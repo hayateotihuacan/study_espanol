@@ -1,0 +1,602 @@
+[
+  {
+    "id": "c1_001",
+    "level": "C1",
+    "word": "epistemología",
+    "meaning": "epistemologíaに関する語彙（C1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso epistemología en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で epistemología を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_002",
+    "level": "C1",
+    "word": "hermenéutica",
+    "meaning": "hermenéuticaに関する語彙（C1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso hermenéutica en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で hermenéutica を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_003",
+    "level": "C1",
+    "word": "interdisciplinar",
+    "meaning": "interdisciplinarに関する語彙（C1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso interdisciplinar en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で interdisciplinar を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_004",
+    "level": "C1",
+    "word": "metodología",
+    "meaning": "metodologíaに関する語彙（C1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso metodología en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で metodología を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_005",
+    "level": "C1",
+    "word": "paradigma",
+    "meaning": "paradigmaに関する語彙（C1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso paradigma en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で paradigma を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_006",
+    "level": "C1",
+    "word": "crítica",
+    "meaning": "críticaに関する語彙（C1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso crítica en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で crítica を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_007",
+    "level": "C1",
+    "word": "discursivo",
+    "meaning": "discursivoに関する語彙（C1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso discursivo en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で discursivo を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_008",
+    "level": "C1",
+    "word": "hegemónico",
+    "meaning": "hegemónicoに関する語彙（C1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso hegemónico en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で hegemónico を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_009",
+    "level": "C1",
+    "word": "dialéctico",
+    "meaning": "dialécticoに関する語彙（C1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso dialéctico en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で dialéctico を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_010",
+    "level": "C1",
+    "word": "contingencia",
+    "meaning": "contingenciaに関する語彙（C1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso contingencia en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で contingencia を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_011",
+    "level": "C1",
+    "word": "ontología",
+    "meaning": "ontologíaに関する語彙（C1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso ontología en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で ontología を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_012",
+    "level": "C1",
+    "word": "normatividad",
+    "meaning": "normatividadに関する語彙（C1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso normatividad en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で normatividad を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_013",
+    "level": "C1",
+    "word": "legitimidad",
+    "meaning": "legitimidadに関する語彙（C1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso legitimidad en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で legitimidad を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_014",
+    "level": "C1",
+    "word": "cartografía",
+    "meaning": "cartografíaに関する語彙（C1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso cartografía en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で cartografía を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_015",
+    "level": "C1",
+    "word": "mediación",
+    "meaning": "mediaciónに関する語彙（C1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso mediación en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で mediación を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_016",
+    "level": "C1",
+    "word": "historicidad",
+    "meaning": "historicidadに関する語彙（C1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso historicidad en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で historicidad を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_017",
+    "level": "C1",
+    "word": "retórica",
+    "meaning": "retóricaに関する語彙（C1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso retórica en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で retórica を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_018",
+    "level": "C1",
+    "word": "ambivalencia",
+    "meaning": "ambivalenciaに関する語彙（C1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso ambivalencia en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で ambivalencia を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_019",
+    "level": "C1",
+    "word": "matriz",
+    "meaning": "matrizに関する語彙（C1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso matriz en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で matriz を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_020",
+    "level": "C1",
+    "word": "genealogía",
+    "meaning": "genealogíaに関する語彙（C1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso genealogía en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で genealogía を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_021",
+    "level": "C1",
+    "word": "epistemología2",
+    "meaning": "epistemologíaに関する語彙（C1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso epistemología en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で epistemología を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_022",
+    "level": "C1",
+    "word": "hermenéutica2",
+    "meaning": "hermenéuticaに関する語彙（C1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso hermenéutica en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で hermenéutica を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_023",
+    "level": "C1",
+    "word": "interdisciplinar2",
+    "meaning": "interdisciplinarに関する語彙（C1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso interdisciplinar en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で interdisciplinar を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_024",
+    "level": "C1",
+    "word": "metodología2",
+    "meaning": "metodologíaに関する語彙（C1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso metodología en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で metodología を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_025",
+    "level": "C1",
+    "word": "paradigma2",
+    "meaning": "paradigmaに関する語彙（C1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso paradigma en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で paradigma を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_026",
+    "level": "C1",
+    "word": "crítica2",
+    "meaning": "críticaに関する語彙（C1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso crítica en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で crítica を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_027",
+    "level": "C1",
+    "word": "discursivo2",
+    "meaning": "discursivoに関する語彙（C1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso discursivo en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で discursivo を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_028",
+    "level": "C1",
+    "word": "hegemónico2",
+    "meaning": "hegemónicoに関する語彙（C1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso hegemónico en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で hegemónico を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_029",
+    "level": "C1",
+    "word": "dialéctico2",
+    "meaning": "dialécticoに関する語彙（C1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso dialéctico en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で dialéctico を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_030",
+    "level": "C1",
+    "word": "contingencia2",
+    "meaning": "contingenciaに関する語彙（C1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso contingencia en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で contingencia を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_031",
+    "level": "C1",
+    "word": "ontología2",
+    "meaning": "ontologíaに関する語彙（C1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso ontología en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で ontología を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_032",
+    "level": "C1",
+    "word": "normatividad2",
+    "meaning": "normatividadに関する語彙（C1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso normatividad en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で normatividad を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_033",
+    "level": "C1",
+    "word": "legitimidad2",
+    "meaning": "legitimidadに関する語彙（C1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso legitimidad en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で legitimidad を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_034",
+    "level": "C1",
+    "word": "cartografía2",
+    "meaning": "cartografíaに関する語彙（C1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso cartografía en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で cartografía を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_035",
+    "level": "C1",
+    "word": "mediación2",
+    "meaning": "mediaciónに関する語彙（C1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso mediación en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で mediación を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_036",
+    "level": "C1",
+    "word": "historicidad2",
+    "meaning": "historicidadに関する語彙（C1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso historicidad en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で historicidad を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_037",
+    "level": "C1",
+    "word": "retórica2",
+    "meaning": "retóricaに関する語彙（C1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso retórica en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で retórica を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_038",
+    "level": "C1",
+    "word": "ambivalencia2",
+    "meaning": "ambivalenciaに関する語彙（C1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso ambivalencia en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で ambivalencia を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_039",
+    "level": "C1",
+    "word": "matriz2",
+    "meaning": "matrizに関する語彙（C1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso matriz en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で matriz を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_040",
+    "level": "C1",
+    "word": "genealogía2",
+    "meaning": "genealogíaに関する語彙（C1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso genealogía en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で genealogía を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_041",
+    "level": "C1",
+    "word": "epistemología3",
+    "meaning": "epistemologíaに関する語彙（C1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso epistemología en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で epistemología を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_042",
+    "level": "C1",
+    "word": "hermenéutica3",
+    "meaning": "hermenéuticaに関する語彙（C1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso hermenéutica en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で hermenéutica を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_043",
+    "level": "C1",
+    "word": "interdisciplinar3",
+    "meaning": "interdisciplinarに関する語彙（C1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso interdisciplinar en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で interdisciplinar を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_044",
+    "level": "C1",
+    "word": "metodología3",
+    "meaning": "metodologíaに関する語彙（C1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso metodología en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で metodología を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_045",
+    "level": "C1",
+    "word": "paradigma3",
+    "meaning": "paradigmaに関する語彙（C1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso paradigma en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で paradigma を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_046",
+    "level": "C1",
+    "word": "crítica3",
+    "meaning": "críticaに関する語彙（C1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso crítica en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で crítica を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_047",
+    "level": "C1",
+    "word": "discursivo3",
+    "meaning": "discursivoに関する語彙（C1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso discursivo en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で discursivo を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_048",
+    "level": "C1",
+    "word": "hegemónico3",
+    "meaning": "hegemónicoに関する語彙（C1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso hegemónico en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で hegemónico を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_049",
+    "level": "C1",
+    "word": "dialéctico3",
+    "meaning": "dialécticoに関する語彙（C1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso dialéctico en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で dialéctico を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_050",
+    "level": "C1",
+    "word": "contingencia3",
+    "meaning": "contingenciaに関する語彙（C1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso contingencia en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で contingencia を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_051",
+    "level": "C1",
+    "word": "ontología3",
+    "meaning": "ontologíaに関する語彙（C1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso ontología en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で ontología を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_052",
+    "level": "C1",
+    "word": "normatividad3",
+    "meaning": "normatividadに関する語彙（C1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso normatividad en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で normatividad を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_053",
+    "level": "C1",
+    "word": "legitimidad3",
+    "meaning": "legitimidadに関する語彙（C1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso legitimidad en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で legitimidad を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_054",
+    "level": "C1",
+    "word": "cartografía3",
+    "meaning": "cartografíaに関する語彙（C1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso cartografía en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で cartografía を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_055",
+    "level": "C1",
+    "word": "mediación3",
+    "meaning": "mediaciónに関する語彙（C1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso mediación en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で mediación を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_056",
+    "level": "C1",
+    "word": "historicidad3",
+    "meaning": "historicidadに関する語彙（C1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso historicidad en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で historicidad を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_057",
+    "level": "C1",
+    "word": "retórica3",
+    "meaning": "retóricaに関する語彙（C1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso retórica en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で retórica を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_058",
+    "level": "C1",
+    "word": "ambivalencia3",
+    "meaning": "ambivalenciaに関する語彙（C1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso ambivalencia en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で ambivalencia を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_059",
+    "level": "C1",
+    "word": "matriz3",
+    "meaning": "matrizに関する語彙（C1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso matriz en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で matriz を使います。",
+    "note": "C1でよく使う重要語。"
+  },
+  {
+    "id": "c1_060",
+    "level": "C1",
+    "word": "genealogía3",
+    "meaning": "genealogíaに関する語彙（C1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso genealogía en una frase de nivel C1.",
+    "translation": "私はC1レベルの文で genealogía を使います。",
+    "note": "C1でよく使う重要語。"
+  }
+]

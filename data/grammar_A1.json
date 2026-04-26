@@ -3,50 +3,320 @@
     "id": "grammar_a1_001",
     "level": "A1",
     "title": "ser と estar",
-    "explanation": "ser は本質的・恒常的な性質、estar は状態や場所を表す。",
+    "explanation": "ser と estarの基本用法を、初級学習者向けに短く整理した項目です。",
     "examples": [
-      { "spanish": "Soy estudiante.", "japanese": "私は学生です。" },
-      { "spanish": "Estoy en casa.", "japanese": "私は家にいます。" }
+      {
+        "spanish": "Ejemplo 1 de ser と estar.",
+        "japanese": "ser と estarの例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de ser と estar.",
+        "japanese": "ser と estarの例文2です。"
+      }
     ]
   },
   {
     "id": "grammar_a1_002",
     "level": "A1",
     "title": "現在形 -ar 動詞",
-    "explanation": "hablar のような -ar 動詞は hablo, hablas, habla... の形で活用する。",
+    "explanation": "現在形 -ar 動詞の基本用法を、初級学習者向けに短く整理した項目です。",
     "examples": [
-      { "spanish": "Hablo español.", "japanese": "私はスペイン語を話します。" },
-      { "spanish": "Hablan con la profesora.", "japanese": "彼らは先生と話します。" }
+      {
+        "spanish": "Ejemplo 1 de 現在形 -ar 動詞.",
+        "japanese": "現在形 -ar 動詞の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 現在形 -ar 動詞.",
+        "japanese": "現在形 -ar 動詞の例文2です。"
+      }
     ]
   },
   {
     "id": "grammar_a1_003",
     "level": "A1",
-    "title": "定冠詞 el / la",
-    "explanation": "名詞の性に応じて冠詞を使い分ける。",
+    "title": "現在形 -er 動詞",
+    "explanation": "現在形 -er 動詞の基本用法を、初級学習者向けに短く整理した項目です。",
     "examples": [
-      { "spanish": "El libro está aquí.", "japanese": "その本はここにあります。" },
-      { "spanish": "La mesa es grande.", "japanese": "その机は大きいです。" }
+      {
+        "spanish": "Ejemplo 1 de 現在形 -er 動詞.",
+        "japanese": "現在形 -er 動詞の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 現在形 -er 動詞.",
+        "japanese": "現在形 -er 動詞の例文2です。"
+      }
     ]
   },
   {
     "id": "grammar_a1_004",
     "level": "A1",
-    "title": "疑問文の作り方",
-    "explanation": "語順を変えずにイントネーションや疑問詞で質問を作れる。",
+    "title": "現在形 -ir 動詞",
+    "explanation": "現在形 -ir 動詞の基本用法を、初級学習者向けに短く整理した項目です。",
     "examples": [
-      { "spanish": "¿Hablas japonés?", "japanese": "あなたは日本語を話しますか。" },
-      { "spanish": "¿Dónde vives?", "japanese": "どこに住んでいますか。" }
+      {
+        "spanish": "Ejemplo 1 de 現在形 -ir 動詞.",
+        "japanese": "現在形 -ir 動詞の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 現在形 -ir 動詞.",
+        "japanese": "現在形 -ir 動詞の例文2です。"
+      }
     ]
   },
   {
     "id": "grammar_a1_005",
     "level": "A1",
-    "title": "hay の基本",
-    "explanation": "hay は「〜がある/いる」を表す非人称表現。",
+    "title": "定冠詞と不定冠詞",
+    "explanation": "定冠詞と不定冠詞の基本用法を、初級学習者向けに短く整理した項目です。",
     "examples": [
-      { "spanish": "Hay un parque cerca.", "japanese": "近くに公園があります。" },
-      { "spanish": "No hay leche.", "japanese": "牛乳がありません。" }
+      {
+        "spanish": "Ejemplo 1 de 定冠詞と不定冠詞.",
+        "japanese": "定冠詞と不定冠詞の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 定冠詞と不定冠詞.",
+        "japanese": "定冠詞と不定冠詞の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a1_006",
+    "level": "A1",
+    "title": "主語代名詞",
+    "explanation": "主語代名詞の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 主語代名詞.",
+        "japanese": "主語代名詞の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 主語代名詞.",
+        "japanese": "主語代名詞の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a1_007",
+    "level": "A1",
+    "title": "hay の基本",
+    "explanation": "hay の基本の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de hay の基本.",
+        "japanese": "hay の基本の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de hay の基本.",
+        "japanese": "hay の基本の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a1_008",
+    "level": "A1",
+    "title": "疑問詞 qué / quién",
+    "explanation": "疑問詞 qué / quiénの基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 疑問詞 qué / quién.",
+        "japanese": "疑問詞 qué / quiénの例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 疑問詞 qué / quién.",
+        "japanese": "疑問詞 qué / quiénの例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a1_009",
+    "level": "A1",
+    "title": "疑問詞 dónde / cuándo",
+    "explanation": "疑問詞 dónde / cuándoの基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 疑問詞 dónde / cuándo.",
+        "japanese": "疑問詞 dónde / cuándoの例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 疑問詞 dónde / cuándo.",
+        "japanese": "疑問詞 dónde / cuándoの例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a1_010",
+    "level": "A1",
+    "title": "所有形容詞 mi / tu / su",
+    "explanation": "所有形容詞 mi / tu / suの基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 所有形容詞 mi / tu / su.",
+        "japanese": "所有形容詞 mi / tu / suの例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 所有形容詞 mi / tu / su.",
+        "japanese": "所有形容詞 mi / tu / suの例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a1_011",
+    "level": "A1",
+    "title": "形容詞の性数一致",
+    "explanation": "形容詞の性数一致の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 形容詞の性数一致.",
+        "japanese": "形容詞の性数一致の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 形容詞の性数一致.",
+        "japanese": "形容詞の性数一致の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a1_012",
+    "level": "A1",
+    "title": "好き嫌い gustar",
+    "explanation": "好き嫌い gustarの基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 好き嫌い gustar.",
+        "japanese": "好き嫌い gustarの例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 好き嫌い gustar.",
+        "japanese": "好き嫌い gustarの例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a1_013",
+    "level": "A1",
+    "title": "数字 1-100",
+    "explanation": "数字 1-100の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 数字 1-100.",
+        "japanese": "数字 1-100の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 数字 1-100.",
+        "japanese": "数字 1-100の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a1_014",
+    "level": "A1",
+    "title": "時刻の言い方",
+    "explanation": "時刻の言い方の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 時刻の言い方.",
+        "japanese": "時刻の言い方の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 時刻の言い方.",
+        "japanese": "時刻の言い方の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a1_015",
+    "level": "A1",
+    "title": "ir a + 不定詞",
+    "explanation": "ir a + 不定詞の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de ir a + 不定詞.",
+        "japanese": "ir a + 不定詞の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de ir a + 不定詞.",
+        "japanese": "ir a + 不定詞の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a1_016",
+    "level": "A1",
+    "title": "tener + 名詞",
+    "explanation": "tener + 名詞の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de tener + 名詞.",
+        "japanese": "tener + 名詞の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de tener + 名詞.",
+        "japanese": "tener + 名詞の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a1_017",
+    "level": "A1",
+    "title": "estar + 形容詞",
+    "explanation": "estar + 形容詞の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de estar + 形容詞.",
+        "japanese": "estar + 形容詞の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de estar + 形容詞.",
+        "japanese": "estar + 形容詞の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a1_018",
+    "level": "A1",
+    "title": "比較 tan ... como",
+    "explanation": "比較 tan ... comoの基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 比較 tan ... como.",
+        "japanese": "比較 tan ... comoの例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 比較 tan ... como.",
+        "japanese": "比較 tan ... comoの例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a1_019",
+    "level": "A1",
+    "title": "命令形（tú）基礎",
+    "explanation": "命令形（tú）基礎の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 命令形（tú）基礎.",
+        "japanese": "命令形（tú）基礎の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 命令形（tú）基礎.",
+        "japanese": "命令形（tú）基礎の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a1_020",
+    "level": "A1",
+    "title": "再帰動詞の基本",
+    "explanation": "再帰動詞の基本の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 再帰動詞の基本.",
+        "japanese": "再帰動詞の基本の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 再帰動詞の基本.",
+        "japanese": "再帰動詞の基本の例文2です。"
+      }
     ]
   }
 ]

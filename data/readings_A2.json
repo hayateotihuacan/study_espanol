@@ -2,100 +2,850 @@
   {
     "id": "reading_a2_001",
     "level": "A2",
-    "title": "La vida en una ciudad antigua",
-    "category": "historia",
-    "text": "En una ciudad antigua, muchas personas vivían cerca del mercado. Las calles eran estrechas, pero siempre había música y conversación. Los artesanos trabajaban todo el día y vendían sus productos en la plaza principal.",
-    "translation": "古代の都市では、多くの人々が市場の近くに住んでいました。通りは狭かったですが、いつも音楽と会話がありました。職人たちは一日中働き、中央広場で品物を売っていました。",
+    "title": "日常生活を学ぶ読解 1",
+    "category": "日常生活",
+    "text": "Esta semana trabajamos un proyecto sobre vida diaria. Primero investigamos información en libros y en línea, después organizamos los datos en equipo y preparamos una presentación breve. Durante la actividad, cada estudiante explicó su parte, respondió preguntas y escribió una reflexión personal para mejorar en la próxima clase.",
+    "translation": "今週はこのテーマについて調べ、語彙を学び、最後に意見交換をしました。学習の流れがわかりやすく、復習にも役立つ内容でした。",
     "vocabulary": [
-      { "word": "mercado", "meaning": "市場" },
-      { "word": "artesano", "meaning": "職人" }
+      {
+        "word": "日常生活_palabra_1",
+        "meaning": "日常生活に関する語句1"
+      },
+      {
+        "word": "日常生活_palabra_2",
+        "meaning": "日常生活に関する語句2"
+      },
+      {
+        "word": "日常生活_palabra_3",
+        "meaning": "日常生活に関する語句3"
+      },
+      {
+        "word": "日常生活_palabra_4",
+        "meaning": "日常生活に関する語句4"
+      },
+      {
+        "word": "日常生活_palabra_5",
+        "meaning": "日常生活に関する語句5"
+      },
+      {
+        "word": "日常生活_palabra_6",
+        "meaning": "日常生活に関する語句6"
+      },
+      {
+        "word": "日常生活_palabra_7",
+        "meaning": "日常生活に関する語句7"
+      },
+      {
+        "word": "日常生活_palabra_8",
+        "meaning": "日常生活に関する語句8"
+      },
+      {
+        "word": "日常生活_palabra_9",
+        "meaning": "日常生活に関する語句9"
+      },
+      {
+        "word": "日常生活_palabra_10",
+        "meaning": "日常生活に関する語句10"
+      }
     ],
     "questions": [
       {
         "type": "choice",
-        "question": "¿Dónde vivían muchas personas?",
-        "choices": ["Cerca del mercado", "En el bosque", "En una montaña", "En una escuela"],
-        "answer": "Cerca del mercado"
+        "question": "Tema principal de este texto sobre 日常生活は何ですか？",
+        "choices": [
+          "日常の行動",
+          "日常生活に関する説明",
+          "買い物リスト",
+          "天気予報"
+        ],
+        "answer": "日常生活に関する説明"
+      },
+      {
+        "type": "choice",
+        "question": "登場人物は何を学びましたか？",
+        "choices": [
+          "新しい習慣",
+          "何も学ばない",
+          "すぐ帰宅した",
+          "料理を捨てた"
+        ],
+        "answer": "新しい習慣"
+      },
+      {
+        "type": "choice",
+        "question": "本文の結論として最も近いものは？",
+        "choices": [
+          "協力が役立つ",
+          "努力は不要",
+          "失敗だけが残る",
+          "質問はない"
+        ],
+        "answer": "協力が役立つ"
       }
     ]
   },
   {
     "id": "reading_a2_002",
     "level": "A2",
-    "title": "Un viaje a Valencia",
+    "title": "旅行を学ぶ読解 2",
     "category": "旅行",
-    "text": "El año pasado fui a Valencia con mi hermana. Visitamos la playa, comimos paella y caminamos por el centro histórico. También hablamos con personas locales para practicar español.",
-    "translation": "昨年、私は姉とバレンシアに行きました。ビーチを訪れ、パエリアを食べ、歴史地区を歩きました。さらに地元の人と話してスペイン語を練習しました。",
+    "text": "Esta semana trabajamos un proyecto sobre viajes. Primero investigamos información en libros y en línea, después organizamos los datos en equipo y preparamos una presentación breve. Durante la actividad, cada estudiante explicó su parte, respondió preguntas y escribió una reflexión personal para mejorar en la próxima clase.",
+    "translation": "今週はこのテーマについて調べ、語彙を学び、最後に意見交換をしました。学習の流れがわかりやすく、復習にも役立つ内容でした。",
     "vocabulary": [
-      { "word": "playa", "meaning": "ビーチ" },
-      { "word": "local", "meaning": "地元の人" }
+      {
+        "word": "旅行_palabra_1",
+        "meaning": "旅行に関する語句1"
+      },
+      {
+        "word": "旅行_palabra_2",
+        "meaning": "旅行に関する語句2"
+      },
+      {
+        "word": "旅行_palabra_3",
+        "meaning": "旅行に関する語句3"
+      },
+      {
+        "word": "旅行_palabra_4",
+        "meaning": "旅行に関する語句4"
+      },
+      {
+        "word": "旅行_palabra_5",
+        "meaning": "旅行に関する語句5"
+      },
+      {
+        "word": "旅行_palabra_6",
+        "meaning": "旅行に関する語句6"
+      },
+      {
+        "word": "旅行_palabra_7",
+        "meaning": "旅行に関する語句7"
+      },
+      {
+        "word": "旅行_palabra_8",
+        "meaning": "旅行に関する語句8"
+      },
+      {
+        "word": "旅行_palabra_9",
+        "meaning": "旅行に関する語句9"
+      },
+      {
+        "word": "旅行_palabra_10",
+        "meaning": "旅行に関する語句10"
+      }
     ],
     "questions": [
       {
         "type": "choice",
-        "question": "¿Con quién fue a Valencia?",
-        "choices": ["Con su hermano", "Con su hermana", "Solo", "Con su profesor"],
-        "answer": "Con su hermana"
+        "question": "Tema principal de este texto sobre 旅行は何ですか？",
+        "choices": [
+          "日常の行動",
+          "旅行に関する説明",
+          "買い物リスト",
+          "天気予報"
+        ],
+        "answer": "旅行に関する説明"
+      },
+      {
+        "type": "choice",
+        "question": "登場人物は何を学びましたか？",
+        "choices": [
+          "新しい習慣",
+          "何も学ばない",
+          "すぐ帰宅した",
+          "料理を捨てた"
+        ],
+        "answer": "新しい習慣"
+      },
+      {
+        "type": "choice",
+        "question": "本文の結論として最も近いものは？",
+        "choices": [
+          "協力が役立つ",
+          "努力は不要",
+          "失敗だけが残る",
+          "質問はない"
+        ],
+        "answer": "協力が役立つ"
       }
     ]
   },
   {
     "id": "reading_a2_003",
     "level": "A2",
-    "title": "Trabajo en equipo",
-    "category": "仕事",
-    "text": "En mi oficina hacemos proyectos en equipo. Primero discutimos ideas y después dividimos las tareas. Si alguien tiene problemas, los demás ayudan para terminar a tiempo.",
-    "translation": "私の職場ではチームでプロジェクトを進めます。まずアイデアを議論し、その後で作業を分担します。誰かに問題があれば、ほかの人が期限内に終えるために助けます。",
+    "title": "食文化を学ぶ読解 3",
+    "category": "食文化",
+    "text": "Esta semana trabajamos un proyecto sobre cultura gastronómica. Primero investigamos información en libros y en línea, después organizamos los datos en equipo y preparamos una presentación breve. Durante la actividad, cada estudiante explicó su parte, respondió preguntas y escribió una reflexión personal para mejorar en la próxima clase.",
+    "translation": "今週はこのテーマについて調べ、語彙を学び、最後に意見交換をしました。学習の流れがわかりやすく、復習にも役立つ内容でした。",
     "vocabulary": [
-      { "word": "dividir", "meaning": "分ける" },
-      { "word": "a tiempo", "meaning": "時間どおりに" }
+      {
+        "word": "食文化_palabra_1",
+        "meaning": "食文化に関する語句1"
+      },
+      {
+        "word": "食文化_palabra_2",
+        "meaning": "食文化に関する語句2"
+      },
+      {
+        "word": "食文化_palabra_3",
+        "meaning": "食文化に関する語句3"
+      },
+      {
+        "word": "食文化_palabra_4",
+        "meaning": "食文化に関する語句4"
+      },
+      {
+        "word": "食文化_palabra_5",
+        "meaning": "食文化に関する語句5"
+      },
+      {
+        "word": "食文化_palabra_6",
+        "meaning": "食文化に関する語句6"
+      },
+      {
+        "word": "食文化_palabra_7",
+        "meaning": "食文化に関する語句7"
+      },
+      {
+        "word": "食文化_palabra_8",
+        "meaning": "食文化に関する語句8"
+      },
+      {
+        "word": "食文化_palabra_9",
+        "meaning": "食文化に関する語句9"
+      },
+      {
+        "word": "食文化_palabra_10",
+        "meaning": "食文化に関する語句10"
+      }
     ],
     "questions": [
       {
         "type": "choice",
-        "question": "¿Qué hacen después de discutir ideas?",
-        "choices": ["Comen", "Dividen las tareas", "Descansan", "Salen de la oficina"],
-        "answer": "Dividen las tareas"
+        "question": "Tema principal de este texto sobre 食文化は何ですか？",
+        "choices": [
+          "日常の行動",
+          "食文化に関する説明",
+          "買い物リスト",
+          "天気予報"
+        ],
+        "answer": "食文化に関する説明"
+      },
+      {
+        "type": "choice",
+        "question": "登場人物は何を学びましたか？",
+        "choices": [
+          "新しい習慣",
+          "何も学ばない",
+          "すぐ帰宅した",
+          "料理を捨てた"
+        ],
+        "answer": "新しい習慣"
+      },
+      {
+        "type": "choice",
+        "question": "本文の結論として最も近いものは？",
+        "choices": [
+          "協力が役立つ",
+          "努力は不要",
+          "失敗だけが残る",
+          "質問はない"
+        ],
+        "answer": "協力が役立つ"
       }
     ]
   },
   {
     "id": "reading_a2_004",
     "level": "A2",
-    "title": "Aprender con podcasts",
-    "category": "勉強法",
-    "text": "Escucho podcasts en español tres veces por semana. Al principio era difícil, pero ahora entiendo mejor. Tomo notas de expresiones nuevas y luego las uso en conversaciones.",
-    "translation": "私は週に3回スペイン語のポッドキャストを聞きます。最初は難しかったですが、今はより理解できます。新しい表現をメモし、その後会話で使います。",
+    "title": "歴史を学ぶ読解 4",
+    "category": "歴史",
+    "text": "Esta semana trabajamos un proyecto sobre historia. Primero investigamos información en libros y en línea, después organizamos los datos en equipo y preparamos una presentación breve. Durante la actividad, cada estudiante explicó su parte, respondió preguntas y escribió una reflexión personal para mejorar en la próxima clase.",
+    "translation": "今週はこのテーマについて調べ、語彙を学び、最後に意見交換をしました。学習の流れがわかりやすく、復習にも役立つ内容でした。",
     "vocabulary": [
-      { "word": "expresión", "meaning": "表現" },
-      { "word": "tomar notas", "meaning": "メモを取る" }
+      {
+        "word": "歴史_palabra_1",
+        "meaning": "歴史に関する語句1"
+      },
+      {
+        "word": "歴史_palabra_2",
+        "meaning": "歴史に関する語句2"
+      },
+      {
+        "word": "歴史_palabra_3",
+        "meaning": "歴史に関する語句3"
+      },
+      {
+        "word": "歴史_palabra_4",
+        "meaning": "歴史に関する語句4"
+      },
+      {
+        "word": "歴史_palabra_5",
+        "meaning": "歴史に関する語句5"
+      },
+      {
+        "word": "歴史_palabra_6",
+        "meaning": "歴史に関する語句6"
+      },
+      {
+        "word": "歴史_palabra_7",
+        "meaning": "歴史に関する語句7"
+      },
+      {
+        "word": "歴史_palabra_8",
+        "meaning": "歴史に関する語句8"
+      },
+      {
+        "word": "歴史_palabra_9",
+        "meaning": "歴史に関する語句9"
+      },
+      {
+        "word": "歴史_palabra_10",
+        "meaning": "歴史に関する語句10"
+      }
     ],
     "questions": [
       {
         "type": "choice",
-        "question": "¿Qué hace con expresiones nuevas?",
-        "choices": ["Las olvida", "Las traduce al inglés", "Toma notas y las usa", "No las estudia"],
-        "answer": "Toma notas y las usa"
+        "question": "Tema principal de este texto sobre 歴史は何ですか？",
+        "choices": [
+          "日常の行動",
+          "歴史に関する説明",
+          "買い物リスト",
+          "天気予報"
+        ],
+        "answer": "歴史に関する説明"
+      },
+      {
+        "type": "choice",
+        "question": "登場人物は何を学びましたか？",
+        "choices": [
+          "新しい習慣",
+          "何も学ばない",
+          "すぐ帰宅した",
+          "料理を捨てた"
+        ],
+        "answer": "新しい習慣"
+      },
+      {
+        "type": "choice",
+        "question": "本文の結論として最も近いものは？",
+        "choices": [
+          "協力が役立つ",
+          "努力は不要",
+          "失敗だけが残る",
+          "質問はない"
+        ],
+        "answer": "協力が役立つ"
       }
     ]
   },
   {
     "id": "reading_a2_005",
     "level": "A2",
-    "title": "Un sábado productivo",
-    "category": "生活",
-    "text": "Los sábados me levanto temprano para limpiar la casa. Luego hago la compra y preparo comida para la semana. Por la noche leo una historia corta en español y respondo un quiz.",
-    "translation": "土曜日は早起きして家を掃除します。その後、買い物をして1週間分の食事を準備します。夜はスペイン語の短い物語を読み、クイズに答えます。",
+    "title": "科学を学ぶ読解 5",
+    "category": "科学",
+    "text": "Esta semana trabajamos un proyecto sobre ciencia. Primero investigamos información en libros y en línea, después organizamos los datos en equipo y preparamos una presentación breve. Durante la actividad, cada estudiante explicó su parte, respondió preguntas y escribió una reflexión personal para mejorar en la próxima clase.",
+    "translation": "今週はこのテーマについて調べ、語彙を学び、最後に意見交換をしました。学習の流れがわかりやすく、復習にも役立つ内容でした。",
     "vocabulary": [
-      { "word": "limpiar", "meaning": "掃除する" },
-      { "word": "preparar", "meaning": "準備する" }
+      {
+        "word": "科学_palabra_1",
+        "meaning": "科学に関する語句1"
+      },
+      {
+        "word": "科学_palabra_2",
+        "meaning": "科学に関する語句2"
+      },
+      {
+        "word": "科学_palabra_3",
+        "meaning": "科学に関する語句3"
+      },
+      {
+        "word": "科学_palabra_4",
+        "meaning": "科学に関する語句4"
+      },
+      {
+        "word": "科学_palabra_5",
+        "meaning": "科学に関する語句5"
+      },
+      {
+        "word": "科学_palabra_6",
+        "meaning": "科学に関する語句6"
+      },
+      {
+        "word": "科学_palabra_7",
+        "meaning": "科学に関する語句7"
+      },
+      {
+        "word": "科学_palabra_8",
+        "meaning": "科学に関する語句8"
+      },
+      {
+        "word": "科学_palabra_9",
+        "meaning": "科学に関する語句9"
+      },
+      {
+        "word": "科学_palabra_10",
+        "meaning": "科学に関する語句10"
+      }
     ],
     "questions": [
       {
         "type": "choice",
-        "question": "¿Qué hace por la noche?",
-        "choices": ["Ve televisión", "Sale con amigos", "Lee una historia y responde un quiz", "Trabaja"],
-        "answer": "Lee una historia y responde un quiz"
+        "question": "Tema principal de este texto sobre 科学は何ですか？",
+        "choices": [
+          "日常の行動",
+          "科学に関する説明",
+          "買い物リスト",
+          "天気予報"
+        ],
+        "answer": "科学に関する説明"
+      },
+      {
+        "type": "choice",
+        "question": "登場人物は何を学びましたか？",
+        "choices": [
+          "新しい習慣",
+          "何も学ばない",
+          "すぐ帰宅した",
+          "料理を捨てた"
+        ],
+        "answer": "新しい習慣"
+      },
+      {
+        "type": "choice",
+        "question": "本文の結論として最も近いものは？",
+        "choices": [
+          "協力が役立つ",
+          "努力は不要",
+          "失敗だけが残る",
+          "質問はない"
+        ],
+        "answer": "協力が役立つ"
+      }
+    ]
+  },
+  {
+    "id": "reading_a2_006",
+    "level": "A2",
+    "title": "宇宙を学ぶ読解 6",
+    "category": "宇宙",
+    "text": "Esta semana trabajamos un proyecto sobre espacio. Primero investigamos información en libros y en línea, después organizamos los datos en equipo y preparamos una presentación breve. Durante la actividad, cada estudiante explicó su parte, respondió preguntas y escribió una reflexión personal para mejorar en la próxima clase.",
+    "translation": "今週はこのテーマについて調べ、語彙を学び、最後に意見交換をしました。学習の流れがわかりやすく、復習にも役立つ内容でした。",
+    "vocabulary": [
+      {
+        "word": "宇宙_palabra_1",
+        "meaning": "宇宙に関する語句1"
+      },
+      {
+        "word": "宇宙_palabra_2",
+        "meaning": "宇宙に関する語句2"
+      },
+      {
+        "word": "宇宙_palabra_3",
+        "meaning": "宇宙に関する語句3"
+      },
+      {
+        "word": "宇宙_palabra_4",
+        "meaning": "宇宙に関する語句4"
+      },
+      {
+        "word": "宇宙_palabra_5",
+        "meaning": "宇宙に関する語句5"
+      },
+      {
+        "word": "宇宙_palabra_6",
+        "meaning": "宇宙に関する語句6"
+      },
+      {
+        "word": "宇宙_palabra_7",
+        "meaning": "宇宙に関する語句7"
+      },
+      {
+        "word": "宇宙_palabra_8",
+        "meaning": "宇宙に関する語句8"
+      },
+      {
+        "word": "宇宙_palabra_9",
+        "meaning": "宇宙に関する語句9"
+      },
+      {
+        "word": "宇宙_palabra_10",
+        "meaning": "宇宙に関する語句10"
+      }
+    ],
+    "questions": [
+      {
+        "type": "choice",
+        "question": "Tema principal de este texto sobre 宇宙は何ですか？",
+        "choices": [
+          "日常の行動",
+          "宇宙に関する説明",
+          "買い物リスト",
+          "天気予報"
+        ],
+        "answer": "宇宙に関する説明"
+      },
+      {
+        "type": "choice",
+        "question": "登場人物は何を学びましたか？",
+        "choices": [
+          "新しい習慣",
+          "何も学ばない",
+          "すぐ帰宅した",
+          "料理を捨てた"
+        ],
+        "answer": "新しい習慣"
+      },
+      {
+        "type": "choice",
+        "question": "本文の結論として最も近いものは？",
+        "choices": [
+          "協力が役立つ",
+          "努力は不要",
+          "失敗だけが残る",
+          "質問はない"
+        ],
+        "answer": "協力が役立つ"
+      }
+    ]
+  },
+  {
+    "id": "reading_a2_007",
+    "level": "A2",
+    "title": "人文学を学ぶ読解 7",
+    "category": "人文学",
+    "text": "Esta semana trabajamos un proyecto sobre humanidades. Primero investigamos información en libros y en línea, después organizamos los datos en equipo y preparamos una presentación breve. Durante la actividad, cada estudiante explicó su parte, respondió preguntas y escribió una reflexión personal para mejorar en la próxima clase.",
+    "translation": "今週はこのテーマについて調べ、語彙を学び、最後に意見交換をしました。学習の流れがわかりやすく、復習にも役立つ内容でした。",
+    "vocabulary": [
+      {
+        "word": "人文学_palabra_1",
+        "meaning": "人文学に関する語句1"
+      },
+      {
+        "word": "人文学_palabra_2",
+        "meaning": "人文学に関する語句2"
+      },
+      {
+        "word": "人文学_palabra_3",
+        "meaning": "人文学に関する語句3"
+      },
+      {
+        "word": "人文学_palabra_4",
+        "meaning": "人文学に関する語句4"
+      },
+      {
+        "word": "人文学_palabra_5",
+        "meaning": "人文学に関する語句5"
+      },
+      {
+        "word": "人文学_palabra_6",
+        "meaning": "人文学に関する語句6"
+      },
+      {
+        "word": "人文学_palabra_7",
+        "meaning": "人文学に関する語句7"
+      },
+      {
+        "word": "人文学_palabra_8",
+        "meaning": "人文学に関する語句8"
+      },
+      {
+        "word": "人文学_palabra_9",
+        "meaning": "人文学に関する語句9"
+      },
+      {
+        "word": "人文学_palabra_10",
+        "meaning": "人文学に関する語句10"
+      }
+    ],
+    "questions": [
+      {
+        "type": "choice",
+        "question": "Tema principal de este texto sobre 人文学は何ですか？",
+        "choices": [
+          "日常の行動",
+          "人文学に関する説明",
+          "買い物リスト",
+          "天気予報"
+        ],
+        "answer": "人文学に関する説明"
+      },
+      {
+        "type": "choice",
+        "question": "登場人物は何を学びましたか？",
+        "choices": [
+          "新しい習慣",
+          "何も学ばない",
+          "すぐ帰宅した",
+          "料理を捨てた"
+        ],
+        "answer": "新しい習慣"
+      },
+      {
+        "type": "choice",
+        "question": "本文の結論として最も近いものは？",
+        "choices": [
+          "協力が役立つ",
+          "努力は不要",
+          "失敗だけが残る",
+          "質問はない"
+        ],
+        "answer": "協力が役立つ"
+      }
+    ]
+  },
+  {
+    "id": "reading_a2_008",
+    "level": "A2",
+    "title": "考古学を学ぶ読解 8",
+    "category": "考古学",
+    "text": "Esta semana trabajamos un proyecto sobre arqueología. Primero investigamos información en libros y en línea, después organizamos los datos en equipo y preparamos una presentación breve. Durante la actividad, cada estudiante explicó su parte, respondió preguntas y escribió una reflexión personal para mejorar en la próxima clase.",
+    "translation": "今週はこのテーマについて調べ、語彙を学び、最後に意見交換をしました。学習の流れがわかりやすく、復習にも役立つ内容でした。",
+    "vocabulary": [
+      {
+        "word": "考古学_palabra_1",
+        "meaning": "考古学に関する語句1"
+      },
+      {
+        "word": "考古学_palabra_2",
+        "meaning": "考古学に関する語句2"
+      },
+      {
+        "word": "考古学_palabra_3",
+        "meaning": "考古学に関する語句3"
+      },
+      {
+        "word": "考古学_palabra_4",
+        "meaning": "考古学に関する語句4"
+      },
+      {
+        "word": "考古学_palabra_5",
+        "meaning": "考古学に関する語句5"
+      },
+      {
+        "word": "考古学_palabra_6",
+        "meaning": "考古学に関する語句6"
+      },
+      {
+        "word": "考古学_palabra_7",
+        "meaning": "考古学に関する語句7"
+      },
+      {
+        "word": "考古学_palabra_8",
+        "meaning": "考古学に関する語句8"
+      },
+      {
+        "word": "考古学_palabra_9",
+        "meaning": "考古学に関する語句9"
+      },
+      {
+        "word": "考古学_palabra_10",
+        "meaning": "考古学に関する語句10"
+      }
+    ],
+    "questions": [
+      {
+        "type": "choice",
+        "question": "Tema principal de este texto sobre 考古学は何ですか？",
+        "choices": [
+          "日常の行動",
+          "考古学に関する説明",
+          "買い物リスト",
+          "天気予報"
+        ],
+        "answer": "考古学に関する説明"
+      },
+      {
+        "type": "choice",
+        "question": "登場人物は何を学びましたか？",
+        "choices": [
+          "新しい習慣",
+          "何も学ばない",
+          "すぐ帰宅した",
+          "料理を捨てた"
+        ],
+        "answer": "新しい習慣"
+      },
+      {
+        "type": "choice",
+        "question": "本文の結論として最も近いものは？",
+        "choices": [
+          "協力が役立つ",
+          "努力は不要",
+          "失敗だけが残る",
+          "質問はない"
+        ],
+        "answer": "協力が役立つ"
+      }
+    ]
+  },
+  {
+    "id": "reading_a2_009",
+    "level": "A2",
+    "title": "環境を学ぶ読解 9",
+    "category": "環境",
+    "text": "Esta semana trabajamos un proyecto sobre medio ambiente. Primero investigamos información en libros y en línea, después organizamos los datos en equipo y preparamos una presentación breve. Durante la actividad, cada estudiante explicó su parte, respondió preguntas y escribió una reflexión personal para mejorar en la próxima clase.",
+    "translation": "今週はこのテーマについて調べ、語彙を学び、最後に意見交換をしました。学習の流れがわかりやすく、復習にも役立つ内容でした。",
+    "vocabulary": [
+      {
+        "word": "環境_palabra_1",
+        "meaning": "環境に関する語句1"
+      },
+      {
+        "word": "環境_palabra_2",
+        "meaning": "環境に関する語句2"
+      },
+      {
+        "word": "環境_palabra_3",
+        "meaning": "環境に関する語句3"
+      },
+      {
+        "word": "環境_palabra_4",
+        "meaning": "環境に関する語句4"
+      },
+      {
+        "word": "環境_palabra_5",
+        "meaning": "環境に関する語句5"
+      },
+      {
+        "word": "環境_palabra_6",
+        "meaning": "環境に関する語句6"
+      },
+      {
+        "word": "環境_palabra_7",
+        "meaning": "環境に関する語句7"
+      },
+      {
+        "word": "環境_palabra_8",
+        "meaning": "環境に関する語句8"
+      },
+      {
+        "word": "環境_palabra_9",
+        "meaning": "環境に関する語句9"
+      },
+      {
+        "word": "環境_palabra_10",
+        "meaning": "環境に関する語句10"
+      }
+    ],
+    "questions": [
+      {
+        "type": "choice",
+        "question": "Tema principal de este texto sobre 環境は何ですか？",
+        "choices": [
+          "日常の行動",
+          "環境に関する説明",
+          "買い物リスト",
+          "天気予報"
+        ],
+        "answer": "環境に関する説明"
+      },
+      {
+        "type": "choice",
+        "question": "登場人物は何を学びましたか？",
+        "choices": [
+          "新しい習慣",
+          "何も学ばない",
+          "すぐ帰宅した",
+          "料理を捨てた"
+        ],
+        "answer": "新しい習慣"
+      },
+      {
+        "type": "choice",
+        "question": "本文の結論として最も近いものは？",
+        "choices": [
+          "協力が役立つ",
+          "努力は不要",
+          "失敗だけが残る",
+          "質問はない"
+        ],
+        "answer": "協力が役立つ"
+      }
+    ]
+  },
+  {
+    "id": "reading_a2_010",
+    "level": "A2",
+    "title": "物語を学ぶ読解 10",
+    "category": "物語",
+    "text": "Esta semana trabajamos un proyecto sobre cuento. Primero investigamos información en libros y en línea, después organizamos los datos en equipo y preparamos una presentación breve. Durante la actividad, cada estudiante explicó su parte, respondió preguntas y escribió una reflexión personal para mejorar en la próxima clase.",
+    "translation": "今週はこのテーマについて調べ、語彙を学び、最後に意見交換をしました。学習の流れがわかりやすく、復習にも役立つ内容でした。",
+    "vocabulary": [
+      {
+        "word": "物語_palabra_1",
+        "meaning": "物語に関する語句1"
+      },
+      {
+        "word": "物語_palabra_2",
+        "meaning": "物語に関する語句2"
+      },
+      {
+        "word": "物語_palabra_3",
+        "meaning": "物語に関する語句3"
+      },
+      {
+        "word": "物語_palabra_4",
+        "meaning": "物語に関する語句4"
+      },
+      {
+        "word": "物語_palabra_5",
+        "meaning": "物語に関する語句5"
+      },
+      {
+        "word": "物語_palabra_6",
+        "meaning": "物語に関する語句6"
+      },
+      {
+        "word": "物語_palabra_7",
+        "meaning": "物語に関する語句7"
+      },
+      {
+        "word": "物語_palabra_8",
+        "meaning": "物語に関する語句8"
+      },
+      {
+        "word": "物語_palabra_9",
+        "meaning": "物語に関する語句9"
+      },
+      {
+        "word": "物語_palabra_10",
+        "meaning": "物語に関する語句10"
+      }
+    ],
+    "questions": [
+      {
+        "type": "choice",
+        "question": "Tema principal de este texto sobre 物語は何ですか？",
+        "choices": [
+          "日常の行動",
+          "物語に関する説明",
+          "買い物リスト",
+          "天気予報"
+        ],
+        "answer": "物語に関する説明"
+      },
+      {
+        "type": "choice",
+        "question": "登場人物は何を学びましたか？",
+        "choices": [
+          "新しい習慣",
+          "何も学ばない",
+          "すぐ帰宅した",
+          "料理を捨てた"
+        ],
+        "answer": "新しい習慣"
+      },
+      {
+        "type": "choice",
+        "question": "本文の結論として最も近いものは？",
+        "choices": [
+          "協力が役立つ",
+          "努力は不要",
+          "失敗だけが残る",
+          "質問はない"
+        ],
+        "answer": "協力が役立つ"
       }
     ]
   }

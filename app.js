@@ -16,7 +16,11 @@ const state = {
   },
 };
 
-// localStorage から保存済み進捗を読み込む。
+const swipeState = {
+  startX: null,
+  startY: null,
+};
+
 function loadProgress() {
   const raw = localStorage.getItem(APP_STORAGE_KEY);
   if (!raw) return;
@@ -34,13 +38,11 @@ function loadProgress() {
   }
 }
 
-// 学習履歴を更新して localStorage に保存する。
 function saveProgress() {
   state.progress.lastStudyDate = new Date().toISOString().slice(0, 10);
   localStorage.setItem(APP_STORAGE_KEY, JSON.stringify(state.progress));
 }
 
-// アプリで使う教材 JSON をまとめて読み込む。
 async function loadData() {
   const files = [
     "data/words_A1.json",
@@ -83,20 +85,81 @@ function showScreen(screen) {
 function renderHome() {
   const totalWords = state.words.length;
   const rememberedWords = Object.values(state.progress.words).filter((v) => v === "known").length;
+  const unknownWords = Object.values(state.progress.words).filter((v) => v === "unknown").length;
   const readingDone = Object.keys(state.progress.readingDone).length;
   const quizStats = getQuizStats();
   const summary = document.getElementById("today-summary");
+  const progressCards = document.getElementById("home-progress-cards");
 
   summary.innerHTML = `
-    <h3>今日の学習</h3>
+    <h3>今日の学習サマリー</h3>
     <p>覚えた単語: <strong>${rememberedWords}</strong> / ${totalWords}</p>
     <p>読了した長文: <strong>${readingDone}</strong> / ${state.readings.length}</p>
     <p>クイズ正答率: <strong>${quizStats.rate}%</strong> (${quizStats.correct}/${quizStats.total})</p>
     <p>最終学習日: <strong>${state.progress.lastStudyDate || "未学習"}</strong></p>
   `;
+
+  progressCards.innerHTML = `
+    <article class="card learning-status-card">
+      <h3>学習進行状況</h3>
+      <p>単語進捗: <strong>${Math.round((rememberedWords / (totalWords || 1)) * 100)}%</strong></p>
+      <div class="progress-bar"><span style="width: ${Math.round((rememberedWords / (totalWords || 1)) * 100)}%"></span></div>
+      <p>苦手単語: <strong>${unknownWords}</strong> 件</p>
+    </article>
+    <article class="card learning-status-card">
+      <h3>読解・クイズ進捗</h3>
+      <p>読了率: <strong>${Math.round((readingDone / (state.readings.length || 1)) * 100)}%</strong></p>
+      <div class="progress-bar"><span style="width: ${Math.round((readingDone / (state.readings.length || 1)) * 100)}%"></span></div>
+      <p>クイズ成績: <strong>${quizStats.correct}</strong> / ${quizStats.total}</p>
+    </article>
+  `;
 }
 
-// 単語カードを 1 枚表示し、学習ボタンで進捗を保存する。
+function handleWordAction(action, word, listLength) {
+  if (action === "next") {
+    state.currentWordIndex = (state.currentWordIndex + 1) % listLength;
+  } else {
+    state.progress.words[word.id] = action;
+    state.currentWordIndex = (state.currentWordIndex + 1) % listLength;
+    saveProgress();
+  }
+  rerenderAll();
+}
+
+function attachSwipeHandlers(card, word, listLength) {
+  const threshold = 60;
+
+  card.addEventListener(
+    "touchstart",
+    (e) => {
+      const touch = e.changedTouches[0];
+      swipeState.startX = touch.clientX;
+      swipeState.startY = touch.clientY;
+    },
+    { passive: true }
+  );
+
+  card.addEventListener(
+    "touchend",
+    (e) => {
+      if (swipeState.startX === null || swipeState.startY === null) return;
+      const touch = e.changedTouches[0];
+      const dx = touch.clientX - swipeState.startX;
+      const dy = touch.clientY - swipeState.startY;
+      swipeState.startX = null;
+      swipeState.startY = null;
+
+      if (Math.abs(dx) < threshold || Math.abs(dx) < Math.abs(dy)) return;
+      if (dx > 0) {
+        handleWordAction("known", word, listLength);
+      } else {
+        handleWordAction("unknown", word, listLength);
+      }
+    },
+    { passive: true }
+  );
+}
+
 function renderVocab() {
   const words = getFilteredWords();
   if (state.currentWordIndex >= words.length) state.currentWordIndex = 0;
@@ -113,12 +176,13 @@ function renderVocab() {
   const status = state.progress.words[word.id];
   progress.textContent = `表示中: ${state.currentWordIndex + 1} / ${words.length}`;
   card.innerHTML = `
-    <h3>${word.word} <span class="tag">${word.level}</span></h3>
+    <div class="card-head"><h3>${word.word} <span class="tag">${word.level}</span></h3></div>
     <p>意味: ${word.meaning}</p>
     <p>品詞: ${word.partOfSpeech}</p>
     <p>例文: ${word.example}</p>
     <p>訳: ${word.translation}</p>
     <p>状態: <strong>${status === "known" ? "覚えた" : status === "unknown" ? "未習得" : "未判定"}</strong></p>
+    <p class="swipe-hint">👉 右スワイプ: 覚えた / 👈 左スワイプ: 未習得</p>
     <div class="inline-actions">
       <button class="primary-btn" data-word-action="known">覚えた</button>
       <button class="secondary-btn" data-word-action="unknown">未習得</button>
@@ -128,17 +192,11 @@ function renderVocab() {
 
   card.querySelectorAll("button[data-word-action]").forEach((btn) => {
     btn.addEventListener("click", () => {
-      const action = btn.dataset.wordAction;
-      if (action === "next") {
-        state.currentWordIndex = (state.currentWordIndex + 1) % words.length;
-      } else {
-        state.progress.words[word.id] = action;
-        state.currentWordIndex = (state.currentWordIndex + 1) % words.length;
-        saveProgress();
-      }
-      rerenderAll();
+      handleWordAction(btn.dataset.wordAction, word, words.length);
     });
   });
+
+  attachSwipeHandlers(card, word, words.length);
 }
 
 function renderGrammar() {
@@ -148,8 +206,8 @@ function renderGrammar() {
   list.innerHTML = grammar
     .map(
       (item) => `
-      <article class="card">
-        <h3>${item.title} <span class="tag">${item.level}</span></h3>
+      <article class="card learning-card">
+        <div class="card-head"><h3>${item.title} <span class="tag">${item.level}</span></h3></div>
         <p>${item.explanation}</p>
         ${item.examples
           .map((ex) => `<p><strong>${ex.spanish}</strong><br /><span>${ex.japanese}</span></p>`)
@@ -165,7 +223,7 @@ function renderReadings() {
   list.innerHTML = state.readings
     .map(
       (reading) => `
-      <button class="menu-card" data-reading-id="${reading.id}">
+      <button class="menu-card reading-menu-card" data-reading-id="${reading.id}">
         <strong>${reading.title}</strong><br />
         <span class="tag">${reading.level}</span>
         <span class="tag">${reading.category}</span>
@@ -184,7 +242,6 @@ function renderReadings() {
   renderReadingDetail();
 }
 
-// 日本語訳の表示切替やクイズ回答判定を含む長文詳細を描画する。
 function renderReadingDetail() {
   const detail = document.getElementById("reading-detail");
   const reading = state.readings.find((r) => r.id === state.selectedReadingId);
@@ -196,20 +253,32 @@ function renderReadingDetail() {
 
   detail.classList.remove("hidden");
   detail.innerHTML = `
-    <h3>${reading.title}</h3>
-    <p><span class="tag">${reading.level}</span><span class="tag">${reading.category}</span></p>
-    <p class="reading-text">${reading.text}</p>
-    <div class="inline-actions">
-      <button id="toggle-translation" class="primary-btn">日本語訳を表示</button>
-      <button id="mark-reading" class="choice-btn">読了にする</button>
-    </div>
-    <p id="translation-box" class="hidden">${reading.translation}</p>
-    <h4>重要語句</h4>
-    <ul>
-      ${reading.vocabulary.map((v) => `<li>${v.word} : ${v.meaning}</li>`).join("")}
-    </ul>
-    <h4>内容確認クイズ</h4>
-    <div id="quiz-area"></div>
+    <section class="reading-section section-title">
+      <h3>${reading.title}</h3>
+      <p><span class="tag">${reading.level}</span><span class="tag">${reading.category}</span></p>
+    </section>
+
+    <section class="reading-section">
+      <h4>本文</h4>
+      <p class="reading-text">${reading.text}</p>
+      <div class="inline-actions">
+        <button id="toggle-translation" class="primary-btn">日本語訳を表示</button>
+        <button id="mark-reading" class="choice-btn">読了にする</button>
+      </div>
+      <p id="translation-box" class="translation-box hidden">${reading.translation}</p>
+    </section>
+
+    <section class="reading-section">
+      <h4>重要語句</h4>
+      <ul class="reading-vocab-list">
+        ${reading.vocabulary.map((v) => `<li><strong>${v.word}</strong> : ${v.meaning}</li>`).join("")}
+      </ul>
+    </section>
+
+    <section class="reading-section">
+      <h4>内容確認クイズ</h4>
+      <div id="quiz-area"></div>
+    </section>
   `;
 
   const translationBox = detail.querySelector("#translation-box");
@@ -232,13 +301,13 @@ function renderReadingDetail() {
     .map((q, idx) => {
       const qid = `${reading.id}_q${idx}`;
       return `
-        <div class="card">
+        <div class="card learning-card quiz-card">
           <p><strong>Q${idx + 1}:</strong> ${q.question}</p>
           <div class="card-list">
             ${q.choices
               .map(
                 (choice) =>
-                  `<button class="choice-btn" data-qid="${qid}" data-answer="${choice}">${choice}</button>`
+                  `<button class="choice-btn quiz-choice-btn" data-qid="${qid}" data-answer="${choice}">${choice}</button>`
               )
               .join("")}
           </div>
@@ -264,8 +333,8 @@ function renderReadingDetail() {
 
       const feedback = document.getElementById(`fb-${qid}`);
       feedback.textContent = isCorrect
-        ? "正解です！"
-        : `不正解です。正解: ${question.answer}`;
+        ? "✅ 正解です！この調子です。"
+        : `❌ 不正解です。正解: ${question.answer}`;
       feedback.className = `feedback ${isCorrect ? "ok" : "ng"}`;
 
       rerenderAll(false);
@@ -296,13 +365,13 @@ function renderReview() {
   `;
 
   reviewList.innerHTML = `
-    <article class="card">
+    <article class="card learning-card">
       <h3>未習得単語</h3>
       <ul>
         ${unknownWords.slice(0, 10).map((w) => `<li>${w.word} (${w.meaning})</li>`).join("") || "<li>ありません</li>"}
       </ul>
     </article>
-    <article class="card">
+    <article class="card learning-card">
       <h3>再挑戦クイズID</h3>
       <ul>
         ${wrongQuizIds.slice(0, 10).map((qid) => `<li>${qid}</li>`).join("") || "<li>ありません</li>"}
@@ -335,7 +404,6 @@ function rerenderAll(includeReadingDetail = true) {
   if (includeReadingDetail) renderReadingDetail();
 }
 
-// 初期化処理: データ読込・イベント登録・Service Worker 登録を実行する。
 async function init() {
   loadProgress();
   await loadData();

@@ -3,45 +3,720 @@
     "id": "a2_001",
     "level": "A2",
     "word": "mejorar",
-    "meaning": "改善する、上達する",
+    "meaning": "mejorar（学習語彙）",
     "partOfSpeech": "動詞",
-    "example": "Quiero mejorar mi pronunciación.",
-    "translation": "私は発音を上達させたいです。"
+    "example": "Quiero mejorar cada día.",
+    "translation": "私は毎日『mejorar』を実践したいです。"
   },
   {
     "id": "a2_002",
     "level": "A2",
     "word": "vecindario",
-    "meaning": "近所、地域",
+    "meaning": "vecindario（学習語彙）",
     "partOfSpeech": "名詞",
-    "example": "Mi vecindario es muy tranquilo.",
-    "translation": "私の近所はとても静かです。"
+    "example": "Vecindario es importante en mi vida.",
+    "translation": "私は毎日vecindarioに関する表現を学びます。"
   },
   {
     "id": "a2_003",
     "level": "A2",
     "word": "además",
-    "meaning": "その上、さらに",
-    "partOfSpeech": "副詞",
-    "example": "Además, necesito practicar más.",
-    "translation": "その上、もっと練習する必要があります。"
+    "meaning": "además（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Además es importante en mi vida.",
+    "translation": "私は毎日ademásに関する表現を学びます。"
   },
   {
     "id": "a2_004",
     "level": "A2",
     "word": "cómodo",
-    "meaning": "快適な",
-    "partOfSpeech": "形容詞",
-    "example": "Este sofá es muy cómodo.",
-    "translation": "このソファはとても快適です。"
+    "meaning": "cómodo（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Cómodo es importante en mi vida.",
+    "translation": "私は毎日cómodoに関する表現を学びます。"
   },
   {
     "id": "a2_005",
     "level": "A2",
     "word": "reunirse",
-    "meaning": "集まる、会う",
-    "partOfSpeech": "再帰動詞",
-    "example": "Nos reunimos después del trabajo.",
-    "translation": "私たちは仕事の後に集まります。"
+    "meaning": "reunirse（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero reunirse cada día.",
+    "translation": "私は毎日『reunirse』を実践したいです。"
+  },
+  {
+    "id": "a2_006",
+    "level": "A2",
+    "word": "aprender",
+    "meaning": "aprender（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Aprender es importante en mi vida.",
+    "translation": "私は毎日aprenderに関する表現を学びます。"
+  },
+  {
+    "id": "a2_007",
+    "level": "A2",
+    "word": "desarrollar",
+    "meaning": "desarrollar（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Desarrollar es importante en mi vida.",
+    "translation": "私は毎日desarrollarに関する表現を学びます。"
+  },
+  {
+    "id": "a2_008",
+    "level": "A2",
+    "word": "decidir",
+    "meaning": "decidir（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Decidir es importante en mi vida.",
+    "translation": "私は毎日decidirに関する表現を学びます。"
+  },
+  {
+    "id": "a2_009",
+    "level": "A2",
+    "word": "recordar",
+    "meaning": "recordar（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero recordar cada día.",
+    "translation": "私は毎日『recordar』を実践したいです。"
+  },
+  {
+    "id": "a2_010",
+    "level": "A2",
+    "word": "olvidar",
+    "meaning": "olvidar（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Olvidar es importante en mi vida.",
+    "translation": "私は毎日olvidarに関する表現を学びます。"
+  },
+  {
+    "id": "a2_011",
+    "level": "A2",
+    "word": "viajero",
+    "meaning": "viajero（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Viajero es importante en mi vida.",
+    "translation": "私は毎日viajeroに関する表現を学びます。"
+  },
+  {
+    "id": "a2_012",
+    "level": "A2",
+    "word": "equipaje",
+    "meaning": "equipaje（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Equipaje es importante en mi vida.",
+    "translation": "私は毎日equipajeに関する表現を学びます。"
+  },
+  {
+    "id": "a2_013",
+    "level": "A2",
+    "word": "reserva",
+    "meaning": "reserva（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero reserva cada día.",
+    "translation": "私は毎日『reserva』を実践したいです。"
+  },
+  {
+    "id": "a2_014",
+    "level": "A2",
+    "word": "aeropuerto",
+    "meaning": "aeropuerto（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Aeropuerto es importante en mi vida.",
+    "translation": "私は毎日aeropuertoに関する表現を学びます。"
+  },
+  {
+    "id": "a2_015",
+    "level": "A2",
+    "word": "estación",
+    "meaning": "estación（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Estación es importante en mi vida.",
+    "translation": "私は毎日estaciónに関する表現を学びます。"
+  },
+  {
+    "id": "a2_016",
+    "level": "A2",
+    "word": "destino",
+    "meaning": "destino（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Destino es importante en mi vida.",
+    "translation": "私は毎日destinoに関する表現を学びます。"
+  },
+  {
+    "id": "a2_017",
+    "level": "A2",
+    "word": "mapa",
+    "meaning": "mapa（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero mapa cada día.",
+    "translation": "私は毎日『mapa』を実践したいです。"
+  },
+  {
+    "id": "a2_018",
+    "level": "A2",
+    "word": "paisaje",
+    "meaning": "paisaje（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Paisaje es importante en mi vida.",
+    "translation": "私は毎日paisajeに関する表現を学びます。"
+  },
+  {
+    "id": "a2_019",
+    "level": "A2",
+    "word": "costumbre",
+    "meaning": "costumbre（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Costumbre es importante en mi vida.",
+    "translation": "私は毎日costumbreに関する表現を学びます。"
+  },
+  {
+    "id": "a2_020",
+    "level": "A2",
+    "word": "tradición",
+    "meaning": "tradición（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Tradición es importante en mi vida.",
+    "translation": "私は毎日tradiciónに関する表現を学びます。"
+  },
+  {
+    "id": "a2_021",
+    "level": "A2",
+    "word": "ingrediente",
+    "meaning": "ingrediente（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero ingrediente cada día.",
+    "translation": "私は毎日『ingrediente』を実践したいです。"
+  },
+  {
+    "id": "a2_022",
+    "level": "A2",
+    "word": "hervir",
+    "meaning": "hervir（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Hervir es importante en mi vida.",
+    "translation": "私は毎日hervirに関する表現を学びます。"
+  },
+  {
+    "id": "a2_023",
+    "level": "A2",
+    "word": "freír",
+    "meaning": "freír（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Freír es importante en mi vida.",
+    "translation": "私は毎日freírに関する表現を学びます。"
+  },
+  {
+    "id": "a2_024",
+    "level": "A2",
+    "word": "hornear",
+    "meaning": "hornear（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Hornear es importante en mi vida.",
+    "translation": "私は毎日hornearに関する表現を学びます。"
+  },
+  {
+    "id": "a2_025",
+    "level": "A2",
+    "word": "sabroso",
+    "meaning": "sabroso（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero sabroso cada día.",
+    "translation": "私は毎日『sabroso』を実践したいです。"
+  },
+  {
+    "id": "a2_026",
+    "level": "A2",
+    "word": "amargo",
+    "meaning": "amargo（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Amargo es importante en mi vida.",
+    "translation": "私は毎日amargoに関する表現を学びます。"
+  },
+  {
+    "id": "a2_027",
+    "level": "A2",
+    "word": "dulce",
+    "meaning": "dulce（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Dulce es importante en mi vida.",
+    "translation": "私は毎日dulceに関する表現を学びます。"
+  },
+  {
+    "id": "a2_028",
+    "level": "A2",
+    "word": "ácido",
+    "meaning": "ácido（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Ácido es importante en mi vida.",
+    "translation": "私は毎日ácidoに関する表現を学びます。"
+  },
+  {
+    "id": "a2_029",
+    "level": "A2",
+    "word": "nutritivo",
+    "meaning": "nutritivo（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero nutritivo cada día.",
+    "translation": "私は毎日『nutritivo』を実践したいです。"
+  },
+  {
+    "id": "a2_030",
+    "level": "A2",
+    "word": "receta",
+    "meaning": "receta（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Receta es importante en mi vida.",
+    "translation": "私は毎日recetaに関する表現を学びます。"
+  },
+  {
+    "id": "a2_031",
+    "level": "A2",
+    "word": "histórico",
+    "meaning": "histórico（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Histórico es importante en mi vida.",
+    "translation": "私は毎日históricoに関する表現を学びます。"
+  },
+  {
+    "id": "a2_032",
+    "level": "A2",
+    "word": "imperio",
+    "meaning": "imperio（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Imperio es importante en mi vida.",
+    "translation": "私は毎日imperioに関する表現を学びます。"
+  },
+  {
+    "id": "a2_033",
+    "level": "A2",
+    "word": "batalla",
+    "meaning": "batalla（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero batalla cada día.",
+    "translation": "私は毎日『batalla』を実践したいです。"
+  },
+  {
+    "id": "a2_034",
+    "level": "A2",
+    "word": "archivo",
+    "meaning": "archivo（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Archivo es importante en mi vida.",
+    "translation": "私は毎日archivoに関する表現を学びます。"
+  },
+  {
+    "id": "a2_035",
+    "level": "A2",
+    "word": "monumento",
+    "meaning": "monumento（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Monumento es importante en mi vida.",
+    "translation": "私は毎日monumentoに関する表現を学びます。"
+  },
+  {
+    "id": "a2_036",
+    "level": "A2",
+    "word": "científico",
+    "meaning": "científico（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Científico es importante en mi vida.",
+    "translation": "私は毎日científicoに関する表現を学びます。"
+  },
+  {
+    "id": "a2_037",
+    "level": "A2",
+    "word": "experimento",
+    "meaning": "experimento（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero experimento cada día.",
+    "translation": "私は毎日『experimento』を実践したいです。"
+  },
+  {
+    "id": "a2_038",
+    "level": "A2",
+    "word": "hipótesis",
+    "meaning": "hipótesis（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Hipótesis es importante en mi vida.",
+    "translation": "私は毎日hipótesisに関する表現を学びます。"
+  },
+  {
+    "id": "a2_039",
+    "level": "A2",
+    "word": "laboratorio",
+    "meaning": "laboratorio（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Laboratorio es importante en mi vida.",
+    "translation": "私は毎日laboratorioに関する表現を学びます。"
+  },
+  {
+    "id": "a2_040",
+    "level": "A2",
+    "word": "descubrimiento",
+    "meaning": "descubrimiento（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Descubrimiento es importante en mi vida.",
+    "translation": "私は毎日descubrimientoに関する表現を学びます。"
+  },
+  {
+    "id": "a2_041",
+    "level": "A2",
+    "word": "planeta",
+    "meaning": "planeta（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero planeta cada día.",
+    "translation": "私は毎日『planeta』を実践したいです。"
+  },
+  {
+    "id": "a2_042",
+    "level": "A2",
+    "word": "galaxia",
+    "meaning": "galaxia（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Galaxia es importante en mi vida.",
+    "translation": "私は毎日galaxiaに関する表現を学びます。"
+  },
+  {
+    "id": "a2_043",
+    "level": "A2",
+    "word": "satélite",
+    "meaning": "satélite（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Satélite es importante en mi vida.",
+    "translation": "私は毎日satéliteに関する表現を学びます。"
+  },
+  {
+    "id": "a2_044",
+    "level": "A2",
+    "word": "astronauta",
+    "meaning": "astronauta（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Astronauta es importante en mi vida.",
+    "translation": "私は毎日astronautaに関する表現を学びます。"
+  },
+  {
+    "id": "a2_045",
+    "level": "A2",
+    "word": "órbita",
+    "meaning": "órbita（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero órbita cada día.",
+    "translation": "私は毎日『órbita』を実践したいです。"
+  },
+  {
+    "id": "a2_046",
+    "level": "A2",
+    "word": "universo",
+    "meaning": "universo（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Universo es importante en mi vida.",
+    "translation": "私は毎日universoに関する表現を学びます。"
+  },
+  {
+    "id": "a2_047",
+    "level": "A2",
+    "word": "filosofía",
+    "meaning": "filosofía（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Filosofía es importante en mi vida.",
+    "translation": "私は毎日filosofíaに関する表現を学びます。"
+  },
+  {
+    "id": "a2_048",
+    "level": "A2",
+    "word": "literatura",
+    "meaning": "literatura（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Literatura es importante en mi vida.",
+    "translation": "私は毎日literaturaに関する表現を学びます。"
+  },
+  {
+    "id": "a2_049",
+    "level": "A2",
+    "word": "ensayo",
+    "meaning": "ensayo（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero ensayo cada día.",
+    "translation": "私は毎日『ensayo』を実践したいです。"
+  },
+  {
+    "id": "a2_050",
+    "level": "A2",
+    "word": "argumento",
+    "meaning": "argumento（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Argumento es importante en mi vida.",
+    "translation": "私は毎日argumentoに関する表現を学びます。"
+  },
+  {
+    "id": "a2_051",
+    "level": "A2",
+    "word": "ruina",
+    "meaning": "ruina（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Ruina es importante en mi vida.",
+    "translation": "私は毎日ruinaに関する表現を学びます。"
+  },
+  {
+    "id": "a2_052",
+    "level": "A2",
+    "word": "excavación",
+    "meaning": "excavación（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Excavación es importante en mi vida.",
+    "translation": "私は毎日excavaciónに関する表現を学びます。"
+  },
+  {
+    "id": "a2_053",
+    "level": "A2",
+    "word": "cerámica",
+    "meaning": "cerámica（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero cerámica cada día.",
+    "translation": "私は毎日『cerámica』を実践したいです。"
+  },
+  {
+    "id": "a2_054",
+    "level": "A2",
+    "word": "fósil",
+    "meaning": "fósil（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Fósil es importante en mi vida.",
+    "translation": "私は毎日fósilに関する表現を学びます。"
+  },
+  {
+    "id": "a2_055",
+    "level": "A2",
+    "word": "clima",
+    "meaning": "clima（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Clima es importante en mi vida.",
+    "translation": "私は毎日climaに関する表現を学びます。"
+  },
+  {
+    "id": "a2_056",
+    "level": "A2",
+    "word": "reciclar",
+    "meaning": "reciclar（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Reciclar es importante en mi vida.",
+    "translation": "私は毎日reciclarに関する表現を学びます。"
+  },
+  {
+    "id": "a2_057",
+    "level": "A2",
+    "word": "contaminar",
+    "meaning": "contaminar（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero contaminar cada día.",
+    "translation": "私は毎日『contaminar』を実践したいです。"
+  },
+  {
+    "id": "a2_058",
+    "level": "A2",
+    "word": "bosque",
+    "meaning": "bosque（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Bosque es importante en mi vida.",
+    "translation": "私は毎日bosqueに関する表現を学びます。"
+  },
+  {
+    "id": "a2_059",
+    "level": "A2",
+    "word": "energía",
+    "meaning": "energía（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Energía es importante en mi vida.",
+    "translation": "私は毎日energíaに関する表現を学びます。"
+  },
+  {
+    "id": "a2_060",
+    "level": "A2",
+    "word": "sostenible",
+    "meaning": "sostenible（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Sostenible es importante en mi vida.",
+    "translation": "私は毎日sostenibleに関する表現を学びます。"
+  },
+  {
+    "id": "a2_061",
+    "level": "A2",
+    "word": "narrador",
+    "meaning": "narrador（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero narrador cada día.",
+    "translation": "私は毎日『narrador』を実践したいです。"
+  },
+  {
+    "id": "a2_062",
+    "level": "A2",
+    "word": "capítulo",
+    "meaning": "capítulo（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Capítulo es importante en mi vida.",
+    "translation": "私は毎日capítuloに関する表現を学びます。"
+  },
+  {
+    "id": "a2_063",
+    "level": "A2",
+    "word": "misterio",
+    "meaning": "misterio（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Misterio es importante en mi vida.",
+    "translation": "私は毎日misterioに関する表現を学びます。"
+  },
+  {
+    "id": "a2_064",
+    "level": "A2",
+    "word": "personaje",
+    "meaning": "personaje（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Personaje es importante en mi vida.",
+    "translation": "私は毎日personajeに関する表現を学びます。"
+  },
+  {
+    "id": "a2_065",
+    "level": "A2",
+    "word": "conflicto",
+    "meaning": "conflicto（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero conflicto cada día.",
+    "translation": "私は毎日『conflicto』を実践したいです。"
+  },
+  {
+    "id": "a2_066",
+    "level": "A2",
+    "word": "solución",
+    "meaning": "solución（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Solución es importante en mi vida.",
+    "translation": "私は毎日soluciónに関する表現を学びます。"
+  },
+  {
+    "id": "a2_067",
+    "level": "A2",
+    "word": "aunque",
+    "meaning": "aunque（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Aunque es importante en mi vida.",
+    "translation": "私は毎日aunqueに関する表現を学びます。"
+  },
+  {
+    "id": "a2_068",
+    "level": "A2",
+    "word": "mientras",
+    "meaning": "mientras（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Mientras es importante en mi vida.",
+    "translation": "私は毎日mientrasに関する表現を学びます。"
+  },
+  {
+    "id": "a2_069",
+    "level": "A2",
+    "word": "sin embargo",
+    "meaning": "sin embargo（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero sin embargo cada día.",
+    "translation": "私は毎日『sin embargo』を実践したいです。"
+  },
+  {
+    "id": "a2_070",
+    "level": "A2",
+    "word": "por eso",
+    "meaning": "por eso（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Por eso es importante en mi vida.",
+    "translation": "私は毎日por esoに関する表現を学びます。"
+  },
+  {
+    "id": "a2_071",
+    "level": "A2",
+    "word": "incluso",
+    "meaning": "incluso（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Incluso es importante en mi vida.",
+    "translation": "私は毎日inclusoに関する表現を学びます。"
+  },
+  {
+    "id": "a2_072",
+    "level": "A2",
+    "word": "apenas",
+    "meaning": "apenas（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Apenas es importante en mi vida.",
+    "translation": "私は毎日apenasに関する表現を学びます。"
+  },
+  {
+    "id": "a2_073",
+    "level": "A2",
+    "word": "lograr",
+    "meaning": "lograr（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero lograr cada día.",
+    "translation": "私は毎日『lograr』を実践したいです。"
+  },
+  {
+    "id": "a2_074",
+    "level": "A2",
+    "word": "proponer",
+    "meaning": "proponer（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Proponer es importante en mi vida.",
+    "translation": "私は毎日proponerに関する表現を学びます。"
+  },
+  {
+    "id": "a2_075",
+    "level": "A2",
+    "word": "resolver",
+    "meaning": "resolver（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Resolver es importante en mi vida.",
+    "translation": "私は毎日resolverに関する表現を学びます。"
+  },
+  {
+    "id": "a2_076",
+    "level": "A2",
+    "word": "participar",
+    "meaning": "participar（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Participar es importante en mi vida.",
+    "translation": "私は毎日participarに関する表現を学びます。"
+  },
+  {
+    "id": "a2_077",
+    "level": "A2",
+    "word": "colaborar",
+    "meaning": "colaborar（学習語彙）",
+    "partOfSpeech": "動詞",
+    "example": "Quiero colaborar cada día.",
+    "translation": "私は毎日『colaborar』を実践したいです。"
+  },
+  {
+    "id": "a2_078",
+    "level": "A2",
+    "word": "mantener",
+    "meaning": "mantener（学習語彙）",
+    "partOfSpeech": "名詞",
+    "example": "Mantener es importante en mi vida.",
+    "translation": "私は毎日mantenerに関する表現を学びます。"
+  },
+  {
+    "id": "a2_079",
+    "level": "A2",
+    "word": "aumentar",
+    "meaning": "aumentar（学習語彙）",
+    "partOfSpeech": "形容詞",
+    "example": "Aumentar es importante en mi vida.",
+    "translation": "私は毎日aumentarに関する表現を学びます。"
+  },
+  {
+    "id": "a2_080",
+    "level": "A2",
+    "word": "reducir",
+    "meaning": "reducir（学習語彙）",
+    "partOfSpeech": "副詞",
+    "example": "Reducir es importante en mi vida.",
+    "translation": "私は毎日reducirに関する表現を学びます。"
   }
 ]

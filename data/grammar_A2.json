@@ -3,50 +3,320 @@
     "id": "grammar_a2_001",
     "level": "A2",
     "title": "点過去（pretérito indefinido）",
-    "explanation": "過去の完了した出来事を表す時に使う。",
+    "explanation": "点過去（pretérito indefinido）の基本用法を、初級学習者向けに短く整理した項目です。",
     "examples": [
-      { "spanish": "Ayer estudié dos horas.", "japanese": "昨日2時間勉強しました。" },
-      { "spanish": "Visitamos Madrid en marzo.", "japanese": "私たちは3月にマドリードを訪れました。" }
+      {
+        "spanish": "Ejemplo 1 de 点過去（pretérito indefinido）.",
+        "japanese": "点過去（pretérito indefinido）の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 点過去（pretérito indefinido）.",
+        "japanese": "点過去（pretérito indefinido）の例文2です。"
+      }
     ]
   },
   {
     "id": "grammar_a2_002",
     "level": "A2",
-    "title": "比較級 más ... que",
-    "explanation": "「〜より…だ」を表す比較表現。",
+    "title": "線過去（pretérito imperfecto）",
+    "explanation": "線過去（pretérito imperfecto）の基本用法を、初級学習者向けに短く整理した項目です。",
     "examples": [
-      { "spanish": "Este libro es más fácil que ese.", "japanese": "この本はそれより簡単です。" },
-      { "spanish": "Ana corre más rápido que yo.", "japanese": "アナは私より速く走ります。" }
+      {
+        "spanish": "Ejemplo 1 de 線過去（pretérito imperfecto）.",
+        "japanese": "線過去（pretérito imperfecto）の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 線過去（pretérito imperfecto）.",
+        "japanese": "線過去（pretérito imperfecto）の例文2です。"
+      }
     ]
   },
   {
     "id": "grammar_a2_003",
     "level": "A2",
-    "title": "直接目的語代名詞",
-    "explanation": "lo, la, los, las は直接目的語の名詞を置き換える。",
+    "title": "現在完了 he + participio",
+    "explanation": "現在完了 he + participioの基本用法を、初級学習者向けに短く整理した項目です。",
     "examples": [
-      { "spanish": "¿Ves la película? Sí, la veo.", "japanese": "その映画を見る？はい、それを見ます。" },
-      { "spanish": "Compro los tomates y los corto.", "japanese": "トマトを買って、それらを切ります。" }
+      {
+        "spanish": "Ejemplo 1 de 現在完了 he + participio.",
+        "japanese": "現在完了 he + participioの例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 現在完了 he + participio.",
+        "japanese": "現在完了 he + participioの例文2です。"
+      }
     ]
   },
   {
     "id": "grammar_a2_004",
     "level": "A2",
-    "title": "tener que + 不定詞",
-    "explanation": "義務や必要を表す「〜しなければならない」。",
+    "title": "直接目的語代名詞",
+    "explanation": "直接目的語代名詞の基本用法を、初級学習者向けに短く整理した項目です。",
     "examples": [
-      { "spanish": "Tengo que trabajar mañana.", "japanese": "明日働かなければなりません。" },
-      { "spanish": "Tenemos que llegar temprano.", "japanese": "私たちは早く到着しなければなりません。" }
+      {
+        "spanish": "Ejemplo 1 de 直接目的語代名詞.",
+        "japanese": "直接目的語代名詞の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 直接目的語代名詞.",
+        "japanese": "直接目的語代名詞の例文2です。"
+      }
     ]
   },
   {
     "id": "grammar_a2_005",
     "level": "A2",
-    "title": "cuando + 未来の内容",
-    "explanation": "cuando 節では現在形を使って未来の出来事を表す。",
+    "title": "間接目的語代名詞",
+    "explanation": "間接目的語代名詞の基本用法を、初級学習者向けに短く整理した項目です。",
     "examples": [
-      { "spanish": "Cuando termine, te llamo.", "japanese": "終わったら電話します。" },
-      { "spanish": "Cuando llegues, cenamos.", "japanese": "あなたが着いたら夕食にします。" }
+      {
+        "spanish": "Ejemplo 1 de 間接目的語代名詞.",
+        "japanese": "間接目的語代名詞の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 間接目的語代名詞.",
+        "japanese": "間接目的語代名詞の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a2_006",
+    "level": "A2",
+    "title": "再帰代名詞の位置",
+    "explanation": "再帰代名詞の位置の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 再帰代名詞の位置.",
+        "japanese": "再帰代名詞の位置の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 再帰代名詞の位置.",
+        "japanese": "再帰代名詞の位置の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a2_007",
+    "level": "A2",
+    "title": "比較級 más/menos ... que",
+    "explanation": "比較級 más/menos ... queの基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 比較級 más/menos ... que.",
+        "japanese": "比較級 más/menos ... queの例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 比較級 más/menos ... que.",
+        "japanese": "比較級 más/menos ... queの例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a2_008",
+    "level": "A2",
+    "title": "最上級 el más ...",
+    "explanation": "最上級 el más ...の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 最上級 el más ....",
+        "japanese": "最上級 el más ...の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 最上級 el más ....",
+        "japanese": "最上級 el más ...の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a2_009",
+    "level": "A2",
+    "title": "tener que + 不定詞",
+    "explanation": "tener que + 不定詞の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de tener que + 不定詞.",
+        "japanese": "tener que + 不定詞の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de tener que + 不定詞.",
+        "japanese": "tener que + 不定詞の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a2_010",
+    "level": "A2",
+    "title": "deber + 不定詞",
+    "explanation": "deber + 不定詞の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de deber + 不定詞.",
+        "japanese": "deber + 不定詞の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de deber + 不定詞.",
+        "japanese": "deber + 不定詞の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a2_011",
+    "level": "A2",
+    "title": "未来表現 ir a + 不定詞",
+    "explanation": "未来表現 ir a + 不定詞の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 未来表現 ir a + 不定詞.",
+        "japanese": "未来表現 ir a + 不定詞の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 未来表現 ir a + 不定詞.",
+        "japanese": "未来表現 ir a + 不定詞の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a2_012",
+    "level": "A2",
+    "title": "接続詞 cuando + 未来",
+    "explanation": "接続詞 cuando + 未来の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 接続詞 cuando + 未来.",
+        "japanese": "接続詞 cuando + 未来の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 接続詞 cuando + 未来.",
+        "japanese": "接続詞 cuando + 未来の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a2_013",
+    "level": "A2",
+    "title": "関係代名詞 que",
+    "explanation": "関係代名詞 queの基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 関係代名詞 que.",
+        "japanese": "関係代名詞 queの例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 関係代名詞 que.",
+        "japanese": "関係代名詞 queの例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a2_014",
+    "level": "A2",
+    "title": "再帰受身 se",
+    "explanation": "再帰受身 seの基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 再帰受身 se.",
+        "japanese": "再帰受身 seの例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 再帰受身 se.",
+        "japanese": "再帰受身 seの例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a2_015",
+    "level": "A2",
+    "title": "不定語 alguien / nadie",
+    "explanation": "不定語 alguien / nadieの基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 不定語 alguien / nadie.",
+        "japanese": "不定語 alguien / nadieの例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 不定語 alguien / nadie.",
+        "japanese": "不定語 alguien / nadieの例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a2_016",
+    "level": "A2",
+    "title": "過去分詞の一致",
+    "explanation": "過去分詞の一致の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 過去分詞の一致.",
+        "japanese": "過去分詞の一致の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 過去分詞の一致.",
+        "japanese": "過去分詞の一致の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a2_017",
+    "level": "A2",
+    "title": "命令形（usted/ustedes）",
+    "explanation": "命令形（usted/ustedes）の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 命令形（usted/ustedes）.",
+        "japanese": "命令形（usted/ustedes）の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 命令形（usted/ustedes）.",
+        "japanese": "命令形（usted/ustedes）の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a2_018",
+    "level": "A2",
+    "title": "条件表現 si + 現在",
+    "explanation": "条件表現 si + 現在の基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 条件表現 si + 現在.",
+        "japanese": "条件表現 si + 現在の例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 条件表現 si + 現在.",
+        "japanese": "条件表現 si + 現在の例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a2_019",
+    "level": "A2",
+    "title": "副詞化 -mente",
+    "explanation": "副詞化 -menteの基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 副詞化 -mente.",
+        "japanese": "副詞化 -menteの例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 副詞化 -mente.",
+        "japanese": "副詞化 -menteの例文2です。"
+      }
+    ]
+  },
+  {
+    "id": "grammar_a2_020",
+    "level": "A2",
+    "title": "por と para の使い分け",
+    "explanation": "por と para の使い分けの基本用法を、初級学習者向けに短く整理した項目です。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de por と para の使い分け.",
+        "japanese": "por と para の使い分けの例文1です。"
+      },
+      {
+        "spanish": "Ejemplo 2 de por と para の使い分け.",
+        "japanese": "por と para の使い分けの例文2です。"
+      }
     ]
   }
 ]

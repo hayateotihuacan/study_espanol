@@ -1,0 +1,52 @@
+[
+  {
+    "id": "grammar_a2_001",
+    "level": "A2",
+    "title": "点過去（pretérito indefinido）",
+    "explanation": "過去の完了した出来事を表す時に使う。",
+    "examples": [
+      { "spanish": "Ayer estudié dos horas.", "japanese": "昨日2時間勉強しました。" },
+      { "spanish": "Visitamos Madrid en marzo.", "japanese": "私たちは3月にマドリードを訪れました。" }
+    ]
+  },
+  {
+    "id": "grammar_a2_002",
+    "level": "A2",
+    "title": "比較級 más ... que",
+    "explanation": "「〜より…だ」を表す比較表現。",
+    "examples": [
+      { "spanish": "Este libro es más fácil que ese.", "japanese": "この本はそれより簡単です。" },
+      { "spanish": "Ana corre más rápido que yo.", "japanese": "アナは私より速く走ります。" }
+    ]
+  },
+  {
+    "id": "grammar_a2_003",
+    "level": "A2",
+    "title": "直接目的語代名詞",
+    "explanation": "lo, la, los, las は直接目的語の名詞を置き換える。",
+    "examples": [
+      { "spanish": "¿Ves la película? Sí, la veo.", "japanese": "その映画を見る？はい、それを見ます。" },
+      { "spanish": "Compro los tomates y los corto.", "japanese": "トマトを買って、それらを切ります。" }
+    ]
+  },
+  {
+    "id": "grammar_a2_004",
+    "level": "A2",
+    "title": "tener que + 不定詞",
+    "explanation": "義務や必要を表す「〜しなければならない」。",
+    "examples": [
+      { "spanish": "Tengo que trabajar mañana.", "japanese": "明日働かなければなりません。" },
+      { "spanish": "Tenemos que llegar temprano.", "japanese": "私たちは早く到着しなければなりません。" }
+    ]
+  },
+  {
+    "id": "grammar_a2_005",
+    "level": "A2",
+    "title": "cuando + 未来の内容",
+    "explanation": "cuando 節では現在形を使って未来の出来事を表す。",
+    "examples": [
+      { "spanish": "Cuando termine, te llamo.", "japanese": "終わったら電話します。" },
+      { "spanish": "Cuando llegues, cenamos.", "japanese": "あなたが着いたら夕食にします。" }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "a2_001",
+    "level": "A2",
+    "word": "mejorar",
+    "meaning": "改善する、上達する",
+    "partOfSpeech": "動詞",
+    "example": "Quiero mejorar mi pronunciación.",
+    "translation": "私は発音を上達させたいです。"
+  },
+  {
+    "id": "a2_002",
+    "level": "A2",
+    "word": "vecindario",
+    "meaning": "近所、地域",
+    "partOfSpeech": "名詞",
+    "example": "Mi vecindario es muy tranquilo.",
+    "translation": "私の近所はとても静かです。"
+  },
+  {
+    "id": "a2_003",
+    "level": "A2",
+    "word": "además",
+    "meaning": "その上、さらに",
+    "partOfSpeech": "副詞",
+    "example": "Además, necesito practicar más.",
+    "translation": "その上、もっと練習する必要があります。"
+  },
+  {
+    "id": "a2_004",
+    "level": "A2",
+    "word": "cómodo",
+    "meaning": "快適な",
+    "partOfSpeech": "形容詞",
+    "example": "Este sofá es muy cómodo.",
+    "translation": "このソファはとても快適です。"
+  },
+  {
+    "id": "a2_005",
+    "level": "A2",
+    "word": "reunirse",
+    "meaning": "集まる、会う",
+    "partOfSpeech": "再帰動詞",
+    "example": "Nos reunimos después del trabajo.",
+    "translation": "私たちは仕事の後に集まります。"
+  }
+]

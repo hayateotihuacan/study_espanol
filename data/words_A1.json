@@ -1,0 +1,47 @@
+[
+  {
+    "id": "a1_001",
+    "level": "A1",
+    "word": "vivir",
+    "meaning": "住む、生きる",
+    "partOfSpeech": "動詞",
+    "example": "Vivo en Japón.",
+    "translation": "私は日本に住んでいます。"
+  },
+  {
+    "id": "a1_002",
+    "level": "A1",
+    "word": "comer",
+    "meaning": "食べる",
+    "partOfSpeech": "動詞",
+    "example": "Comemos paella los domingos.",
+    "translation": "私たちは日曜日にパエリアを食べます。"
+  },
+  {
+    "id": "a1_003",
+    "level": "A1",
+    "word": "libro",
+    "meaning": "本",
+    "partOfSpeech": "名詞",
+    "example": "Este libro es interesante.",
+    "translation": "この本は面白いです。"
+  },
+  {
+    "id": "a1_004",
+    "level": "A1",
+    "word": "rápido",
+    "meaning": "速い",
+    "partOfSpeech": "形容詞",
+    "example": "El tren es rápido.",
+    "translation": "その電車は速いです。"
+  },
+  {
+    "id": "a1_005",
+    "level": "A1",
+    "word": "hoy",
+    "meaning": "今日",
+    "partOfSpeech": "副詞",
+    "example": "Hoy estudio español.",
+    "translation": "今日はスペイン語を勉強します。"
+  }
+]

@@ -1,4 +1,5 @@
 const APP_STORAGE_KEY = "lector_espanol_state_v1";
+const APP_VERSION = "1.2.1";
 
 const state = {
   words: [],
@@ -634,6 +635,8 @@ async function init() {
   }
 
   rerenderAll();
+  const versionEl = document.getElementById("app-version");
+  if (versionEl) versionEl.textContent = `version ${APP_VERSION}`;
 
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("service-worker.js").catch((error) => {

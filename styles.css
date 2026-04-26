@@ -380,3 +380,9 @@ button {
   color: #36557e;
   font-size: 0.88rem;
 }
+.app-footer {
+  text-align: center;
+  color: #6d7f96;
+  font-size: 0.8rem;
+  padding: 4px 0 124px;
+}

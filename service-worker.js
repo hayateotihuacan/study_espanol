@@ -1,4 +1,4 @@
-const CACHE_NAME = "lector-espanol-cache-v1";
+const CACHE_NAME = "lector-espanol-cache-20260427-ui-content-review-tts";
 const ASSETS_TO_CACHE = [
   "./",
   "./index.html",

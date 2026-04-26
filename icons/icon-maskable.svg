@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" fill="#1f7aec"/>
-  <circle cx="256" cy="256" r="190" fill="#ffffff"/>
-  <text x="256" y="248" text-anchor="middle" font-size="88" font-family="Arial, sans-serif" fill="#1f7aec" font-weight="700">LE</text>
-  <text x="256" y="304" text-anchor="middle" font-size="40" font-family="Arial, sans-serif" fill="#45617d">A1/A2</text>
+  <rect width="512" height="512" fill="#dbeafe"/>
+  <circle cx="256" cy="256" r="200" fill="#ffffff"/>
+  <text x="256" y="230" text-anchor="middle" font-size="68" font-family="Arial, sans-serif" fill="#1e40af">Español</text>
+  <text x="256" y="305" text-anchor="middle" font-size="96" font-weight="700" font-family="Arial, sans-serif" fill="#1d4ed8">C1</text>
 </svg>

@@ -1,73 +1,62 @@
-# Lector Español
+# Lector Español C1
 
-iPad Safariで使える、オフライン対応のスペイン語学習PWAです。最初にオンラインで読み込めば、ホーム画面追加後にオフラインでも利用できます。
+## 1. アプリ概要
+Lector Español C1 は、GitHub Pages で公開し iPad Safari のホーム画面から使える、オフライン対応のスペイン語学習PWAです。機能は「単語」「文法」「長文読解」「復習」「学習履歴」に絞っています。
 
-## 構成ファイル
+## 2. A1〜C1対応
+CEFR A1 / A2 / B1 / B2 / C1 の5段階に対応し、各画面でレベル切替できます。
 
-- `index.html` : 画面レイアウト（ホーム / 単語 / 文法 / 長文読解 / 復習 / 学習履歴）
-- `styles.css` : 白基調・大きめ文字・カード型UI
-- `app.js` : データ読込、画面描画、クイズ処理、学習履歴保存
-- `manifest.json` : PWA設定
-- `service-worker.js` : キャッシュ制御
-- `data/*.json` : A1/A2教材データ
-- `icons/*.svg` : PWAアイコン
+## 3. ファイル構成
+- `index.html`
+- `styles.css`
+- `app.js`
+- `manifest.json`
+- `service-worker.js`
+- `icons/icon.svg`
+- `icons/icon-maskable.svg`
+- `data/words_A1.json` 〜 `data/words_C1.json`
+- `data/grammar_A1.json` 〜 `data/grammar_C1.json`
+- `data/readings_A1.json` 〜 `data/readings_C1.json`
 
-## 使い方（iPad Safari）
+## 4. GitHub Pagesで公開する手順
+1. GitHub に push する。
+2. リポジトリの **Settings > Pages** を開く。
+3. Source を `Deploy from a branch`、Branch を `main`（または利用ブランチ）/`root` に設定。
+4. 公開URLにアクセスして動作確認。
 
-1. このアプリをWebサーバー経由で開く（`file://` ではなく `http://` / `https://`）。
-2. 学習画面を一通り表示して、教材データを読み込む。
-3. Safariの共有メニューから「ホーム画面に追加」を選択する。
-4. ホーム画面の「Lector Español」アイコンから起動する。
-5. 2回目以降はオフラインでも利用可能。
+## 5. iPad Safariで開く手順
+1. iPad の Safari で GitHub Pages のURLを開く。
+2. 初回はオンライン状態で全データを読み込む。
 
-## オフライン動作確認手順
+## 6. ホーム画面に追加する手順
+1. Safari の共有ボタンを押す。
+2. 「ホーム画面に追加」を選ぶ。
+3. アイコン名を確認して追加。
 
-1. オンラインでアプリを開く。
-2. 単語・文法・長文読解を表示してキャッシュを作る。
-3. Safariの開発者メニュー（Mac接続時）または通信OFFで動作確認する。
-4. iPadを機内モードにして、ホーム画面アイコンから再起動する。
-5. 画面表示・クイズ・履歴が動作すれば成功。
+## 7. オフライン確認手順
+1. 一度オンラインでアプリを開く。
+2. その後機内モードに切替。
+3. ホーム画面アイコンから起動し、単語/文法/長文/復習/履歴が表示できるか確認。
 
-## 学習履歴（localStorage）
+## 8. 更新後に古い画面が表示される場合の対処
+- Safariで強制再読み込みする。
+- ホーム画面アイコンを削除して再追加する。
+- iPadの「設定 > Safari > 履歴とWebサイトデータを消去」を実行する。
+- `service-worker.js` の `CACHE_NAME` を更新し再デプロイする。
 
-以下を `localStorage` に保存します。
+## 9. 教材追加方法
+1. `data/` の JSON を編集。
+2. 単語は `words_*.json`、文法は `grammar_*.json`、長文は `readings_*.json` を更新。
+3. 必須キー（id、level、answer など）を保つ。
 
-- 単語の学習状態（覚えた / 未習得）
-- 長文の読了状態
-- クイズの正解/不正解
+## 10. localStorageに保存される内容
+- 単語学習状態（覚えた/未習得）
+- 長文読了状態
+- クイズ回答結果（正誤、正答）
 - 最終学習日
+- 現在選択中レベル
 
-## 開発時の起動例
-
-簡易サーバーを使って起動してください。
-
-```bash
-python3 -m http.server 8080
-```
-
-その後 `http://localhost:8080` にアクセスします。
-
-## GitHub Pages で公開する手順
-
-1. このリポジトリを GitHub に push する。
-2. GitHub の `Settings` → `Pages` を開く。
-3. `Build and deployment` の `Source` で `Deploy from a branch` を選ぶ。
-4. Branch を `main`（または公開したいブランチ） / `/ (root)` に設定して保存。
-5. 数分後に表示される公開URLへアクセス。
-6. iPad SafariでURLを開き、「ホーム画面に追加」を実行。
-
-## 注意点
-
-- Service Worker更新時はキャッシュが残るため、必要に応じて再読み込みしてください。
-- iOSのPWA仕様により、一部機能はブラウザ起動時と挙動が異なる場合があります。
-
-
-## 更新後も古い画面が表示される場合（PWAキャッシュ対処）
-
-Service Workerのキャッシュが残っていると、GitHub Pages更新後でも古い画面が表示されることがあります。
-
-1. **ブラウザの強制再読み込み**を実行する（Safariで再読み込みを長押しして再読込）。
-2. ホーム画面に追加したアプリを一度削除し、**ホーム画面アイコンを追加し直す**。
-3. Safariの設定から**Webサイトデータを削除**する。
-   - iPad: `設定 > Safari > 履歴とWebサイトデータを消去`
-   - または `設定 > Safari > 詳細 > Webサイトデータ` から対象サイトを削除
+## 11. 注意事項
+- パスはすべて相対パス（`./`）で実装。
+- 外部API、ログイン、クラウド同期は未実装。
+- バージョンは `version 1.0.0` を画面フッターに表示。

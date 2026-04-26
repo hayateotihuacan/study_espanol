@@ -1,22 +1,19 @@
 {
-  "name": "Lector Español",
-  "short_name": "Lector",
-  "description": "オフライン対応のスペイン語学習PWA",
-  "start_url": "./index.html",
+  "name": "Lector Español C1",
+  "short_name": "Lector C1",
   "display": "standalone",
+  "start_url": "./",
+  "scope": "./",
   "background_color": "#ffffff",
-  "theme_color": "#ffffff",
-  "lang": "ja",
-  "orientation": "portrait",
+  "theme_color": "#f8fafc",
   "icons": [
     {
-      "src": "icons/icon.svg",
+      "src": "./icons/icon.svg",
       "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
+      "type": "image/svg+xml"
     },
     {
-      "src": "icons/icon-maskable.svg",
+      "src": "./icons/icon-maskable.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "maskable"

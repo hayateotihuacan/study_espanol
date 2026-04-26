@@ -1,0 +1,602 @@
+[
+  {
+    "id": "b1_001",
+    "level": "B1",
+    "word": "opinar",
+    "meaning": "opinarに関する語彙（B1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso opinar en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で opinar を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_002",
+    "level": "B1",
+    "word": "argumento",
+    "meaning": "argumentoに関する語彙（B1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso argumento en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で argumento を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_003",
+    "level": "B1",
+    "word": "sociedad",
+    "meaning": "sociedadに関する語彙（B1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso sociedad en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で sociedad を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_004",
+    "level": "B1",
+    "word": "vecindario",
+    "meaning": "vecindarioに関する語彙（B1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso vecindario en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で vecindario を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_005",
+    "level": "B1",
+    "word": "proyecto",
+    "meaning": "proyectoに関する語彙（B1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso proyecto en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で proyecto を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_006",
+    "level": "B1",
+    "word": "decisión",
+    "meaning": "decisiónに関する語彙（B1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso decisión en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で decisión を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_007",
+    "level": "B1",
+    "word": "describir",
+    "meaning": "describirに関する語彙（B1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso describir en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で describir を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_008",
+    "level": "B1",
+    "word": "explicar",
+    "meaning": "explicarに関する語彙（B1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso explicar en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で explicar を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_009",
+    "level": "B1",
+    "word": "proponer",
+    "meaning": "proponerに関する語彙（B1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso proponer en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で proponer を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_010",
+    "level": "B1",
+    "word": "participar",
+    "meaning": "participarに関する語彙（B1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso participar en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で participar を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_011",
+    "level": "B1",
+    "word": "costumbre",
+    "meaning": "costumbreに関する語彙（B1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso costumbre en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で costumbre を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_012",
+    "level": "B1",
+    "word": "debate",
+    "meaning": "debateに関する語彙（B1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso debate en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で debate を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_013",
+    "level": "B1",
+    "word": "problema",
+    "meaning": "problemaに関する語彙（B1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso problema en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で problema を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_014",
+    "level": "B1",
+    "word": "solución",
+    "meaning": "soluciónに関する語彙（B1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso solución en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で solución を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_015",
+    "level": "B1",
+    "word": "responsable",
+    "meaning": "responsableに関する語彙（B1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso responsable en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で responsable を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_016",
+    "level": "B1",
+    "word": "norma",
+    "meaning": "normaに関する語彙（B1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso norma en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で norma を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_017",
+    "level": "B1",
+    "word": "derecho",
+    "meaning": "derechoに関する語彙（B1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso derecho en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で derecho を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_018",
+    "level": "B1",
+    "word": "deber",
+    "meaning": "deberに関する語彙（B1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso deber en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で deber を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_019",
+    "level": "B1",
+    "word": "experiencia",
+    "meaning": "experienciaに関する語彙（B1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso experiencia en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で experiencia を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_020",
+    "level": "B1",
+    "word": "objetivo",
+    "meaning": "objetivoに関する語彙（B1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso objetivo en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で objetivo を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_021",
+    "level": "B1",
+    "word": "opinar2",
+    "meaning": "opinarに関する語彙（B1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso opinar en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で opinar を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_022",
+    "level": "B1",
+    "word": "argumento2",
+    "meaning": "argumentoに関する語彙（B1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso argumento en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で argumento を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_023",
+    "level": "B1",
+    "word": "sociedad2",
+    "meaning": "sociedadに関する語彙（B1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso sociedad en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で sociedad を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_024",
+    "level": "B1",
+    "word": "vecindario2",
+    "meaning": "vecindarioに関する語彙（B1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso vecindario en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で vecindario を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_025",
+    "level": "B1",
+    "word": "proyecto2",
+    "meaning": "proyectoに関する語彙（B1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso proyecto en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で proyecto を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_026",
+    "level": "B1",
+    "word": "decisión2",
+    "meaning": "decisiónに関する語彙（B1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso decisión en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で decisión を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_027",
+    "level": "B1",
+    "word": "describir2",
+    "meaning": "describirに関する語彙（B1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso describir en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で describir を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_028",
+    "level": "B1",
+    "word": "explicar2",
+    "meaning": "explicarに関する語彙（B1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso explicar en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で explicar を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_029",
+    "level": "B1",
+    "word": "proponer2",
+    "meaning": "proponerに関する語彙（B1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso proponer en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で proponer を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_030",
+    "level": "B1",
+    "word": "participar2",
+    "meaning": "participarに関する語彙（B1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso participar en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で participar を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_031",
+    "level": "B1",
+    "word": "costumbre2",
+    "meaning": "costumbreに関する語彙（B1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso costumbre en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で costumbre を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_032",
+    "level": "B1",
+    "word": "debate2",
+    "meaning": "debateに関する語彙（B1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso debate en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で debate を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_033",
+    "level": "B1",
+    "word": "problema2",
+    "meaning": "problemaに関する語彙（B1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso problema en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で problema を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_034",
+    "level": "B1",
+    "word": "solución2",
+    "meaning": "soluciónに関する語彙（B1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso solución en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で solución を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_035",
+    "level": "B1",
+    "word": "responsable2",
+    "meaning": "responsableに関する語彙（B1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso responsable en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で responsable を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_036",
+    "level": "B1",
+    "word": "norma2",
+    "meaning": "normaに関する語彙（B1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso norma en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で norma を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_037",
+    "level": "B1",
+    "word": "derecho2",
+    "meaning": "derechoに関する語彙（B1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso derecho en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で derecho を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_038",
+    "level": "B1",
+    "word": "deber2",
+    "meaning": "deberに関する語彙（B1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso deber en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で deber を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_039",
+    "level": "B1",
+    "word": "experiencia2",
+    "meaning": "experienciaに関する語彙（B1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso experiencia en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で experiencia を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_040",
+    "level": "B1",
+    "word": "objetivo2",
+    "meaning": "objetivoに関する語彙（B1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso objetivo en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で objetivo を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_041",
+    "level": "B1",
+    "word": "opinar3",
+    "meaning": "opinarに関する語彙（B1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso opinar en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で opinar を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_042",
+    "level": "B1",
+    "word": "argumento3",
+    "meaning": "argumentoに関する語彙（B1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso argumento en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で argumento を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_043",
+    "level": "B1",
+    "word": "sociedad3",
+    "meaning": "sociedadに関する語彙（B1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso sociedad en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で sociedad を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_044",
+    "level": "B1",
+    "word": "vecindario3",
+    "meaning": "vecindarioに関する語彙（B1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso vecindario en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で vecindario を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_045",
+    "level": "B1",
+    "word": "proyecto3",
+    "meaning": "proyectoに関する語彙（B1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso proyecto en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で proyecto を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_046",
+    "level": "B1",
+    "word": "decisión3",
+    "meaning": "decisiónに関する語彙（B1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso decisión en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で decisión を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_047",
+    "level": "B1",
+    "word": "describir3",
+    "meaning": "describirに関する語彙（B1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso describir en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で describir を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_048",
+    "level": "B1",
+    "word": "explicar3",
+    "meaning": "explicarに関する語彙（B1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso explicar en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で explicar を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_049",
+    "level": "B1",
+    "word": "proponer3",
+    "meaning": "proponerに関する語彙（B1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso proponer en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で proponer を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_050",
+    "level": "B1",
+    "word": "participar3",
+    "meaning": "participarに関する語彙（B1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso participar en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で participar を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_051",
+    "level": "B1",
+    "word": "costumbre3",
+    "meaning": "costumbreに関する語彙（B1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso costumbre en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で costumbre を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_052",
+    "level": "B1",
+    "word": "debate3",
+    "meaning": "debateに関する語彙（B1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso debate en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で debate を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_053",
+    "level": "B1",
+    "word": "problema3",
+    "meaning": "problemaに関する語彙（B1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso problema en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で problema を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_054",
+    "level": "B1",
+    "word": "solución3",
+    "meaning": "soluciónに関する語彙（B1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso solución en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で solución を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_055",
+    "level": "B1",
+    "word": "responsable3",
+    "meaning": "responsableに関する語彙（B1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso responsable en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で responsable を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_056",
+    "level": "B1",
+    "word": "norma3",
+    "meaning": "normaに関する語彙（B1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso norma en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で norma を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_057",
+    "level": "B1",
+    "word": "derecho3",
+    "meaning": "derechoに関する語彙（B1学習向け）",
+    "partOfSpeech": "名詞",
+    "example": "Uso derecho en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で derecho を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_058",
+    "level": "B1",
+    "word": "deber3",
+    "meaning": "deberに関する語彙（B1学習向け）",
+    "partOfSpeech": "動詞",
+    "example": "Uso deber en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で deber を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_059",
+    "level": "B1",
+    "word": "experiencia3",
+    "meaning": "experienciaに関する語彙（B1学習向け）",
+    "partOfSpeech": "形容詞",
+    "example": "Uso experiencia en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で experiencia を使います。",
+    "note": "B1でよく使う重要語。"
+  },
+  {
+    "id": "b1_060",
+    "level": "B1",
+    "word": "objetivo3",
+    "meaning": "objetivoに関する語彙（B1学習向け）",
+    "partOfSpeech": "副詞",
+    "example": "Uso objetivo en una frase de nivel B1.",
+    "translation": "私はB1レベルの文で objetivo を使います。",
+    "note": "B1でよく使う重要語。"
+  }
+]

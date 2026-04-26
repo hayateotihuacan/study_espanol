@@ -1,0 +1,272 @@
+[
+  {
+    "id": "grammar_b1_001",
+    "level": "B1",
+    "title": "接続法現在の基礎",
+    "explanation": "接続法現在の基礎の使い方を、B1学習者向けに整理した説明。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 接続法現在の基礎 en nivel B1.",
+        "japanese": "接続法現在の基礎の例文1（B1）。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 接続法現在の基礎 en nivel B1.",
+        "japanese": "接続法現在の基礎の例文2（B1）。"
+      }
+    ],
+    "note": "接続法現在の基礎では文脈と時制の整合性に注意する。",
+    "commonMistake": "接続法現在の基礎で直訳しすぎると不自然になる。"
+  },
+  {
+    "id": "grammar_b1_002",
+    "level": "B1",
+    "title": "関係詞",
+    "explanation": "関係詞の使い方を、B1学習者向けに整理した説明。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 関係詞 en nivel B1.",
+        "japanese": "関係詞の例文1（B1）。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 関係詞 en nivel B1.",
+        "japanese": "関係詞の例文2（B1）。"
+      }
+    ],
+    "note": "関係詞では文脈と時制の整合性に注意する。",
+    "commonMistake": "関係詞で直訳しすぎると不自然になる。"
+  },
+  {
+    "id": "grammar_b1_003",
+    "level": "B1",
+    "title": "過去完了",
+    "explanation": "過去完了の使い方を、B1学習者向けに整理した説明。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 過去完了 en nivel B1.",
+        "japanese": "過去完了の例文1（B1）。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 過去完了 en nivel B1.",
+        "japanese": "過去完了の例文2（B1）。"
+      }
+    ],
+    "note": "過去完了では文脈と時制の整合性に注意する。",
+    "commonMistake": "過去完了で直訳しすぎると不自然になる。"
+  },
+  {
+    "id": "grammar_b1_004",
+    "level": "B1",
+    "title": "条件法",
+    "explanation": "条件法の使い方を、B1学習者向けに整理した説明。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 条件法 en nivel B1.",
+        "japanese": "条件法の例文1（B1）。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 条件法 en nivel B1.",
+        "japanese": "条件法の例文2（B1）。"
+      }
+    ],
+    "note": "条件法では文脈と時制の整合性に注意する。",
+    "commonMistake": "条件法で直訳しすぎると不自然になる。"
+  },
+  {
+    "id": "grammar_b1_005",
+    "level": "B1",
+    "title": "未来形",
+    "explanation": "未来形の使い方を、B1学習者向けに整理した説明。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 未来形 en nivel B1.",
+        "japanese": "未来形の例文1（B1）。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 未来形 en nivel B1.",
+        "japanese": "未来形の例文2（B1）。"
+      }
+    ],
+    "note": "未来形では文脈と時制の整合性に注意する。",
+    "commonMistake": "未来形で直訳しすぎると不自然になる。"
+  },
+  {
+    "id": "grammar_b1_006",
+    "level": "B1",
+    "title": "受動表現",
+    "explanation": "受動表現の使い方を、B1学習者向けに整理した説明。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 受動表現 en nivel B1.",
+        "japanese": "受動表現の例文1（B1）。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 受動表現 en nivel B1.",
+        "japanese": "受動表現の例文2（B1）。"
+      }
+    ],
+    "note": "受動表現では文脈と時制の整合性に注意する。",
+    "commonMistake": "受動表現で直訳しすぎると不自然になる。"
+  },
+  {
+    "id": "grammar_b1_007",
+    "level": "B1",
+    "title": "無人称表現",
+    "explanation": "無人称表現の使い方を、B1学習者向けに整理した説明。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 無人称表現 en nivel B1.",
+        "japanese": "無人称表現の例文1（B1）。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 無人称表現 en nivel B1.",
+        "japanese": "無人称表現の例文2（B1）。"
+      }
+    ],
+    "note": "無人称表現では文脈と時制の整合性に注意する。",
+    "commonMistake": "無人称表現で直訳しすぎると不自然になる。"
+  },
+  {
+    "id": "grammar_b1_008",
+    "level": "B1",
+    "title": "意見表明の表現",
+    "explanation": "意見表明の表現の使い方を、B1学習者向けに整理した説明。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 意見表明の表現 en nivel B1.",
+        "japanese": "意見表明の表現の例文1（B1）。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 意見表明の表現 en nivel B1.",
+        "japanese": "意見表明の表現の例文2（B1）。"
+      }
+    ],
+    "note": "意見表明の表現では文脈と時制の整合性に注意する。",
+    "commonMistake": "意見表明の表現で直訳しすぎると不自然になる。"
+  },
+  {
+    "id": "grammar_b1_009",
+    "level": "B1",
+    "title": "接続詞 aunque",
+    "explanation": "接続詞 aunqueの使い方を、B1学習者向けに整理した説明。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 接続詞 aunque en nivel B1.",
+        "japanese": "接続詞 aunqueの例文1（B1）。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 接続詞 aunque en nivel B1.",
+        "japanese": "接続詞 aunqueの例文2（B1）。"
+      }
+    ],
+    "note": "接続詞 aunqueでは文脈と時制の整合性に注意する。",
+    "commonMistake": "接続詞 aunqueで直訳しすぎると不自然になる。"
+  },
+  {
+    "id": "grammar_b1_010",
+    "level": "B1",
+    "title": "談話標識",
+    "explanation": "談話標識の使い方を、B1学習者向けに整理した説明。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 談話標識 en nivel B1.",
+        "japanese": "談話標識の例文1（B1）。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 談話標識 en nivel B1.",
+        "japanese": "談話標識の例文2（B1）。"
+      }
+    ],
+    "note": "談話標識では文脈と時制の整合性に注意する。",
+    "commonMistake": "談話標識で直訳しすぎると不自然になる。"
+  },
+  {
+    "id": "grammar_b1_011",
+    "level": "B1",
+    "title": "仮定文 tipo 1",
+    "explanation": "仮定文 tipo 1の使い方を、B1学習者向けに整理した説明。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 仮定文 tipo 1 en nivel B1.",
+        "japanese": "仮定文 tipo 1の例文1（B1）。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 仮定文 tipo 1 en nivel B1.",
+        "japanese": "仮定文 tipo 1の例文2（B1）。"
+      }
+    ],
+    "note": "仮定文 tipo 1では文脈と時制の整合性に注意する。",
+    "commonMistake": "仮定文 tipo 1で直訳しすぎると不自然になる。"
+  },
+  {
+    "id": "grammar_b1_012",
+    "level": "B1",
+    "title": "推量表現",
+    "explanation": "推量表現の使い方を、B1学習者向けに整理した説明。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 推量表現 en nivel B1.",
+        "japanese": "推量表現の例文1（B1）。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 推量表現 en nivel B1.",
+        "japanese": "推量表現の例文2（B1）。"
+      }
+    ],
+    "note": "推量表現では文脈と時制の整合性に注意する。",
+    "commonMistake": "推量表現で直訳しすぎると不自然になる。"
+  },
+  {
+    "id": "grammar_b1_013",
+    "level": "B1",
+    "title": "間接話法入門",
+    "explanation": "間接話法入門の使い方を、B1学習者向けに整理した説明。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 間接話法入門 en nivel B1.",
+        "japanese": "間接話法入門の例文1（B1）。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 間接話法入門 en nivel B1.",
+        "japanese": "間接話法入門の例文2（B1）。"
+      }
+    ],
+    "note": "間接話法入門では文脈と時制の整合性に注意する。",
+    "commonMistake": "間接話法入門で直訳しすぎると不自然になる。"
+  },
+  {
+    "id": "grammar_b1_014",
+    "level": "B1",
+    "title": "受動の se",
+    "explanation": "受動の seの使い方を、B1学習者向けに整理した説明。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 受動の se en nivel B1.",
+        "japanese": "受動の seの例文1（B1）。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 受動の se en nivel B1.",
+        "japanese": "受動の seの例文2（B1）。"
+      }
+    ],
+    "note": "受動の seでは文脈と時制の整合性に注意する。",
+    "commonMistake": "受動の seで直訳しすぎると不自然になる。"
+  },
+  {
+    "id": "grammar_b1_015",
+    "level": "B1",
+    "title": "前置詞句の拡張",
+    "explanation": "前置詞句の拡張の使い方を、B1学習者向けに整理した説明。",
+    "examples": [
+      {
+        "spanish": "Ejemplo 1 de 前置詞句の拡張 en nivel B1.",
+        "japanese": "前置詞句の拡張の例文1（B1）。"
+      },
+      {
+        "spanish": "Ejemplo 2 de 前置詞句の拡張 en nivel B1.",
+        "japanese": "前置詞句の拡張の例文2（B1）。"
+      }
+    ],
+    "note": "前置詞句の拡張では文脈と時制の整合性に注意する。",
+    "commonMistake": "前置詞句の拡張で直訳しすぎると不自然になる。"
+  }
+]

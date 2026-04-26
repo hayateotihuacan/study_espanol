@@ -1,99 +1,41 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="apple-mobile-web-app-title" content="Lector Español" />
-    <link rel="apple-touch-icon" href="icons/icon.svg" />
-    <link rel="manifest" href="manifest.json" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Lector Español</title>
-  </head>
-  <body>
-    <header class="app-header">
-      <h1>Lector Español</h1>
-      <p class="subtitle">オフライン対応スペイン語学習アプリ</p>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8fafc">
+  <title>Lector Español C1</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="app-header card">
+    <h1>Lector Español C1</h1>
+    <p>オフライン対応スペイン語学習PWA（A1〜C1）</p>
+  </header>
 
-    <main id="app" class="app-main">
-      <section id="screen-home" class="screen active">
-        <h2>ホーム</h2>
-        <div id="today-summary" class="card learning-card"></div>
-        <div id="home-progress-cards" class="card-list two-col"></div>
-        <div class="menu-grid">
-          <button class="menu-card" data-screen="vocab">単語</button>
-          <button class="menu-card" data-screen="grammar">文法</button>
-          <button class="menu-card" data-screen="readings">長文読解</button>
-          <button class="menu-card" data-screen="review">復習</button>
-          <button class="menu-card" data-screen="history">学習履歴</button>
-        </div>
-      </section>
+  <main id="app" class="app-main">
+    <section id="error-banner" class="error-banner hidden" aria-live="polite"></section>
 
-      <section id="screen-vocab" class="screen">
-        <div class="section-header">
-          <h2>単語</h2>
-          <select id="vocab-level-filter" aria-label="単語レベル選択">
-            <option value="all">A1 / A2</option>
-            <option value="A1">A1</option>
-            <option value="A2">A2</option>
-          </select>
-        </div>
-        <div id="vocab-progress" class="progress"></div>
-        <div id="vocab-card" class="card learning-card"></div>
-      </section>
+    <section id="screen-home" class="screen active" data-screen="home"></section>
+    <section id="screen-words" class="screen" data-screen="words"></section>
+    <section id="screen-grammar" class="screen" data-screen="grammar"></section>
+    <section id="screen-readings" class="screen" data-screen="readings"></section>
+    <section id="screen-review" class="screen" data-screen="review"></section>
+    <section id="screen-history" class="screen" data-screen="history"></section>
+  </main>
 
-      <section id="screen-grammar" class="screen">
-        <div class="section-header">
-          <h2>文法</h2>
-          <select id="grammar-level-filter" aria-label="文法レベル選択">
-            <option value="all">A1 / A2</option>
-            <option value="A1">A1</option>
-            <option value="A2">A2</option>
-          </select>
-        </div>
-        <div id="grammar-list" class="card-list"></div>
-      </section>
+  <footer class="app-footer">version <span id="app-version">1.0.0</span></footer>
 
-      <section id="screen-readings" class="screen">
-        <h2>長文読解</h2>
-        <div id="reading-list" class="card-list"></div>
-        <article id="reading-detail" class="card learning-card hidden"></article>
-      </section>
+  <nav class="bottom-nav" aria-label="画面切り替え">
+    <button class="nav-btn active" data-target="home">ホーム</button>
+    <button class="nav-btn" data-target="words">単語</button>
+    <button class="nav-btn" data-target="grammar">文法</button>
+    <button class="nav-btn" data-target="readings">長文</button>
+    <button class="nav-btn" data-target="review">復習</button>
+    <button class="nav-btn" data-target="history">履歴</button>
+  </nav>
 
-      <section id="screen-review" class="screen">
-        <h2>復習</h2>
-        <div id="review-summary" class="card learning-card"></div>
-        <div id="today-review" class="card-list"></div>
-
-        <h3>未習得単語の復習</h3>
-        <div id="review-word-cards" class="card-list"></div>
-
-        <h3>間違えたクイズの復習</h3>
-        <div id="review-quiz-cards" class="card-list"></div>
-
-        <h3>未読長文の確認</h3>
-        <div id="review-reading-cards" class="card-list"></div>
-      </section>
-
-      <section id="screen-history" class="screen">
-        <h2>学習履歴</h2>
-        <div id="history-card" class="card learning-card"></div>
-      </section>
-    </main>
-
-    <footer class="app-footer"><small id="app-version">version --</small></footer>
-
-    <nav class="bottom-nav" aria-label="メインナビゲーション">
-      <button data-screen="home" class="nav-btn active">ホーム</button>
-      <button data-screen="vocab" class="nav-btn">単語</button>
-      <button data-screen="grammar" class="nav-btn">文法</button>
-      <button data-screen="readings" class="nav-btn">読解</button>
-      <button data-screen="history" class="nav-btn">履歴</button>
-    </nav>
-
-    <script src="app.js" defer></script>
-  </body>
+  <script src="./app.js"></script>
+</body>
 </html>

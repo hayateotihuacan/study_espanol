@@ -21,7 +21,8 @@
     <main id="app" class="app-main">
       <section id="screen-home" class="screen active">
         <h2>ホーム</h2>
-        <div id="today-summary" class="card"></div>
+        <div id="today-summary" class="card learning-card"></div>
+        <div id="home-progress-cards" class="card-list two-col"></div>
         <div class="menu-grid">
           <button class="menu-card" data-screen="vocab">単語</button>
           <button class="menu-card" data-screen="grammar">文法</button>
@@ -41,7 +42,7 @@
           </select>
         </div>
         <div id="vocab-progress" class="progress"></div>
-        <div id="vocab-card" class="card"></div>
+        <div id="vocab-card" class="card learning-card"></div>
       </section>
 
       <section id="screen-grammar" class="screen">
@@ -59,20 +60,31 @@
       <section id="screen-readings" class="screen">
         <h2>長文読解</h2>
         <div id="reading-list" class="card-list"></div>
-        <article id="reading-detail" class="card hidden"></article>
+        <article id="reading-detail" class="card learning-card hidden"></article>
       </section>
 
       <section id="screen-review" class="screen">
         <h2>復習</h2>
-        <div id="review-summary" class="card"></div>
-        <div id="review-list" class="card-list"></div>
+        <div id="review-summary" class="card learning-card"></div>
+        <div id="today-review" class="card-list"></div>
+
+        <h3>未習得単語の復習</h3>
+        <div id="review-word-cards" class="card-list"></div>
+
+        <h3>間違えたクイズの復習</h3>
+        <div id="review-quiz-cards" class="card-list"></div>
+
+        <h3>未読長文の確認</h3>
+        <div id="review-reading-cards" class="card-list"></div>
       </section>
 
       <section id="screen-history" class="screen">
         <h2>学習履歴</h2>
-        <div id="history-card" class="card"></div>
+        <div id="history-card" class="card learning-card"></div>
       </section>
     </main>
+
+    <footer class="app-footer"><small id="app-version">version --</small></footer>
 
     <nav class="bottom-nav" aria-label="メインナビゲーション">
       <button data-screen="home" class="nav-btn active">ホーム</button>

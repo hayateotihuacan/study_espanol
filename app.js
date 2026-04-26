@@ -13,6 +13,12 @@ const state = {
     readingDone: {},
     quiz: {},
     lastStudyDate: null,
+    review: {
+      completed: {},
+      completedCount: 0,
+      todayDate: null,
+      todayCount: 0,
+    },
   },
 };
 
@@ -32,6 +38,11 @@ function loadProgress() {
       words: parsed.words || {},
       readingDone: parsed.readingDone || {},
       quiz: parsed.quiz || {},
+      review: {
+        ...state.progress.review,
+        ...(parsed.review || {}),
+        completed: parsed.review?.completed || {},
+      },
     };
   } catch {
     console.warn("学習データの読み込みに失敗しました。");
@@ -41,6 +52,54 @@ function loadProgress() {
 function saveProgress() {
   state.progress.lastStudyDate = new Date().toISOString().slice(0, 10);
   localStorage.setItem(APP_STORAGE_KEY, JSON.stringify(state.progress));
+}
+
+function recordReviewCompletion(key) {
+  const today = new Date().toISOString().slice(0, 10);
+  if (state.progress.review.todayDate !== today) {
+    state.progress.review.todayDate = today;
+    state.progress.review.todayCount = 0;
+  }
+  if (!state.progress.review.completed[key]) {
+    state.progress.review.completed[key] = today;
+    state.progress.review.completedCount += 1;
+    state.progress.review.todayCount += 1;
+  }
+}
+
+function parseQuizQid(qid) {
+  const [readingId, suffix] = qid.split("_q");
+  const idx = Number(suffix);
+  return { readingId, idx };
+}
+
+function isSpeechSupported() {
+  return "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
+}
+
+function getSpanishVoice() {
+  const voices = window.speechSynthesis.getVoices();
+  return (
+    voices.find((voice) => voice.lang === "es-ES") ||
+    voices.find((voice) => voice.lang === "es-MX") ||
+    voices.find((voice) => voice.lang.startsWith("es")) ||
+    null
+  );
+}
+
+function speakSpanish(text, statusEl) {
+  if (!isSpeechSupported()) {
+    if (statusEl) statusEl.textContent = "この端末では読み上げに対応していません";
+    return;
+  }
+  const utterance = new SpeechSynthesisUtterance(text);
+  const voice = getSpanishVoice();
+  utterance.lang = voice?.lang || "es-ES";
+  if (voice) utterance.voice = voice;
+  utterance.rate = 0.95;
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(utterance);
+  if (statusEl) statusEl.textContent = `読み上げ中 (${utterance.lang})`;
 }
 
 async function loadData() {
@@ -187,7 +246,10 @@ function renderVocab() {
       <button class="primary-btn" data-word-action="known">覚えた</button>
       <button class="secondary-btn" data-word-action="unknown">未習得</button>
       <button class="choice-btn" data-word-action="next">次の単語へ</button>
+      <button class="choice-btn" id="speak-word">発音</button>
+      <button class="choice-btn" id="speak-example">例文を読む</button>
     </div>
+    <p id="vocab-speech-status" class="speech-status"></p>
   `;
 
   card.querySelectorAll("button[data-word-action]").forEach((btn) => {
@@ -195,6 +257,12 @@ function renderVocab() {
       handleWordAction(btn.dataset.wordAction, word, words.length);
     });
   });
+
+  const speechStatus = card.querySelector("#vocab-speech-status");
+  card.querySelector("#speak-word").addEventListener("click", () => speakSpanish(word.word, speechStatus));
+  card
+    .querySelector("#speak-example")
+    .addEventListener("click", () => speakSpanish(word.example, speechStatus));
 
   attachSwipeHandlers(card, word, words.length);
 }
@@ -264,8 +332,10 @@ function renderReadingDetail() {
       <div class="inline-actions">
         <button id="toggle-translation" class="primary-btn">日本語訳を表示</button>
         <button id="mark-reading" class="choice-btn">読了にする</button>
+        <button id="speak-reading" class="choice-btn">本文を読む</button>
       </div>
       <p id="translation-box" class="translation-box hidden">${reading.translation}</p>
+      <p id="reading-speech-status" class="speech-status"></p>
     </section>
 
     <section class="reading-section">
@@ -283,6 +353,8 @@ function renderReadingDetail() {
 
   const translationBox = detail.querySelector("#translation-box");
   const toggleBtn = detail.querySelector("#toggle-translation");
+  const speechStatus = detail.querySelector("#reading-speech-status");
+
   toggleBtn.addEventListener("click", () => {
     translationBox.classList.toggle("hidden");
     toggleBtn.textContent = translationBox.classList.contains("hidden")
@@ -295,6 +367,10 @@ function renderReadingDetail() {
     saveProgress();
     rerenderAll();
   });
+
+  detail
+    .querySelector("#speak-reading")
+    .addEventListener("click", () => speakSpanish(reading.text, speechStatus));
 
   const quizArea = detail.querySelector("#quiz-area");
   quizArea.innerHTML = reading.questions
@@ -352,32 +428,158 @@ function getQuizStats() {
 
 function renderReview() {
   const reviewSummary = document.getElementById("review-summary");
-  const reviewList = document.getElementById("review-list");
+  const todayReview = document.getElementById("today-review");
+  const wordReview = document.getElementById("review-word-cards");
+  const quizReview = document.getElementById("review-quiz-cards");
+  const unreadReview = document.getElementById("review-reading-cards");
 
   const unknownWords = state.words.filter((w) => state.progress.words[w.id] === "unknown");
   const wrongQuizIds = Object.entries(state.progress.quiz)
     .filter(([, val]) => !val.correct)
     .map(([qid]) => qid);
+  const unreadReadings = state.readings.filter((r) => !state.progress.readingDone[r.id]);
 
   reviewSummary.innerHTML = `
     <p>未習得単語: <strong>${unknownWords.length}</strong> 件</p>
     <p>再挑戦クイズ: <strong>${wrongQuizIds.length}</strong> 件</p>
+    <p>未読長文: <strong>${unreadReadings.length}</strong> 件</p>
   `;
 
-  reviewList.innerHTML = `
+  todayReview.innerHTML = `
     <article class="card learning-card">
-      <h3>未習得単語</h3>
-      <ul>
-        ${unknownWords.slice(0, 10).map((w) => `<li>${w.word} (${w.meaning})</li>`).join("") || "<li>ありません</li>"}
-      </ul>
-    </article>
-    <article class="card learning-card">
-      <h3>再挑戦クイズID</h3>
-      <ul>
-        ${wrongQuizIds.slice(0, 10).map((qid) => `<li>${qid}</li>`).join("") || "<li>ありません</li>"}
-      </ul>
+      <h3>今日の復習</h3>
+      <p>本日の復習完了数: <strong>${state.progress.review.todayCount}</strong></p>
+      <p>累計復習完了数: <strong>${state.progress.review.completedCount}</strong></p>
+      <p>更新日: <strong>${state.progress.review.todayDate || "未実施"}</strong></p>
     </article>
   `;
+
+  wordReview.innerHTML =
+    unknownWords
+      .slice(0, 12)
+      .map(
+        (word) => `
+      <article class="card learning-card">
+        <h4>${word.word} <span class="tag">${word.level}</span></h4>
+        <p>品詞: ${word.partOfSpeech}</p>
+        <p>例文: ${word.example}</p>
+        <p class="review-answer hidden" id="ans-${word.id}">意味: ${word.meaning}<br />訳: ${word.translation}</p>
+        <div class="inline-actions">
+          <button class="choice-btn" data-review-show="${word.id}">答えを見る</button>
+          <button class="primary-btn" data-review-known="${word.id}">覚えた</button>
+        </div>
+      </article>
+    `
+      )
+      .join("") || '<article class="card learning-card"><p>未習得単語はありません。</p></article>';
+
+  quizReview.innerHTML =
+    wrongQuizIds
+      .slice(0, 10)
+      .map((qid) => {
+        const { readingId, idx } = parseQuizQid(qid);
+        const reading = state.readings.find((r) => r.id === readingId);
+        const question = reading?.questions?.[idx];
+        if (!reading || !question) {
+          return `<article class="card learning-card"><p>${qid}（データが見つかりません）</p></article>`;
+        }
+
+        return `
+          <article class="card learning-card">
+            <h4>再挑戦クイズ</h4>
+            <p><strong>${reading.title}</strong></p>
+            <p>${question.question}</p>
+            <div class="card-list">
+              ${question.choices
+                .map(
+                  (choice) =>
+                    `<button class="choice-btn quiz-choice-btn" data-review-qid="${qid}" data-review-answer="${choice}">${choice}</button>`
+                )
+                .join("")}
+            </div>
+            <p class="feedback" id="review-fb-${qid}"></p>
+          </article>
+        `;
+      })
+      .join("") || '<article class="card learning-card"><p>再挑戦クイズはありません。</p></article>';
+
+  unreadReview.innerHTML =
+    unreadReadings
+      .slice(0, 10)
+      .map(
+        (reading) => `
+      <article class="card learning-card">
+        <h4>${reading.title}</h4>
+        <p><span class="tag">${reading.level}</span><span class="tag">${reading.category}</span></p>
+        <div class="inline-actions">
+          <button class="choice-btn" data-open-reading="${reading.id}">読解画面で開く</button>
+          <button class="primary-btn" data-mark-reading="${reading.id}">読了にする</button>
+        </div>
+      </article>
+    `
+      )
+      .join("") || '<article class="card learning-card"><p>未読の長文はありません。</p></article>';
+
+  wordReview.querySelectorAll("[data-review-show]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.dataset.reviewShow;
+      wordReview.querySelector(`#ans-${id}`)?.classList.remove("hidden");
+    });
+  });
+
+  wordReview.querySelectorAll("[data-review-known]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.dataset.reviewKnown;
+      state.progress.words[id] = "known";
+      recordReviewCompletion(`word_${id}`);
+      saveProgress();
+      rerenderAll();
+    });
+  });
+
+  quizReview.querySelectorAll("[data-review-qid]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const qid = btn.dataset.reviewQid;
+      const selected = btn.dataset.reviewAnswer;
+      const { readingId, idx } = parseQuizQid(qid);
+      const question = state.readings.find((r) => r.id === readingId)?.questions?.[idx];
+      if (!question) return;
+
+      const isCorrect = selected === question.answer;
+      state.progress.quiz[qid] = {
+        correct: isCorrect,
+        updatedAt: new Date().toISOString(),
+      };
+
+      const feedback = quizReview.querySelector(`#review-fb-${qid}`);
+      if (feedback) {
+        feedback.textContent = isCorrect ? "✅ 正解です。復習リストから外れます。" : `❌ 不正解です。正解: ${question.answer}`;
+        feedback.className = `feedback ${isCorrect ? "ok" : "ng"}`;
+      }
+
+      if (isCorrect) recordReviewCompletion(`quiz_${qid}`);
+      saveProgress();
+      rerenderAll();
+    });
+  });
+
+  unreadReview.querySelectorAll("[data-open-reading]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.selectedReadingId = btn.dataset.openReading;
+      showScreen("readings");
+      renderReadingDetail();
+    });
+  });
+
+  unreadReview.querySelectorAll("[data-mark-reading]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.dataset.markReading;
+      state.progress.readingDone[id] = true;
+      recordReviewCompletion(`reading_${id}`);
+      saveProgress();
+      rerenderAll();
+    });
+  });
 }
 
 function renderHistory() {
@@ -390,6 +592,8 @@ function renderHistory() {
     <p>学習済み単語数: <strong>${learnedWords}</strong></p>
     <p>読了した長文数: <strong>${readingsDone}</strong></p>
     <p>クイズ正答率: <strong>${quizStats.rate}%</strong> (${quizStats.correct}/${quizStats.total})</p>
+    <p>復習完了数（累計）: <strong>${state.progress.review.completedCount}</strong></p>
+    <p>復習完了数（今日）: <strong>${state.progress.review.todayCount}</strong></p>
     <p>最終学習日: <strong>${state.progress.lastStudyDate || "未学習"}</strong></p>
   `;
 }
@@ -422,6 +626,12 @@ async function init() {
     state.grammarFilter = e.target.value;
     renderGrammar();
   });
+
+  if (isSpeechSupported()) {
+    window.speechSynthesis.onvoiceschanged = () => {
+      window.speechSynthesis.getVoices();
+    };
+  }
 
   rerenderAll();
 

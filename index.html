@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Lector Español" />
+    <link rel="apple-touch-icon" href="icons/icon.svg" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Lector Español</title>
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Lector Español</h1>
+      <p class="subtitle">オフライン対応スペイン語学習アプリ</p>
+    </header>
+
+    <main id="app" class="app-main">
+      <section id="screen-home" class="screen active">
+        <h2>ホーム</h2>
+        <div id="today-summary" class="card"></div>
+        <div class="menu-grid">
+          <button class="menu-card" data-screen="vocab">単語</button>
+          <button class="menu-card" data-screen="grammar">文法</button>
+          <button class="menu-card" data-screen="readings">長文読解</button>
+          <button class="menu-card" data-screen="review">復習</button>
+          <button class="menu-card" data-screen="history">学習履歴</button>
+        </div>
+      </section>
+
+      <section id="screen-vocab" class="screen">
+        <div class="section-header">
+          <h2>単語</h2>
+          <select id="vocab-level-filter" aria-label="単語レベル選択">
+            <option value="all">A1 / A2</option>
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+          </select>
+        </div>
+        <div id="vocab-progress" class="progress"></div>
+        <div id="vocab-card" class="card"></div>
+      </section>
+
+      <section id="screen-grammar" class="screen">
+        <div class="section-header">
+          <h2>文法</h2>
+          <select id="grammar-level-filter" aria-label="文法レベル選択">
+            <option value="all">A1 / A2</option>
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+          </select>
+        </div>
+        <div id="grammar-list" class="card-list"></div>
+      </section>
+
+      <section id="screen-readings" class="screen">
+        <h2>長文読解</h2>
+        <div id="reading-list" class="card-list"></div>
+        <article id="reading-detail" class="card hidden"></article>
+      </section>
+
+      <section id="screen-review" class="screen">
+        <h2>復習</h2>
+        <div id="review-summary" class="card"></div>
+        <div id="review-list" class="card-list"></div>
+      </section>
+
+      <section id="screen-history" class="screen">
+        <h2>学習履歴</h2>
+        <div id="history-card" class="card"></div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="メインナビゲーション">
+      <button data-screen="home" class="nav-btn active">ホーム</button>
+      <button data-screen="vocab" class="nav-btn">単語</button>
+      <button data-screen="grammar" class="nav-btn">文法</button>
+      <button data-screen="readings" class="nav-btn">読解</button>
+      <button data-screen="history" class="nav-btn">履歴</button>
+    </nav>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

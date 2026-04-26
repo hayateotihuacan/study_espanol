@@ -1,0 +1,102 @@
+[
+  {
+    "id": "reading_a1_001",
+    "level": "A1",
+    "title": "Mi rutina de la mañana",
+    "category": "vida diaria",
+    "text": "Me levanto a las siete. Después desayuno pan y café. Voy a la escuela en autobús y estudio español con mis amigos.",
+    "translation": "私は7時に起きます。その後、パンとコーヒーを朝食に取ります。バスで学校へ行き、友達とスペイン語を勉強します。",
+    "vocabulary": [
+      { "word": "levantarse", "meaning": "起きる" },
+      { "word": "desayunar", "meaning": "朝食をとる" }
+    ],
+    "questions": [
+      {
+        "type": "choice",
+        "question": "¿A qué hora se levanta?",
+        "choices": ["A las siete", "A las ocho", "A las seis", "A las nueve"],
+        "answer": "A las siete"
+      }
+    ]
+  },
+  {
+    "id": "reading_a1_002",
+    "level": "A1",
+    "title": "La familia de Ana",
+    "category": "家族",
+    "text": "Ana vive con su madre, su padre y su hermano menor. Los fines de semana cocinan juntos y miran películas en casa.",
+    "translation": "アナは母、父、弟と一緒に住んでいます。週末には一緒に料理をして、家で映画を見ます。",
+    "vocabulary": [
+      { "word": "hermano", "meaning": "兄弟" },
+      { "word": "fines de semana", "meaning": "週末" }
+    ],
+    "questions": [
+      {
+        "type": "choice",
+        "question": "¿Con quién vive Ana?",
+        "choices": ["Con sus amigos", "Con su familia", "Sola", "Con su profesora"],
+        "answer": "Con su familia"
+      }
+    ]
+  },
+  {
+    "id": "reading_a1_003",
+    "level": "A1",
+    "title": "Un día en el mercado",
+    "category": "買い物",
+    "text": "En el mercado compro tomates, manzanas y pan. El vendedor es amable y siempre me recomienda frutas frescas.",
+    "translation": "市場で私はトマト、りんご、パンを買います。店員は親切で、いつも新鮮な果物を勧めてくれます。",
+    "vocabulary": [
+      { "word": "vendedor", "meaning": "売り手" },
+      { "word": "fresco", "meaning": "新鮮な" }
+    ],
+    "questions": [
+      {
+        "type": "choice",
+        "question": "¿Qué compra en el mercado?",
+        "choices": ["Ropa", "Tomates y pan", "Libros", "Zapatos"],
+        "answer": "Tomates y pan"
+      }
+    ]
+  },
+  {
+    "id": "reading_a1_004",
+    "level": "A1",
+    "title": "Mi clase de español",
+    "category": "学校",
+    "text": "La clase empieza a las diez. Practicamos vocabulario, escuchamos diálogos y escribimos frases cortas.",
+    "translation": "授業は10時に始まります。語彙を練習し、会話を聞き、短い文を書きます。",
+    "vocabulary": [
+      { "word": "escuchar", "meaning": "聞く" },
+      { "word": "frase", "meaning": "文" }
+    ],
+    "questions": [
+      {
+        "type": "choice",
+        "question": "¿Qué hacen en la clase?",
+        "choices": ["Juegan al fútbol", "Practican vocabulario", "Cocinan", "Viajan"],
+        "answer": "Practican vocabulario"
+      }
+    ]
+  },
+  {
+    "id": "reading_a1_005",
+    "level": "A1",
+    "title": "El parque cerca de mi casa",
+    "category": "町",
+    "text": "Hay un parque grande cerca de mi casa. Por la tarde camino allí y leo un libro bajo un árbol.",
+    "translation": "私の家の近くに大きな公園があります。午後にそこを歩き、木の下で本を読みます。",
+    "vocabulary": [
+      { "word": "caminar", "meaning": "歩く" },
+      { "word": "árbol", "meaning": "木" }
+    ],
+    "questions": [
+      {
+        "type": "choice",
+        "question": "¿Qué hace por la tarde?",
+        "choices": ["Nada", "Camina en el parque", "Trabaja", "Nada en la piscina"],
+        "answer": "Camina en el parque"
+      }
+    ]
+  }
+]

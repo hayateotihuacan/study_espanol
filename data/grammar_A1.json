@@ -1,0 +1,52 @@
+[
+  {
+    "id": "grammar_a1_001",
+    "level": "A1",
+    "title": "ser と estar",
+    "explanation": "ser は本質的・恒常的な性質、estar は状態や場所を表す。",
+    "examples": [
+      { "spanish": "Soy estudiante.", "japanese": "私は学生です。" },
+      { "spanish": "Estoy en casa.", "japanese": "私は家にいます。" }
+    ]
+  },
+  {
+    "id": "grammar_a1_002",
+    "level": "A1",
+    "title": "現在形 -ar 動詞",
+    "explanation": "hablar のような -ar 動詞は hablo, hablas, habla... の形で活用する。",
+    "examples": [
+      { "spanish": "Hablo español.", "japanese": "私はスペイン語を話します。" },
+      { "spanish": "Hablan con la profesora.", "japanese": "彼らは先生と話します。" }
+    ]
+  },
+  {
+    "id": "grammar_a1_003",
+    "level": "A1",
+    "title": "定冠詞 el / la",
+    "explanation": "名詞の性に応じて冠詞を使い分ける。",
+    "examples": [
+      { "spanish": "El libro está aquí.", "japanese": "その本はここにあります。" },
+      { "spanish": "La mesa es grande.", "japanese": "その机は大きいです。" }
+    ]
+  },
+  {
+    "id": "grammar_a1_004",
+    "level": "A1",
+    "title": "疑問文の作り方",
+    "explanation": "語順を変えずにイントネーションや疑問詞で質問を作れる。",
+    "examples": [
+      { "spanish": "¿Hablas japonés?", "japanese": "あなたは日本語を話しますか。" },
+      { "spanish": "¿Dónde vives?", "japanese": "どこに住んでいますか。" }
+    ]
+  },
+  {
+    "id": "grammar_a1_005",
+    "level": "A1",
+    "title": "hay の基本",
+    "explanation": "hay は「〜がある/いる」を表す非人称表現。",
+    "examples": [
+      { "spanish": "Hay un parque cerca.", "japanese": "近くに公園があります。" },
+      { "spanish": "No hay leche.", "japanese": "牛乳がありません。" }
+    ]
+  }
+]

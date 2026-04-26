@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#1f7aec"/>
+  <rect x="36" y="36" width="440" height="440" rx="76" fill="#ffffff"/>
+  <text x="256" y="235" text-anchor="middle" font-size="90" font-family="Arial, sans-serif" fill="#1f7aec" font-weight="700">LE</text>
+  <text x="256" y="305" text-anchor="middle" font-size="46" font-family="Arial, sans-serif" fill="#45617d">Español</text>
+</svg>

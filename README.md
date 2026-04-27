@@ -1,62 +1,68 @@
-# Lector Español C1
+# Lector Español Clean
 
 ## 1. アプリ概要
-Lector Español C1 は、GitHub Pages で公開し iPad Safari のホーム画面から使える、オフライン対応のスペイン語学習PWAです。機能は「単語」「文法」「長文読解」「復習」「学習履歴」に絞っています。
+Lector Español Clean は、GitHub Pages でそのまま公開できる、スペイン語学習用の静的PWAです。HTML / CSS / JavaScriptのみで実装し、iPad Safari のホーム画面追加とオフライン利用を想定しています。
 
 ## 2. A1〜C1対応
-CEFR A1 / A2 / B1 / B2 / C1 の5段階に対応し、各画面でレベル切替できます。
+A1 / A2 / B1 / B2 / C1 の5レベルに対応しています。単語・文法・長文読解・復習・学習履歴でレベル切替できます。
 
-## 3. ファイル構成
+## 3. 教材JSONを後から編集する前提
+`data/` 配下の JSON をユーザーが編集・差し替えする前提で設計しています。アプリ側は固定のキーを読み取るだけなので、同じ形式を守れば教材を自由に入れ替えできます。
+
+## 4. ファイル構成
 - `index.html`
 - `styles.css`
 - `app.js`
 - `manifest.json`
 - `service-worker.js`
-- `icons/icon.svg`
-- `icons/icon-maskable.svg`
+- `README.md`
+- `DATA_GUIDE.md`
 - `data/words_A1.json` 〜 `data/words_C1.json`
 - `data/grammar_A1.json` 〜 `data/grammar_C1.json`
 - `data/readings_A1.json` 〜 `data/readings_C1.json`
+- `icons/icon.svg`
+- `icons/icon-maskable.svg`
 
-## 4. GitHub Pagesで公開する手順
-1. GitHub に push する。
-2. リポジトリの **Settings > Pages** を開く。
-3. Source を `Deploy from a branch`、Branch を `main`（または利用ブランチ）/`root` に設定。
-4. 公開URLにアクセスして動作確認。
+## 5. GitHub Pagesで公開する手順
+1. このリポジトリを GitHub に push します。
+2. GitHub の `Settings` → `Pages` を開きます。
+3. `Build and deployment` で `Deploy from a branch` を選択します。
+4. Branch を `main`（または公開したいブランチ）/`root` に設定します。
+5. 発行された URL へアクセスして表示を確認します。
 
-## 5. iPad Safariで開く手順
-1. iPad の Safari で GitHub Pages のURLを開く。
-2. 初回はオンライン状態で全データを読み込む。
+## 6. iPad Safariで開く手順
+1. iPad の Safari で GitHub Pages のURLを開きます。
+2. 初回だけオンラインで開き、教材JSONとService Workerを読み込みます。
 
-## 6. ホーム画面に追加する手順
-1. Safari の共有ボタンを押す。
-2. 「ホーム画面に追加」を選ぶ。
-3. アイコン名を確認して追加。
+## 7. ホーム画面に追加する手順
+1. Safari の共有ボタンを押します。
+2. 「ホーム画面に追加」を選択します。
+3. アイコン名を確認して追加します。
 
-## 7. オフライン確認手順
-1. 一度オンラインでアプリを開く。
-2. その後機内モードに切替。
-3. ホーム画面アイコンから起動し、単語/文法/長文/復習/履歴が表示できるか確認。
+## 8. オフライン確認手順
+1. 1回オンラインでアプリを開きます。
+2. その後、機内モードまたはWi-Fiオフにします。
+3. ホーム画面アイコンから起動し、各画面（ホーム/単語/文法/長文/復習/履歴）が表示できるか確認します。
 
-## 8. 更新後に古い画面が表示される場合の対処
-- Safariで強制再読み込みする。
-- ホーム画面アイコンを削除して再追加する。
-- iPadの「設定 > Safari > 履歴とWebサイトデータを消去」を実行する。
-- `service-worker.js` の `CACHE_NAME` を更新し再デプロイする。
+## 9. 更新後に古い画面が表示される場合の対処
+- Safariで強制再読み込み（更新ボタン長押し等）を行う。
+- ホーム画面アイコンを削除して追加し直す。
+- iPad 設定 > Safari > 詳細 > Webサイトデータ から対象データを削除する。
+- `service-worker.js` の `CACHE_NAME` を更新して再デプロイする。
 
-## 9. 教材追加方法
-1. `data/` の JSON を編集。
-2. 単語は `words_*.json`、文法は `grammar_*.json`、長文は `readings_*.json` を更新。
-3. 必須キー（id、level、answer など）を保つ。
+## 10. 教材追加方法
+1. `data/words_*.json`、`data/grammar_*.json`、`data/readings_*.json` を編集します。
+2. 既存キー（`id`, `level`, `word`, `meaning`, `text`, `translation` など）を維持します。
+3. コミット後、GitHub Pages反映を待ちます。
 
-## 10. localStorageに保存される内容
-- 単語学習状態（覚えた/未習得）
-- 長文読了状態
-- クイズ回答結果（正誤、正答）
+## 11. localStorageに保存される内容
+- 単語の状態（覚えた / 未習得）
+- 長文の読了状態
+- クイズ回答結果（正誤、問題、正答、レベル）
 - 最終学習日
 - 現在選択中レベル
 
-## 11. 注意事項
-- パスはすべて相対パス（`./`）で実装。
-- 外部API、ログイン、クラウド同期は未実装。
-- バージョンは `version 1.0.0` を画面フッターに表示。
+## 12. 注意事項
+- パスはすべて相対パス（`./`始まり）です。
+- 外部API、ログイン、クラウド同期、AI機能は未実装です。
+- 画面下部に `version 1.0.0` を表示しています。

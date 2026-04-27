@@ -2,271 +2,55 @@
   {
     "id": "grammar_a1_001",
     "level": "A1",
-    "title": "ser / estar",
-    "explanation": "ser / estarの使い方を、A1学習者向けに整理した説明。",
+    "title": "ser と estar",
+    "explanation": "ser は本質、estar は状態や場所を表します。",
     "examples": [
       {
-        "spanish": "Ejemplo 1 de ser / estar en nivel A1.",
-        "japanese": "ser / estarの例文1（A1）。"
+        "spanish": "Soy estudiante.",
+        "japanese": "私は学生です。"
       },
       {
-        "spanish": "Ejemplo 2 de ser / estar en nivel A1.",
-        "japanese": "ser / estarの例文2（A1）。"
+        "spanish": "Estoy en casa.",
+        "japanese": "私は家にいます。"
       }
     ],
-    "note": "ser / estarでは文脈と時制の整合性に注意する。",
-    "commonMistake": "ser / estarで直訳しすぎると不自然になる。"
+    "note": "文脈で使い分ける。",
+    "commonMistake": "Estoy estudiante. とは通常言いません。"
   },
   {
     "id": "grammar_a1_002",
     "level": "A1",
-    "title": "現在形",
-    "explanation": "現在形の使い方を、A1学習者向けに整理した説明。",
+    "title": "現在形の規則活用",
+    "explanation": "-ar/-er/-ir 動詞の現在形を学びます。",
     "examples": [
       {
-        "spanish": "Ejemplo 1 de 現在形 en nivel A1.",
-        "japanese": "現在形の例文1（A1）。"
+        "spanish": "Trabajo en una tienda.",
+        "japanese": "私は店で働いています。"
       },
       {
-        "spanish": "Ejemplo 2 de 現在形 en nivel A1.",
-        "japanese": "現在形の例文2（A1）。"
+        "spanish": "Comen juntos.",
+        "japanese": "彼らは一緒に食べます。"
       }
     ],
-    "note": "現在形では文脈と時制の整合性に注意する。",
-    "commonMistake": "現在形で直訳しすぎると不自然になる。"
+    "note": "主語に合わせて語尾を変える。",
+    "commonMistake": "主語を見ずに原形のまま使うミス。"
   },
   {
     "id": "grammar_a1_003",
     "level": "A1",
-    "title": "名詞の性数",
-    "explanation": "名詞の性数の使い方を、A1学習者向けに整理した説明。",
+    "title": "名詞の性と数",
+    "explanation": "名詞・形容詞の性数一致を確認します。",
     "examples": [
       {
-        "spanish": "Ejemplo 1 de 名詞の性数 en nivel A1.",
-        "japanese": "名詞の性数の例文1（A1）。"
+        "spanish": "El libro es nuevo.",
+        "japanese": "その本は新しいです。"
       },
       {
-        "spanish": "Ejemplo 2 de 名詞の性数 en nivel A1.",
-        "japanese": "名詞の性数の例文2（A1）。"
+        "spanish": "Las mesas son grandes.",
+        "japanese": "その机は大きいです。"
       }
     ],
-    "note": "名詞の性数では文脈と時制の整合性に注意する。",
-    "commonMistake": "名詞の性数で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a1_004",
-    "level": "A1",
-    "title": "定冠詞と不定冠詞",
-    "explanation": "定冠詞と不定冠詞の使い方を、A1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 定冠詞と不定冠詞 en nivel A1.",
-        "japanese": "定冠詞と不定冠詞の例文1（A1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 定冠詞と不定冠詞 en nivel A1.",
-        "japanese": "定冠詞と不定冠詞の例文2（A1）。"
-      }
-    ],
-    "note": "定冠詞と不定冠詞では文脈と時制の整合性に注意する。",
-    "commonMistake": "定冠詞と不定冠詞で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a1_005",
-    "level": "A1",
-    "title": "基本前置詞",
-    "explanation": "基本前置詞の使い方を、A1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 基本前置詞 en nivel A1.",
-        "japanese": "基本前置詞の例文1（A1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 基本前置詞 en nivel A1.",
-        "japanese": "基本前置詞の例文2（A1）。"
-      }
-    ],
-    "note": "基本前置詞では文脈と時制の整合性に注意する。",
-    "commonMistake": "基本前置詞で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a1_006",
-    "level": "A1",
-    "title": "所有形容詞",
-    "explanation": "所有形容詞の使い方を、A1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 所有形容詞 en nivel A1.",
-        "japanese": "所有形容詞の例文1（A1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 所有形容詞 en nivel A1.",
-        "japanese": "所有形容詞の例文2（A1）。"
-      }
-    ],
-    "note": "所有形容詞では文脈と時制の整合性に注意する。",
-    "commonMistake": "所有形容詞で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a1_007",
-    "level": "A1",
-    "title": "指示詞",
-    "explanation": "指示詞の使い方を、A1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 指示詞 en nivel A1.",
-        "japanese": "指示詞の例文1（A1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 指示詞 en nivel A1.",
-        "japanese": "指示詞の例文2（A1）。"
-      }
-    ],
-    "note": "指示詞では文脈と時制の整合性に注意する。",
-    "commonMistake": "指示詞で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a1_008",
-    "level": "A1",
-    "title": "疑問詞",
-    "explanation": "疑問詞の使い方を、A1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 疑問詞 en nivel A1.",
-        "japanese": "疑問詞の例文1（A1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 疑問詞 en nivel A1.",
-        "japanese": "疑問詞の例文2（A1）。"
-      }
-    ],
-    "note": "疑問詞では文脈と時制の整合性に注意する。",
-    "commonMistake": "疑問詞で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a1_009",
-    "level": "A1",
-    "title": "hay と estar",
-    "explanation": "hay と estarの使い方を、A1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de hay と estar en nivel A1.",
-        "japanese": "hay と estarの例文1（A1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de hay と estar en nivel A1.",
-        "japanese": "hay と estarの例文2（A1）。"
-      }
-    ],
-    "note": "hay と estarでは文脈と時制の整合性に注意する。",
-    "commonMistake": "hay と estarで直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a1_010",
-    "level": "A1",
-    "title": "数字と時間",
-    "explanation": "数字と時間の使い方を、A1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 数字と時間 en nivel A1.",
-        "japanese": "数字と時間の例文1（A1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 数字と時間 en nivel A1.",
-        "japanese": "数字と時間の例文2（A1）。"
-      }
-    ],
-    "note": "数字と時間では文脈と時制の整合性に注意する。",
-    "commonMistake": "数字と時間で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a1_011",
-    "level": "A1",
-    "title": "gustar の基礎",
-    "explanation": "gustar の基礎の使い方を、A1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de gustar の基礎 en nivel A1.",
-        "japanese": "gustar の基礎の例文1（A1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de gustar の基礎 en nivel A1.",
-        "japanese": "gustar の基礎の例文2（A1）。"
-      }
-    ],
-    "note": "gustar の基礎では文脈と時制の整合性に注意する。",
-    "commonMistake": "gustar の基礎で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a1_012",
-    "level": "A1",
-    "title": "再帰代名詞入門",
-    "explanation": "再帰代名詞入門の使い方を、A1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 再帰代名詞入門 en nivel A1.",
-        "japanese": "再帰代名詞入門の例文1（A1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 再帰代名詞入門 en nivel A1.",
-        "japanese": "再帰代名詞入門の例文2（A1）。"
-      }
-    ],
-    "note": "再帰代名詞入門では文脈と時制の整合性に注意する。",
-    "commonMistake": "再帰代名詞入門で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a1_013",
-    "level": "A1",
-    "title": "語順の基本",
-    "explanation": "語順の基本の使い方を、A1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 語順の基本 en nivel A1.",
-        "japanese": "語順の基本の例文1（A1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 語順の基本 en nivel A1.",
-        "japanese": "語順の基本の例文2（A1）。"
-      }
-    ],
-    "note": "語順の基本では文脈と時制の整合性に注意する。",
-    "commonMistake": "語順の基本で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a1_014",
-    "level": "A1",
-    "title": "比較級入門",
-    "explanation": "比較級入門の使い方を、A1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 比較級入門 en nivel A1.",
-        "japanese": "比較級入門の例文1（A1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 比較級入門 en nivel A1.",
-        "japanese": "比較級入門の例文2（A1）。"
-      }
-    ],
-    "note": "比較級入門では文脈と時制の整合性に注意する。",
-    "commonMistake": "比較級入門で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a1_015",
-    "level": "A1",
-    "title": "命令形 tú の基礎",
-    "explanation": "命令形 tú の基礎の使い方を、A1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 命令形 tú の基礎 en nivel A1.",
-        "japanese": "命令形 tú の基礎の例文1（A1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 命令形 tú の基礎 en nivel A1.",
-        "japanese": "命令形 tú の基礎の例文2（A1）。"
-      }
-    ],
-    "note": "命令形 tú の基礎では文脈と時制の整合性に注意する。",
-    "commonMistake": "命令形 tú の基礎で直訳しすぎると不自然になる。"
+    "note": "冠詞も一致させる。",
+    "commonMistake": "las libro のような不一致。"
   }
 ]

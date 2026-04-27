@@ -4,34 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f8fafc">
-  <title>Lector Español C1</title>
+  <title>Lector Español Clean</title>
   <link rel="manifest" href="./manifest.json">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <header class="app-header card">
-    <h1>Lector Español C1</h1>
-    <p>オフライン対応スペイン語学習PWA（A1〜C1）</p>
+    <h1>Lector Español Clean</h1>
+    <p>GitHub Pages + iPad Safari 対応のオフライン学習PWA</p>
   </header>
 
-  <main id="app" class="app-main">
+  <main class="app-main">
     <section id="error-banner" class="error-banner hidden" aria-live="polite"></section>
 
-    <section id="screen-home" class="screen active" data-screen="home"></section>
-    <section id="screen-words" class="screen" data-screen="words"></section>
-    <section id="screen-grammar" class="screen" data-screen="grammar"></section>
-    <section id="screen-readings" class="screen" data-screen="readings"></section>
-    <section id="screen-review" class="screen" data-screen="review"></section>
-    <section id="screen-history" class="screen" data-screen="history"></section>
+    <section id="screen-home" class="screen active"></section>
+    <section id="screen-words" class="screen"></section>
+    <section id="screen-grammar" class="screen"></section>
+    <section id="screen-readings" class="screen"></section>
+    <section id="screen-review" class="screen"></section>
+    <section id="screen-history" class="screen"></section>
   </main>
 
   <footer class="app-footer">version <span id="app-version">1.0.0</span></footer>
 
-  <nav class="bottom-nav" aria-label="画面切り替え">
+  <nav class="bottom-nav" aria-label="下部ナビゲーション">
     <button class="nav-btn active" data-target="home">ホーム</button>
     <button class="nav-btn" data-target="words">単語</button>
     <button class="nav-btn" data-target="grammar">文法</button>
-    <button class="nav-btn" data-target="readings">長文</button>
+    <button class="nav-btn" data-target="readings">長文読解</button>
     <button class="nav-btn" data-target="review">復習</button>
     <button class="nav-btn" data-target="history">履歴</button>
   </nav>

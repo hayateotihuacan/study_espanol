@@ -2,271 +2,55 @@
   {
     "id": "grammar_c1_001",
     "level": "C1",
-    "title": "高度な接続法",
-    "explanation": "高度な接続法の使い方を、C1学習者向けに整理した説明。",
+    "title": "談話マーカーの運用",
+    "explanation": "論理展開を滑らかにする接続表現を整理します。",
     "examples": [
       {
-        "spanish": "Ejemplo 1 de 高度な接続法 en nivel C1.",
-        "japanese": "高度な接続法の例文1（C1）。"
+        "spanish": "Por consiguiente, la medida fue efectiva.",
+        "japanese": "したがって、その施策は効果的でした。"
       },
       {
-        "spanish": "Ejemplo 2 de 高度な接続法 en nivel C1.",
-        "japanese": "高度な接続法の例文2（C1）。"
+        "spanish": "Sin embargo, faltan datos comparables.",
+        "japanese": "しかし、比較可能なデータが不足しています。"
       }
     ],
-    "note": "高度な接続法では文脈と時制の整合性に注意する。",
-    "commonMistake": "高度な接続法で直訳しすぎると不自然になる。"
+    "note": "段落ごとに機能を分ける。",
+    "commonMistake": "逆接と順接を混在させる。"
   },
   {
     "id": "grammar_c1_002",
     "level": "C1",
-    "title": "複雑な関係節",
-    "explanation": "複雑な関係節の使い方を、C1学習者向けに整理した説明。",
+    "title": "名詞化による抽象表現",
+    "explanation": "動詞や形容詞を名詞化して学術的に述べます。",
     "examples": [
       {
-        "spanish": "Ejemplo 1 de 複雑な関係節 en nivel C1.",
-        "japanese": "複雑な関係節の例文1（C1）。"
+        "spanish": "La implementación requiere coordinación.",
+        "japanese": "実施には調整が必要です。"
       },
       {
-        "spanish": "Ejemplo 2 de 複雑な関係節 en nivel C1.",
-        "japanese": "複雑な関係節の例文2（C1）。"
+        "spanish": "Su evaluación fue precisa.",
+        "japanese": "彼の評価は正確でした。"
       }
     ],
-    "note": "複雑な関係節では文脈と時制の整合性に注意する。",
-    "commonMistake": "複雑な関係節で直訳しすぎると不自然になる。"
+    "note": "過度に名詞化しすぎない。",
+    "commonMistake": "主語が不明瞭になる。"
   },
   {
     "id": "grammar_c1_003",
     "level": "C1",
-    "title": "名詞化表現",
-    "explanation": "名詞化表現の使い方を、C1学習者向けに整理した説明。",
+    "title": "文体レジスターの調整",
+    "explanation": "フォーマル・セミフォーマルを場面で切り替えます。",
     "examples": [
       {
-        "spanish": "Ejemplo 1 de 名詞化表現 en nivel C1.",
-        "japanese": "名詞化表現の例文1（C1）。"
+        "spanish": "Le agradecería su respuesta.",
+        "japanese": "ご返信いただけますと幸いです。"
       },
       {
-        "spanish": "Ejemplo 2 de 名詞化表現 en nivel C1.",
-        "japanese": "名詞化表現の例文2（C1）。"
+        "spanish": "Te escribo para comentar el informe.",
+        "japanese": "報告書について話すために書いています。"
       }
     ],
-    "note": "名詞化表現では文脈と時制の整合性に注意する。",
-    "commonMistake": "名詞化表現で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_c1_004",
-    "level": "C1",
-    "title": "学術論文風の文体",
-    "explanation": "学術論文風の文体の使い方を、C1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 学術論文風の文体 en nivel C1.",
-        "japanese": "学術論文風の文体の例文1（C1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 学術論文風の文体 en nivel C1.",
-        "japanese": "学術論文風の文体の例文2（C1）。"
-      }
-    ],
-    "note": "学術論文風の文体では文脈と時制の整合性に注意する。",
-    "commonMistake": "学術論文風の文体で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_c1_005",
-    "level": "C1",
-    "title": "批評表現",
-    "explanation": "批評表現の使い方を、C1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 批評表現 en nivel C1.",
-        "japanese": "批評表現の例文1（C1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 批評表現 en nivel C1.",
-        "japanese": "批評表現の例文2（C1）。"
-      }
-    ],
-    "note": "批評表現では文脈と時制の整合性に注意する。",
-    "commonMistake": "批評表現で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_c1_006",
-    "level": "C1",
-    "title": "抽象概念を扱う構文",
-    "explanation": "抽象概念を扱う構文の使い方を、C1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 抽象概念を扱う構文 en nivel C1.",
-        "japanese": "抽象概念を扱う構文の例文1（C1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 抽象概念を扱う構文 en nivel C1.",
-        "japanese": "抽象概念を扱う構文の例文2（C1）。"
-      }
-    ],
-    "note": "抽象概念を扱う構文では文脈と時制の整合性に注意する。",
-    "commonMistake": "抽象概念を扱う構文で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_c1_007",
-    "level": "C1",
-    "title": "論証の接続表現",
-    "explanation": "論証の接続表現の使い方を、C1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 論証の接続表現 en nivel C1.",
-        "japanese": "論証の接続表現の例文1（C1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 論証の接続表現 en nivel C1.",
-        "japanese": "論証の接続表現の例文2（C1）。"
-      }
-    ],
-    "note": "論証の接続表現では文脈と時制の整合性に注意する。",
-    "commonMistake": "論証の接続表現で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_c1_008",
-    "level": "C1",
-    "title": "ニュアンス差のある表現",
-    "explanation": "ニュアンス差のある表現の使い方を、C1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de ニュアンス差のある表現 en nivel C1.",
-        "japanese": "ニュアンス差のある表現の例文1（C1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de ニュアンス差のある表現 en nivel C1.",
-        "japanese": "ニュアンス差のある表現の例文2（C1）。"
-      }
-    ],
-    "note": "ニュアンス差のある表現では文脈と時制の整合性に注意する。",
-    "commonMistake": "ニュアンス差のある表現で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_c1_009",
-    "level": "C1",
-    "title": "メタ談話表現",
-    "explanation": "メタ談話表現の使い方を、C1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de メタ談話表現 en nivel C1.",
-        "japanese": "メタ談話表現の例文1（C1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de メタ談話表現 en nivel C1.",
-        "japanese": "メタ談話表現の例文2（C1）。"
-      }
-    ],
-    "note": "メタ談話表現では文脈と時制の整合性に注意する。",
-    "commonMistake": "メタ談話表現で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_c1_010",
-    "level": "C1",
-    "title": "引用と再述",
-    "explanation": "引用と再述の使い方を、C1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 引用と再述 en nivel C1.",
-        "japanese": "引用と再述の例文1（C1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 引用と再述 en nivel C1.",
-        "japanese": "引用と再述の例文2（C1）。"
-      }
-    ],
-    "note": "引用と再述では文脈と時制の整合性に注意する。",
-    "commonMistake": "引用と再述で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_c1_011",
-    "level": "C1",
-    "title": "レジスター操作",
-    "explanation": "レジスター操作の使い方を、C1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de レジスター操作 en nivel C1.",
-        "japanese": "レジスター操作の例文1（C1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de レジスター操作 en nivel C1.",
-        "japanese": "レジスター操作の例文2（C1）。"
-      }
-    ],
-    "note": "レジスター操作では文脈と時制の整合性に注意する。",
-    "commonMistake": "レジスター操作で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_c1_012",
-    "level": "C1",
-    "title": "語用論的含意",
-    "explanation": "語用論的含意の使い方を、C1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 語用論的含意 en nivel C1.",
-        "japanese": "語用論的含意の例文1（C1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 語用論的含意 en nivel C1.",
-        "japanese": "語用論的含意の例文2（C1）。"
-      }
-    ],
-    "note": "語用論的含意では文脈と時制の整合性に注意する。",
-    "commonMistake": "語用論的含意で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_c1_013",
-    "level": "C1",
-    "title": "条件法の反実仮想",
-    "explanation": "条件法の反実仮想の使い方を、C1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 条件法の反実仮想 en nivel C1.",
-        "japanese": "条件法の反実仮想の例文1（C1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 条件法の反実仮想 en nivel C1.",
-        "japanese": "条件法の反実仮想の例文2（C1）。"
-      }
-    ],
-    "note": "条件法の反実仮想では文脈と時制の整合性に注意する。",
-    "commonMistake": "条件法の反実仮想で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_c1_014",
-    "level": "C1",
-    "title": "複文の焦点化",
-    "explanation": "複文の焦点化の使い方を、C1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 複文の焦点化 en nivel C1.",
-        "japanese": "複文の焦点化の例文1（C1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 複文の焦点化 en nivel C1.",
-        "japanese": "複文の焦点化の例文2（C1）。"
-      }
-    ],
-    "note": "複文の焦点化では文脈と時制の整合性に注意する。",
-    "commonMistake": "複文の焦点化で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_c1_015",
-    "level": "C1",
-    "title": "省略と照応",
-    "explanation": "省略と照応の使い方を、C1学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 省略と照応 en nivel C1.",
-        "japanese": "省略と照応の例文1（C1）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 省略と照応 en nivel C1.",
-        "japanese": "省略と照応の例文2（C1）。"
-      }
-    ],
-    "note": "省略と照応では文脈と時制の整合性に注意する。",
-    "commonMistake": "省略と照応で直訳しすぎると不自然になる。"
+    "note": "相手との距離感を基準にする。",
+    "commonMistake": "敬語と口語を同文で混在させる。"
   }
 ]

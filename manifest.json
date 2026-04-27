@@ -1,6 +1,6 @@
 {
-  "name": "Lector Español C1",
-  "short_name": "Lector C1",
+  "name": "Lector Español Clean",
+  "short_name": "Lector",
   "display": "standalone",
   "start_url": "./",
   "scope": "./",

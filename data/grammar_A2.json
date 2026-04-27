@@ -2,271 +2,55 @@
   {
     "id": "grammar_a2_001",
     "level": "A2",
-    "title": "点過去",
-    "explanation": "点過去の使い方を、A2学習者向けに整理した説明。",
+    "title": "点過去と線過去",
+    "explanation": "完了した出来事は点過去、背景描写は線過去。",
     "examples": [
       {
-        "spanish": "Ejemplo 1 de 点過去 en nivel A2.",
-        "japanese": "点過去の例文1（A2）。"
+        "spanish": "Ayer compré pan.",
+        "japanese": "昨日私はパンを買いました。"
       },
       {
-        "spanish": "Ejemplo 2 de 点過去 en nivel A2.",
-        "japanese": "点過去の例文2（A2）。"
+        "spanish": "Cuando era niño, leía mucho.",
+        "japanese": "子どもの頃、私はよく読んでいました。"
       }
     ],
-    "note": "点過去では文脈と時制の整合性に注意する。",
-    "commonMistake": "点過去で直訳しすぎると不自然になる。"
+    "note": "時間軸を意識する。",
+    "commonMistake": "出来事と背景を逆にする。"
   },
   {
     "id": "grammar_a2_002",
     "level": "A2",
-    "title": "線過去",
-    "explanation": "線過去の使い方を、A2学習者向けに整理した説明。",
+    "title": "再帰動詞",
+    "explanation": "日課や状態変化で再帰代名詞を使います。",
     "examples": [
       {
-        "spanish": "Ejemplo 1 de 線過去 en nivel A2.",
-        "japanese": "線過去の例文1（A2）。"
+        "spanish": "Me levanto a las seis.",
+        "japanese": "私は6時に起きます。"
       },
       {
-        "spanish": "Ejemplo 2 de 線過去 en nivel A2.",
-        "japanese": "線過去の例文2（A2）。"
+        "spanish": "Se llaman Ana y Luis.",
+        "japanese": "彼らはアナとルイスという名前です。"
       }
     ],
-    "note": "線過去では文脈と時制の整合性に注意する。",
-    "commonMistake": "線過去で直訳しすぎると不自然になる。"
+    "note": "目的語代名詞と区別する。",
+    "commonMistake": "主語に合わない代名詞を置く。"
   },
   {
     "id": "grammar_a2_003",
     "level": "A2",
-    "title": "再帰動詞",
-    "explanation": "再帰動詞の使い方を、A2学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 再帰動詞 en nivel A2.",
-        "japanese": "再帰動詞の例文1（A2）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 再帰動詞 en nivel A2.",
-        "japanese": "再帰動詞の例文2（A2）。"
-      }
-    ],
-    "note": "再帰動詞では文脈と時制の整合性に注意する。",
-    "commonMistake": "再帰動詞で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a2_004",
-    "level": "A2",
-    "title": "直接目的語代名詞",
-    "explanation": "直接目的語代名詞の使い方を、A2学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 直接目的語代名詞 en nivel A2.",
-        "japanese": "直接目的語代名詞の例文1（A2）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 直接目的語代名詞 en nivel A2.",
-        "japanese": "直接目的語代名詞の例文2（A2）。"
-      }
-    ],
-    "note": "直接目的語代名詞では文脈と時制の整合性に注意する。",
-    "commonMistake": "直接目的語代名詞で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a2_005",
-    "level": "A2",
-    "title": "間接目的語代名詞",
-    "explanation": "間接目的語代名詞の使い方を、A2学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 間接目的語代名詞 en nivel A2.",
-        "japanese": "間接目的語代名詞の例文1（A2）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 間接目的語代名詞 en nivel A2.",
-        "japanese": "間接目的語代名詞の例文2（A2）。"
-      }
-    ],
-    "note": "間接目的語代名詞では文脈と時制の整合性に注意する。",
-    "commonMistake": "間接目的語代名詞で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a2_006",
-    "level": "A2",
     "title": "比較表現",
-    "explanation": "比較表現の使い方を、A2学習者向けに整理した説明。",
+    "explanation": "más/menos/tan を使って比較します。",
     "examples": [
       {
-        "spanish": "Ejemplo 1 de 比較表現 en nivel A2.",
-        "japanese": "比較表現の例文1（A2）。"
+        "spanish": "Este café es más caro.",
+        "japanese": "このコーヒーはより高いです。"
       },
       {
-        "spanish": "Ejemplo 2 de 比較表現 en nivel A2.",
-        "japanese": "比較表現の例文2（A2）。"
+        "spanish": "Ella es tan alta como yo.",
+        "japanese": "彼女は私と同じくらい背が高いです。"
       }
     ],
-    "note": "比較表現では文脈と時制の整合性に注意する。",
-    "commonMistake": "比較表現で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a2_007",
-    "level": "A2",
-    "title": "命令形の基礎",
-    "explanation": "命令形の基礎の使い方を、A2学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 命令形の基礎 en nivel A2.",
-        "japanese": "命令形の基礎の例文1（A2）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 命令形の基礎 en nivel A2.",
-        "japanese": "命令形の基礎の例文2（A2）。"
-      }
-    ],
-    "note": "命令形の基礎では文脈と時制の整合性に注意する。",
-    "commonMistake": "命令形の基礎で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a2_008",
-    "level": "A2",
-    "title": "現在完了",
-    "explanation": "現在完了の使い方を、A2学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 現在完了 en nivel A2.",
-        "japanese": "現在完了の例文1（A2）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 現在完了 en nivel A2.",
-        "japanese": "現在完了の例文2（A2）。"
-      }
-    ],
-    "note": "現在完了では文脈と時制の整合性に注意する。",
-    "commonMistake": "現在完了で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a2_009",
-    "level": "A2",
-    "title": "未来 perifrástico",
-    "explanation": "未来 perifrásticoの使い方を、A2学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 未来 perifrástico en nivel A2.",
-        "japanese": "未来 perifrásticoの例文1（A2）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 未来 perifrástico en nivel A2.",
-        "japanese": "未来 perifrásticoの例文2（A2）。"
-      }
-    ],
-    "note": "未来 perifrásticoでは文脈と時制の整合性に注意する。",
-    "commonMistake": "未来 perifrásticoで直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a2_010",
-    "level": "A2",
-    "title": "関係代名詞 que",
-    "explanation": "関係代名詞 queの使い方を、A2学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 関係代名詞 que en nivel A2.",
-        "japanese": "関係代名詞 queの例文1（A2）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 関係代名詞 que en nivel A2.",
-        "japanese": "関係代名詞 queの例文2（A2）。"
-      }
-    ],
-    "note": "関係代名詞 queでは文脈と時制の整合性に注意する。",
-    "commonMistake": "関係代名詞 queで直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a2_011",
-    "level": "A2",
-    "title": "副詞の位置",
-    "explanation": "副詞の位置の使い方を、A2学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 副詞の位置 en nivel A2.",
-        "japanese": "副詞の位置の例文1（A2）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 副詞の位置 en nivel A2.",
-        "japanese": "副詞の位置の例文2（A2）。"
-      }
-    ],
-    "note": "副詞の位置では文脈と時制の整合性に注意する。",
-    "commonMistake": "副詞の位置で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a2_012",
-    "level": "A2",
-    "title": "否定語の組み合わせ",
-    "explanation": "否定語の組み合わせの使い方を、A2学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 否定語の組み合わせ en nivel A2.",
-        "japanese": "否定語の組み合わせの例文1（A2）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 否定語の組み合わせ en nivel A2.",
-        "japanese": "否定語の組み合わせの例文2（A2）。"
-      }
-    ],
-    "note": "否定語の組み合わせでは文脈と時制の整合性に注意する。",
-    "commonMistake": "否定語の組み合わせで直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a2_013",
-    "level": "A2",
-    "title": "接続詞 porque/pero",
-    "explanation": "接続詞 porque/peroの使い方を、A2学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 接続詞 porque/pero en nivel A2.",
-        "japanese": "接続詞 porque/peroの例文1（A2）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 接続詞 porque/pero en nivel A2.",
-        "japanese": "接続詞 porque/peroの例文2（A2）。"
-      }
-    ],
-    "note": "接続詞 porque/peroでは文脈と時制の整合性に注意する。",
-    "commonMistake": "接続詞 porque/peroで直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a2_014",
-    "level": "A2",
-    "title": "数量表現",
-    "explanation": "数量表現の使い方を、A2学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 数量表現 en nivel A2.",
-        "japanese": "数量表現の例文1（A2）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 数量表現 en nivel A2.",
-        "japanese": "数量表現の例文2（A2）。"
-      }
-    ],
-    "note": "数量表現では文脈と時制の整合性に注意する。",
-    "commonMistake": "数量表現で直訳しすぎると不自然になる。"
-  },
-  {
-    "id": "grammar_a2_015",
-    "level": "A2",
-    "title": "感嘆文",
-    "explanation": "感嘆文の使い方を、A2学習者向けに整理した説明。",
-    "examples": [
-      {
-        "spanish": "Ejemplo 1 de 感嘆文 en nivel A2.",
-        "japanese": "感嘆文の例文1（A2）。"
-      },
-      {
-        "spanish": "Ejemplo 2 de 感嘆文 en nivel A2.",
-        "japanese": "感嘆文の例文2（A2）。"
-      }
-    ],
-    "note": "感嘆文では文脈と時制の整合性に注意する。",
-    "commonMistake": "感嘆文で直訳しすぎると不自然になる。"
+    "note": "比較対象を明確にする。",
+    "commonMistake": "como を省略してしまう。"
   }
 ]

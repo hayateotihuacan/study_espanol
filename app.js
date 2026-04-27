@@ -1,25 +1,28 @@
 const APP_VERSION = '1.0.0';
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+
 const STORAGE_KEYS = {
-  wordsStatus: 'lector_words_status',
-  readingStatus: 'lector_reading_status',
-  quizResults: 'lector_quiz_results',
-  lastStudyDate: 'lector_last_study_date',
-  selectedLevel: 'lector_selected_level'
+  wordsStatus: 'lector_clean_words_status',
+  readingStatus: 'lector_clean_reading_status',
+  quizResults: 'lector_clean_quiz_results',
+  selectedLevel: 'lector_clean_selected_level',
+  lastStudyDate: 'lector_clean_last_study_date'
 };
 
 const state = {
+  currentScreen: 'home',
   selectedLevel: 'A1',
-  screen: 'home',
   words: {},
   grammar: {},
   readings: {},
   wordsStatus: {},
   readingStatus: {},
-  quizResults: {}
+  quizResults: {},
+  openReadingId: null,
+  translationVisible: {}
 };
 
-// localStorage 読み込み共通関数（壊れていてもアプリが止まらないようにする）
+// localStorage読み込み：JSONが壊れていても落ちないようにする。
 function loadStorage(key, fallback) {
   try {
     const raw = localStorage.getItem(key);
@@ -29,139 +32,163 @@ function loadStorage(key, fallback) {
   }
 }
 
-// localStorage 保存共通関数
+// localStorage保存を共通化し、処理を分かりやすくする。
 function saveStorage(key, value) {
   localStorage.setItem(key, JSON.stringify(value));
 }
 
-function touchStudyDate() {
-  const today = new Date().toISOString().slice(0, 10);
-  localStorage.setItem(STORAGE_KEYS.lastStudyDate, today);
+function updateLastStudyDate() {
+  localStorage.setItem(STORAGE_KEYS.lastStudyDate, new Date().toISOString().slice(0, 10));
 }
 
 function showError(message) {
-  const banner = document.getElementById('error-banner');
-  banner.textContent = message;
-  banner.classList.remove('hidden');
+  const el = document.getElementById('error-banner');
+  el.textContent = message;
+  el.classList.remove('hidden');
 }
 
 function hideError() {
   document.getElementById('error-banner').classList.add('hidden');
 }
 
+function formatOrFallback(value, fallback) {
+  if (typeof value !== 'string') return fallback;
+  const trimmed = value.trim();
+  return trimmed ? trimmed : fallback;
+}
+
 async function loadJson(path) {
-  const res = await fetch(path);
-  if (!res.ok) throw new Error(`データ取得失敗: ${path}`);
-  return res.json();
+  const response = await fetch(path);
+  if (!response.ok) {
+    throw new Error(`教材JSONの読み込みに失敗: ${path}`);
+  }
+  return response.json();
 }
 
 async function loadAllData() {
-  const promises = [];
   for (const level of LEVELS) {
-    promises.push(loadJson(`./data/words_${level}.json`).then(d => state.words[level] = d));
-    promises.push(loadJson(`./data/grammar_${level}.json`).then(d => state.grammar[level] = d));
-    promises.push(loadJson(`./data/readings_${level}.json`).then(d => state.readings[level] = d));
-  }
-  await Promise.all(promises);
-}
-
-function registerSW() {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./service-worker.js').catch(() => {
-      showError('Service Worker の登録に失敗しました。オンラインで再読み込みしてください。');
-    });
+    state.words[level] = await loadJson(`./data/words_${level}.json`);
+    state.grammar[level] = await loadJson(`./data/grammar_${level}.json`);
+    state.readings[level] = await loadJson(`./data/readings_${level}.json`);
   }
 }
 
-function statsSummary() {
-  const allWords = LEVELS.flatMap(l => state.words[l] || []);
-  const allReadings = LEVELS.flatMap(l => state.readings[l] || []);
-  const wordKnown = Object.values(state.wordsStatus).filter(v => v === 'known').length;
-  const wordUnknown = Object.values(state.wordsStatus).filter(v => v === 'unknown').length;
+function registerServiceWorker() {
+  if (!('serviceWorker' in navigator)) return;
+  navigator.serviceWorker.register('./service-worker.js').catch(() => {
+    showError('Service Workerの登録に失敗しました。オンラインで再読み込みしてください。');
+  });
+}
+
+function allWords() {
+  return LEVELS.flatMap((level) => state.words[level] || []);
+}
+
+function allReadings() {
+  return LEVELS.flatMap((level) => state.readings[level] || []);
+}
+
+function calculateStats() {
+  const words = allWords();
+  const readings = allReadings();
+  const known = Object.values(state.wordsStatus).filter((v) => v === 'known').length;
+  const unknown = Object.values(state.wordsStatus).filter((v) => v === 'unknown').length;
   const readDone = Object.values(state.readingStatus).filter(Boolean).length;
-  const quizEntries = Object.values(state.quizResults);
-  const quizTotal = quizEntries.length;
-  const quizCorrect = quizEntries.filter(v => v.correct).length;
-  const rate = quizTotal ? Math.round((quizCorrect / quizTotal) * 100) : 0;
+  const quizItems = Object.values(state.quizResults);
+  const quizCount = quizItems.length;
+  const correct = quizItems.filter((x) => x.correct).length;
+  const rate = quizCount ? Math.round((correct / quizCount) * 100) : 0;
+
   return {
-    allWords: allWords.length,
-    wordKnown,
-    wordUnknown,
+    totalWords: words.length,
+    known,
+    unknown,
     readDone,
-    quizTotal,
-    quizCorrect,
+    unread: readings.filter((r) => !state.readingStatus[r.id]).length,
+    quizCount,
+    correct,
     rate,
-    lastDate: localStorage.getItem(STORAGE_KEYS.lastStudyDate) || '未学習',
-    unlearnedWords: allWords.filter(w => state.wordsStatus[w.id] !== 'known').length,
-    unreadReadings: allReadings.filter(r => !state.readingStatus[r.id]).length
+    lastStudyDate: localStorage.getItem(STORAGE_KEYS.lastStudyDate) || '未学習'
   };
 }
 
-function levelButtons(active, cbName) {
-  return `<div class="level-switcher">${LEVELS.map(l => `<button class="level-btn ${l === active ? 'active' : ''}" data-cb="${cbName}" data-level="${l}">${l}</button>`).join('')}</div>`;
+function renderLevelButtons() {
+  return `
+    <div class="level-switcher">
+      ${LEVELS.map((level) => `<button class="level-btn ${level === state.selectedLevel ? 'active' : ''}" data-level="${level}">${level}</button>`).join('')}
+    </div>
+  `;
 }
 
 function renderHome() {
-  const s = statsSummary();
+  const stats = calculateStats();
   document.getElementById('screen-home').innerHTML = `
     <div class="card">
-      <h2 class="section-title">今日の学習へ</h2>
-      <p>現在レベル: <span class="badge">${state.selectedLevel}</span></p>
+      <h2>ホーム</h2>
+      <p><strong>アプリ名:</strong> Lector Español Clean</p>
+      <p><strong>現在選択中の学習レベル:</strong> <span class="badge">${state.selectedLevel}</span></p>
       <div class="stats-grid">
-        <div class="stat-card"><div>学習済み単語</div><div class="stat-value">${s.wordKnown}</div></div>
-        <div class="stat-card"><div>未習得単語</div><div class="stat-value">${s.wordUnknown}</div></div>
-        <div class="stat-card"><div>読了長文</div><div class="stat-value">${s.readDone}</div></div>
-        <div class="stat-card"><div>クイズ正答率</div><div class="stat-value">${s.rate}%</div></div>
-        <div class="stat-card"><div>最終学習日</div><div>${s.lastDate}</div></div>
+        <div class="stat-card"><div>学習済み単語数</div><div class="stat-value">${stats.known}</div></div>
+        <div class="stat-card"><div>未習得単語数</div><div class="stat-value">${stats.unknown}</div></div>
+        <div class="stat-card"><div>読了した長文数</div><div class="stat-value">${stats.readDone}</div></div>
+        <div class="stat-card"><div>クイズ正答率</div><div class="stat-value">${stats.rate}%</div></div>
+        <div class="stat-card"><div>最終学習日</div><div>${stats.lastStudyDate}</div></div>
       </div>
     </div>
-    <div class="links-grid">
-      ${['words','grammar','readings','review','history'].map(k => `<button class="card quick-link" data-go="${k}">${({words:'単語',grammar:'文法',readings:'長文読解',review:'復習',history:'学習履歴'})[k]}</button>`).join('')}
+
+    <div class="link-grid">
+      <button class="card action-btn" data-go="words">単語</button>
+      <button class="card action-btn" data-go="grammar">文法</button>
+      <button class="card action-btn" data-go="readings">長文読解</button>
+      <button class="card action-btn" data-go="review">復習</button>
+      <button class="card action-btn" data-go="history">履歴</button>
     </div>
   `;
 }
 
 function renderWords() {
-  const list = state.words[state.selectedLevel] || [];
+  const items = state.words[state.selectedLevel] || [];
   document.getElementById('screen-words').innerHTML = `
     <div class="card">
-      <h2 class="section-title">単語学習 (${state.selectedLevel})</h2>
-      ${levelButtons(state.selectedLevel, 'select-level')}
-      ${list.map(w => {
-        const st = state.wordsStatus[w.id] || 'new';
-        return `<article class="card">
-          <div><span class="badge">${w.level}</span></div>
-          <h3>${w.word}</h3>
-          <p><strong>日本語訳:</strong> ${w.meaning}</p>
-          <p><strong>品詞:</strong> ${w.partOfSpeech}</p>
-          <p><strong>例文:</strong> ${w.example}</p>
-          <p class="translation-box">${w.translation}</p>
-          <p><strong>補足:</strong> ${w.note}</p>
-          <p>状態: <strong>${st === 'known' ? '覚えた' : st === 'unknown' ? '未習得' : '未設定'}</strong></p>
-          <div class="word-actions">
-            <button class="action-btn primary" data-word-id="${w.id}" data-word-state="known">覚えた</button>
-            <button class="action-btn" data-word-id="${w.id}" data-word-state="unknown">未習得</button>
-          </div>
-        </article>`;
+      <h2>単語</h2>
+      ${renderLevelButtons()}
+      ${items.map((item) => {
+        const label = state.wordsStatus[item.id] === 'known' ? '覚えた' : state.wordsStatus[item.id] === 'unknown' ? '未習得' : '未設定';
+        return `
+          <article class="card">
+            <p><span class="badge">${item.level}</span></p>
+            <h3>${formatOrFallback(item.word, '単語未設定')}</h3>
+            <p><strong>日本語訳:</strong> ${formatOrFallback(item.meaning, '訳未設定')}</p>
+            <p><strong>品詞:</strong> ${formatOrFallback(item.partOfSpeech, '未設定')}</p>
+            <p><strong>例文:</strong> ${formatOrFallback(item.example, '例文未設定')}</p>
+            <p class="translation-box"><strong>例文訳:</strong> ${formatOrFallback(item.translation, '例文訳未設定')}</p>
+            <p><strong>補足メモ:</strong> ${formatOrFallback(item.note, '補足未設定')}</p>
+            <p><strong>現在状態:</strong> ${label}</p>
+            <div class="word-actions">
+              <button class="action-btn primary" data-word-id="${item.id}" data-word-state="known">覚えた</button>
+              <button class="action-btn" data-word-id="${item.id}" data-word-state="unknown">未習得</button>
+            </div>
+          </article>
+        `;
       }).join('')}
     </div>
   `;
 }
 
 function renderGrammar() {
-  const list = state.grammar[state.selectedLevel] || [];
+  const items = state.grammar[state.selectedLevel] || [];
   document.getElementById('screen-grammar').innerHTML = `
     <div class="card">
-      <h2 class="section-title">文法 (${state.selectedLevel})</h2>
-      ${levelButtons(state.selectedLevel, 'select-level')}
-      ${list.map(g => `
+      <h2>文法</h2>
+      ${renderLevelButtons()}
+      ${items.map((item) => `
         <article class="card">
-          <div><span class="badge">${g.level}</span></div>
-          <h3>${g.title}</h3>
-          <p>${g.explanation}</p>
-          ${(g.examples || []).map(ex => `<p><strong>${ex.spanish}</strong><br>${ex.japanese}</p>`).join('')}
-          <p><strong>注意点:</strong> ${g.note}</p>
-          <p><strong>よくある間違い:</strong> ${g.commonMistake}</p>
+          <p><span class="badge">${item.level}</span></p>
+          <h3>${formatOrFallback(item.title, 'タイトル未設定')}</h3>
+          <p><strong>説明:</strong> ${formatOrFallback(item.explanation, '説明未設定')}</p>
+          ${(item.examples || []).map((ex) => `<p><strong>${formatOrFallback(ex.spanish, '例文未設定')}</strong><br>${formatOrFallback(ex.japanese, '訳未設定')}</p>`).join('')}
+          <p><strong>注意点:</strong> ${formatOrFallback(item.note, '未設定')}</p>
+          <p><strong>よくある間違い:</strong> ${formatOrFallback(item.commonMistake, '未設定')}</p>
         </article>
       `).join('')}
     </div>
@@ -169,113 +196,146 @@ function renderGrammar() {
 }
 
 function renderReadings() {
-  const list = state.readings[state.selectedLevel] || [];
+  const items = state.readings[state.selectedLevel] || [];
   document.getElementById('screen-readings').innerHTML = `
     <div class="card">
-      <h2 class="section-title">長文読解 (${state.selectedLevel})</h2>
-      ${levelButtons(state.selectedLevel, 'select-level')}
+      <h2>長文読解</h2>
+      ${renderLevelButtons()}
       <div class="card">
         <h3>長文一覧</h3>
-        ${list.map(r => `<button class="action-btn" data-open-reading="${r.id}">${r.title} (${r.category}) ${state.readingStatus[r.id] ? '✅' : ''}</button>`).join('<br>')}
+        ${items.map((item) => `
+          <button class="action-btn" data-open-reading="${item.id}">${item.title} / ${item.level} / ${item.category}${state.readingStatus[item.id] ? ' ✅' : ''}</button>
+        `).join('')}
       </div>
       <div id="reading-detail"></div>
     </div>
   `;
+
+  if (state.openReadingId) {
+    renderReadingDetail(state.openReadingId);
+  }
 }
 
 function renderReadingDetail(readingId) {
-  const reading = (state.readings[state.selectedLevel] || []).find(r => r.id === readingId);
-  if (!reading) return;
-  const detail = document.getElementById('reading-detail');
-  detail.innerHTML = `
+  const target = (state.readings[state.selectedLevel] || []).find((item) => item.id === readingId);
+  const container = document.getElementById('reading-detail');
+  if (!container || !target) return;
+
+  const showTranslation = Boolean(state.translationVisible[readingId]);
+  container.innerHTML = `
     <article class="card">
-      <h3>${reading.title}</h3>
-      <p><span class="badge">${reading.level}</span> <span class="badge">${reading.category}</span></p>
-      <div class="reading-text">${reading.text}</div>
-      <button class="action-btn" data-toggle-translation="${reading.id}">日本語訳を表示/隠す</button>
-      <div id="translation-${reading.id}" class="translation-box hidden">${reading.translation}</div>
+      <h3>${target.title}</h3>
+      <p><span class="badge">${target.level}</span> <span class="badge">${target.category}</span></p>
+      <div class="reading-text">${formatOrFallback(target.text, '本文未設定')}</div>
+      <div class="reading-actions">
+        <button class="action-btn" data-toggle-translation="${target.id}">${showTranslation ? '日本語訳を隠す' : '日本語訳を表示'}</button>
+        <button class="action-btn primary" data-mark-read="${target.id}">読了にする</button>
+      </div>
+      <div class="translation-box ${showTranslation ? '' : 'hidden'}">${formatOrFallback(target.translation, '日本語訳未設定')}</div>
+
       <h4>重要語句</h4>
-      <div class="chips">${reading.vocabulary.map(v => `<span class="chip">${v.word}: ${v.meaning}</span>`).join('')}</div>
+      <div>${(target.vocabulary || []).map((v) => `<span class="chip">${formatOrFallback(v.word, '語句未設定')}: ${formatOrFallback(v.meaning, '訳未設定')}</span>`).join('')}</div>
+
       <h4>内容確認クイズ</h4>
-      ${reading.questions.map(q => {
-        const res = state.quizResults[q.id];
-        return `<div class="card">
-          <p><strong>${q.question}</strong></p>
-          ${q.choices.map(c => `<button class="choice-btn" data-question-id="${q.id}" data-choice="${c}">${c}</button>`).join('')}
-          <div class="result ${res ? (res.correct ? 'ok' : 'ng') : ''}">${res ? (res.correct ? '正解です。' : `不正解です。正答: ${q.answer}`) : ''}</div>
-        </div>`;
+      ${(target.questions || []).map((q) => {
+        const result = state.quizResults[q.id];
+        const resultText = !result ? '' : result.correct ? '正解です。' : `不正解です。正答: ${q.answer}`;
+        const resultClass = !result ? '' : result.correct ? 'ok' : 'ng';
+        return `
+          <div class="card">
+            <p><strong>${q.question}</strong></p>
+            ${(q.choices || []).map((choice) => `<button class="choice-btn" data-question-id="${q.id}" data-reading-id="${target.id}" data-choice="${choice}">${choice}</button>`).join('')}
+            <p class="result ${resultClass}">${resultText}</p>
+          </div>
+        `;
       }).join('')}
-      <button class="action-btn primary" data-mark-read="${reading.id}">読了にする</button>
     </article>
   `;
 }
 
 function renderReview() {
   const level = state.selectedLevel;
-  const words = (state.words[level] || []).filter(w => state.wordsStatus[w.id] === 'unknown');
-  const wrongQuizzes = Object.entries(state.quizResults)
+  const unknownWords = (state.words[level] || []).filter((w) => state.wordsStatus[w.id] === 'unknown');
+  const wrongQuiz = Object.entries(state.quizResults)
     .filter(([, v]) => !v.correct && v.level === level)
-    .map(([id, v]) => ({ id, ...v }));
-  const unread = (state.readings[level] || []).filter(r => !state.readingStatus[r.id]);
+    .map(([id, value]) => ({ id, ...value }));
+  const unreadReadings = (state.readings[level] || []).filter((r) => !state.readingStatus[r.id]);
 
   document.getElementById('screen-review').innerHTML = `
     <div class="card">
-      <h2 class="section-title">復習 (${level})</h2>
-      ${levelButtons(level, 'select-level')}
+      <h2>復習</h2>
+      ${renderLevelButtons()}
+
       <article class="card">
-        <h3>未習得の単語</h3>
-        ${words.length ? words.map(w => `<div class="card"><strong>${w.word}</strong>
-          <button class="action-btn" data-reveal-word="${w.id}">答えを見る</button>
-          <button class="action-btn primary" data-word-id="${w.id}" data-word-state="known">覚えたに変更</button>
-          <div id="reveal-${w.id}" class="translation-box hidden">${w.meaning}</div></div>`).join('') : '<p>ありません。</p>'}
+        <h3>未習得の単語一覧</h3>
+        ${unknownWords.length ? unknownWords.map((w) => `
+          <div class="card">
+            <p><strong>${w.word}</strong></p>
+            <button class="action-btn" data-reveal-word="${w.id}">答えを見る</button>
+            <button class="action-btn primary" data-word-id="${w.id}" data-word-state="known">覚えたに変更</button>
+            <p id="reveal-${w.id}" class="translation-box hidden">${formatOrFallback(w.meaning, '訳未設定')}</p>
+          </div>
+        `).join('') : '<p>未習得単語はありません。</p>'}
       </article>
+
       <article class="card">
-        <h3>間違えたクイズ</h3>
-        ${wrongQuizzes.length ? wrongQuizzes.map(q => `<div class="card"><p>${q.question}</p><p class="translation-box">正解: ${q.answer}</p></div>`).join('') : '<p>ありません。</p>'}
+        <h3>間違えたクイズ一覧</h3>
+        ${wrongQuiz.length ? wrongQuiz.map((q) => `
+          <div class="card">
+            <p><strong>問題:</strong> ${q.question}</p>
+            <p class="translation-box"><strong>正解:</strong> ${q.answer}</p>
+          </div>
+        `).join('') : '<p>間違えたクイズはありません。</p>'}
       </article>
+
       <article class="card">
-        <h3>未読の長文</h3>
-        ${unread.length ? unread.map(r => `<div class="card"><strong>${r.title}</strong> <span class="badge">${r.level}</span> <span class="badge">${r.category}</span></div>`).join('') : '<p>ありません。</p>'}
+        <h3>未読の長文一覧</h3>
+        ${unreadReadings.length ? unreadReadings.map((r) => `
+          <div class="card">
+            <p><strong>${r.title}</strong></p>
+            <p><span class="badge">${r.level}</span> <span class="badge">${r.category}</span></p>
+          </div>
+        `).join('') : '<p>未読長文はありません。</p>'}
       </article>
     </div>
   `;
 }
 
-function levelStatsHtml() {
-  return LEVELS.map(level => {
-    const w = (state.words[level] || []).map(x => x.id);
-    const r = (state.readings[level] || []).map(x => x.id);
-    const known = w.filter(id => state.wordsStatus[id] === 'known').length;
-    const done = r.filter(id => state.readingStatus[id]).length;
-    const qids = Object.values(state.quizResults).filter(x => x.level === level);
-    const rate = qids.length ? Math.round(qids.filter(x => x.correct).length / qids.length * 100) : 0;
-    return `<div class="stat-card"><strong>${level}</strong><br>単語 ${known}/${w.length}<br>読解 ${done}/${r.length}<br>クイズ正答率 ${rate}%</div>`;
+function levelProgressHtml() {
+  return LEVELS.map((level) => {
+    const words = state.words[level] || [];
+    const readings = state.readings[level] || [];
+    const known = words.filter((w) => state.wordsStatus[w.id] === 'known').length;
+    const readDone = readings.filter((r) => state.readingStatus[r.id]).length;
+    const quiz = Object.values(state.quizResults).filter((q) => q.level === level);
+    const rate = quiz.length ? Math.round((quiz.filter((q) => q.correct).length / quiz.length) * 100) : 0;
+    return `<div class="stat-card"><strong>${level}</strong><br>単語 ${known}/${words.length}<br>長文 ${readDone}/${readings.length}<br>正答率 ${rate}%</div>`;
   }).join('');
 }
 
 function renderHistory() {
-  const s = statsSummary();
+  const stats = calculateStats();
   document.getElementById('screen-history').innerHTML = `
     <div class="card">
-      <h2 class="section-title">学習履歴</h2>
-      ${levelButtons(state.selectedLevel, 'select-level')}
+      <h2>学習履歴</h2>
+      ${renderLevelButtons()}
       <div class="stats-grid">
-        <div class="stat-card"><div>学習済み単語数</div><div class="stat-value">${s.wordKnown}</div></div>
-        <div class="stat-card"><div>未習得単語数</div><div class="stat-value">${s.wordUnknown}</div></div>
-        <div class="stat-card"><div>読了長文数</div><div class="stat-value">${s.readDone}</div></div>
-        <div class="stat-card"><div>解いたクイズ数</div><div class="stat-value">${s.quizTotal}</div></div>
-        <div class="stat-card"><div>正解数</div><div class="stat-value">${s.quizCorrect}</div></div>
-        <div class="stat-card"><div>正答率</div><div class="stat-value">${s.rate}%</div></div>
-        <div class="stat-card"><div>最終学習日</div><div>${s.lastDate}</div></div>
+        <div class="stat-card"><div>学習済み単語数</div><div class="stat-value">${stats.known}</div></div>
+        <div class="stat-card"><div>未習得単語数</div><div class="stat-value">${stats.unknown}</div></div>
+        <div class="stat-card"><div>読了した長文数</div><div class="stat-value">${stats.readDone}</div></div>
+        <div class="stat-card"><div>解いたクイズ数</div><div class="stat-value">${stats.quizCount}</div></div>
+        <div class="stat-card"><div>正解数</div><div class="stat-value">${stats.correct}</div></div>
+        <div class="stat-card"><div>正答率</div><div class="stat-value">${stats.rate}%</div></div>
+        <div class="stat-card"><div>最終学習日</div><div>${stats.lastStudyDate}</div></div>
       </div>
-      <h3>レベル別学習状況</h3>
-      <div class="stats-grid">${levelStatsHtml()}</div>
+      <h3>レベル別の学習状況</h3>
+      <div class="stats-grid">${levelProgressHtml()}</div>
       <button class="action-btn" data-reset-history="1">履歴リセット</button>
     </div>
   `;
 }
 
-function renderCurrentScreen() {
+function renderAllScreens() {
   hideError();
   renderHome();
   renderWords();
@@ -285,111 +345,155 @@ function renderCurrentScreen() {
   renderHistory();
 }
 
-function switchScreen(target) {
-  state.screen = target;
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  document.querySelector(`#screen-${target}`).classList.add('active');
-  document.querySelectorAll('.nav-btn').forEach(b => b.classList.toggle('active', b.dataset.target === target));
+function switchScreen(screenName) {
+  state.currentScreen = screenName;
+  document.querySelectorAll('.screen').forEach((el) => el.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach((el) => el.classList.remove('active'));
+  document.getElementById(`screen-${screenName}`).classList.add('active');
+  document.querySelector(`.nav-btn[data-target="${screenName}"]`).classList.add('active');
+}
+
+function setLevel(level) {
+  state.selectedLevel = level;
+  saveStorage(STORAGE_KEYS.selectedLevel, level);
+  state.openReadingId = null;
+  renderAllScreens();
+  switchScreen(state.currentScreen);
+}
+
+function setWordStatus(wordId, status) {
+  state.wordsStatus[wordId] = status;
+  saveStorage(STORAGE_KEYS.wordsStatus, state.wordsStatus);
+  updateLastStudyDate();
+  renderAllScreens();
+  switchScreen(state.currentScreen);
+}
+
+function answerQuiz(questionId, readingId, choice) {
+  const reading = (state.readings[state.selectedLevel] || []).find((r) => r.id === readingId);
+  if (!reading) return;
+  const question = (reading.questions || []).find((q) => q.id === questionId);
+  if (!question) return;
+
+  state.quizResults[questionId] = {
+    level: reading.level,
+    question: question.question,
+    answer: question.answer,
+    correct: choice === question.answer,
+    readingId
+  };
+
+  saveStorage(STORAGE_KEYS.quizResults, state.quizResults);
+  updateLastStudyDate();
+  renderReadingDetail(readingId);
+  renderHome();
+  renderHistory();
+  renderReview();
+}
+
+function markReadingDone(readingId) {
+  state.readingStatus[readingId] = true;
+  saveStorage(STORAGE_KEYS.readingStatus, state.readingStatus);
+  updateLastStudyDate();
+  renderAllScreens();
+  switchScreen('readings');
+}
+
+function resetHistory() {
+  const ok = confirm('学習履歴をリセットします。よろしいですか？');
+  if (!ok) return;
+
+  state.wordsStatus = {};
+  state.readingStatus = {};
+  state.quizResults = {};
+  state.translationVisible = {};
+
+  localStorage.removeItem(STORAGE_KEYS.wordsStatus);
+  localStorage.removeItem(STORAGE_KEYS.readingStatus);
+  localStorage.removeItem(STORAGE_KEYS.quizResults);
+  localStorage.removeItem(STORAGE_KEYS.lastStudyDate);
+
+  renderAllScreens();
+  switchScreen('history');
 }
 
 function setupEvents() {
-  document.body.addEventListener('click', (e) => {
-    const t = e.target;
-    if (t.matches('[data-go]')) { switchScreen(t.dataset.go); return; }
-    if (t.matches('.nav-btn')) { switchScreen(t.dataset.target); return; }
+  document.body.addEventListener('click', (event) => {
+    const target = event.target;
 
-    if (t.matches('.level-btn')) {
-      state.selectedLevel = t.dataset.level;
-      localStorage.setItem(STORAGE_KEYS.selectedLevel, state.selectedLevel);
-      renderCurrentScreen();
-      switchScreen(state.screen);
+    if (target.matches('.nav-btn')) {
+      switchScreen(target.dataset.target);
       return;
     }
 
-    if (t.matches('[data-word-id]')) {
-      state.wordsStatus[t.dataset.wordId] = t.dataset.wordState;
-      saveStorage(STORAGE_KEYS.wordsStatus, state.wordsStatus);
-      touchStudyDate();
-      renderCurrentScreen();
-      switchScreen(state.screen);
+    if (target.matches('[data-go]')) {
+      switchScreen(target.dataset.go);
       return;
     }
 
-    if (t.matches('[data-open-reading]')) {
-      renderReadingDetail(t.dataset.openReading);
+    if (target.matches('.level-btn')) {
+      setLevel(target.dataset.level);
       return;
     }
 
-    if (t.matches('[data-toggle-translation]')) {
-      document.getElementById(`translation-${t.dataset.toggleTranslation}`).classList.toggle('hidden');
+    if (target.matches('[data-word-id]')) {
+      setWordStatus(target.dataset.wordId, target.dataset.wordState);
       return;
     }
 
-    if (t.matches('[data-question-id]')) {
-      const questionId = t.dataset.questionId;
-      const choice = t.dataset.choice;
-      const reading = (state.readings[state.selectedLevel] || []).find(r => r.questions.some(q => q.id === questionId));
-      const q = reading.questions.find(x => x.id === questionId);
-      state.quizResults[questionId] = {
-        correct: choice === q.answer,
-        answer: q.answer,
-        question: q.question,
-        level: reading.level,
-        readingId: reading.id
-      };
-      saveStorage(STORAGE_KEYS.quizResults, state.quizResults);
-      touchStudyDate();
-      renderReadingDetail(reading.id);
-      renderHistory();
-      renderHome();
+    if (target.matches('[data-open-reading]')) {
+      state.openReadingId = target.dataset.openReading;
+      state.translationVisible[state.openReadingId] = false;
+      renderReadings();
       return;
     }
 
-    if (t.matches('[data-mark-read]')) {
-      state.readingStatus[t.dataset.markRead] = true;
-      saveStorage(STORAGE_KEYS.readingStatus, state.readingStatus);
-      touchStudyDate();
-      renderCurrentScreen();
-      switchScreen('readings');
+    if (target.matches('[data-toggle-translation]')) {
+      const readingId = target.dataset.toggleTranslation;
+      state.translationVisible[readingId] = !state.translationVisible[readingId];
+      renderReadingDetail(readingId);
       return;
     }
 
-    if (t.matches('[data-reveal-word]')) {
-      document.getElementById(`reveal-${t.dataset.revealWord}`).classList.toggle('hidden');
+    if (target.matches('[data-question-id]')) {
+      answerQuiz(target.dataset.questionId, target.dataset.readingId, target.dataset.choice);
       return;
     }
 
-    if (t.matches('[data-reset-history]')) {
-      if (confirm('学習履歴をリセットします。よろしいですか？')) {
-        state.wordsStatus = {};
-        state.readingStatus = {};
-        state.quizResults = {};
-        localStorage.removeItem(STORAGE_KEYS.wordsStatus);
-        localStorage.removeItem(STORAGE_KEYS.readingStatus);
-        localStorage.removeItem(STORAGE_KEYS.quizResults);
-        localStorage.removeItem(STORAGE_KEYS.lastStudyDate);
-        renderCurrentScreen();
-        switchScreen('history');
-      }
+    if (target.matches('[data-mark-read]')) {
+      markReadingDone(target.dataset.markRead);
+      return;
+    }
+
+    if (target.matches('[data-reveal-word]')) {
+      const reveal = document.getElementById(`reveal-${target.dataset.revealWord}`);
+      if (reveal) reveal.classList.toggle('hidden');
+      return;
+    }
+
+    if (target.matches('[data-reset-history]')) {
+      resetHistory();
     }
   });
 }
 
 async function init() {
   document.getElementById('app-version').textContent = APP_VERSION;
-  state.selectedLevel = localStorage.getItem(STORAGE_KEYS.selectedLevel) || 'A1';
+
+  state.selectedLevel = loadStorage(STORAGE_KEYS.selectedLevel, 'A1');
   state.wordsStatus = loadStorage(STORAGE_KEYS.wordsStatus, {});
   state.readingStatus = loadStorage(STORAGE_KEYS.readingStatus, {});
   state.quizResults = loadStorage(STORAGE_KEYS.quizResults, {});
 
-  registerSW();
+  registerServiceWorker();
+
   try {
     await loadAllData();
-    renderCurrentScreen();
+    renderAllScreens();
     switchScreen('home');
     setupEvents();
-  } catch (err) {
-    showError('教材データの読み込みに失敗しました。通信状態を確認して再読み込みしてください。');
+  } catch (error) {
+    showError('教材データの読み込みに失敗しました。JSON形式と通信状態を確認してください。');
   }
 }
 
